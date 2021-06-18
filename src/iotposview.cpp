@@ -293,6 +293,8 @@ iotposView::iotposView() //: QWidget(parent)
   connect(ui_mainview.buttonSearchDone_2, SIGNAL(clicked()), SLOT(buttonDone()) );
   connect(ui_mainview.buttonSearchDone_3, SIGNAL(clicked()), SLOT(buttonDone()) );
   connect(ui_mainview.checkCard, SIGNAL(toggled(bool)), SLOT(checksChanged())  );
+  //CM Adding button to checkQR
+  connect(ui_mainview.checkQR, SIGNAL(toggled(bool)), SLOT(checksChanged())  );
   connect(ui_mainview.checkCash, SIGNAL(toggled(bool)), SLOT(checksChanged())  );
   connect(ui_mainview.checkOwnCredit, SIGNAL(toggled(bool)), SLOT(checksChanged())  );
   connect(ui_mainview.editAmount,SIGNAL(returnPressed()), SLOT(finishCurrentTransaction()) );
@@ -302,7 +304,8 @@ iotposView::iotposView() //: QWidget(parent)
   connect(ui_mainview.splitter, SIGNAL(splitterMoved(int, int)), SLOT(setUpTable()));
   connect(ui_mainview.splitterGrid, SIGNAL(splitterMoved(int, int)), SLOT(setUpTable()));
   connect(ui_mainview.editClient, SIGNAL(returnPressed()), SLOT(filterClient()));
-  connect(ui_mainview.btnChangeSaleDate, SIGNAL(clicked()), SLOT(showChangeDate()));
+  // CM adding button line connect(ui_mainview.btnChangeSaleDate, SIGNAL(clicked()), SLOT(finishCurrentTransaction()));
+  connect(ui_mainview.btnProcessPayment, SIGNAL(clicked()), SLOT(finishCurrentTransaction()));
   ui_mainview.listView->setStyleSheet("QScrollBar:vertical { width: 25px; }");
   ui_mainview.tableWidget->verticalScrollBar()->setStyleSheet("QScrollBar:vertical { width: 25px; }");
   ui_mainview.editTicketDatePicker->setDate(QDate::currentDate());
@@ -873,7 +876,7 @@ void iotposView::buttonDone()
 
 void iotposView::checksChanged()
 {
-  bool readOnly = ui_mainview.checkOwnCredit->isChecked() || ui_mainview.checkCard->isChecked();
+  bool readOnly = ui_mainview.checkOwnCredit->isChecked() || ui_mainview.checkCard->isChecked() || ui_mainview.checkQR->isChecked(); //CM Adding condition to check for QR
   ui_mainview.editAmount->setReadOnly(readOnly);
 
   if (ui_mainview.checkCash->isChecked())
@@ -882,7 +885,7 @@ void iotposView::checksChanged()
     ui_mainview.editAmount->setFocus();
     ui_mainview.editAmount->setSelection(0,ui_mainview.editAmount->text().length());
   }//cash
-  else if (ui_mainview.checkCard->isChecked()) //Card, need editCardkNumber...
+  else if (ui_mainview.checkCard->isChecked() || ui_mainview.checkQR->isChecked()) //Card, need editCardkNumber... //CM Added checkQR 
   {
     ui_mainview.editAmount->setText(QString::number(totalSum));
     ui_mainview.editAmount->setFocus();
@@ -1456,7 +1459,7 @@ void iotposView::refreshTotalLabel()
     //}
     updateClientInfo();
 
-    if ( ui_mainview.checkOwnCredit->isChecked() || ui_mainview.checkCard->isChecked() ) {
+    if ( ui_mainview.checkOwnCredit->isChecked() || ui_mainview.checkCard->isChecked() || ui_mainview.checkQR->isChecked() ) { // CM Added check_QR
         //Set the amount to pay.
         ui_mainview.editAmount->setText(QString::number(totalSum, 'f', 2));
     }
@@ -2565,6 +2568,38 @@ void iotposView::finishCurrentTransaction()
       }
     }
   }
+  // CM Adding QR code
+  else if(ui_mainview.checkQR->isChecked()){
+      QProcess process;
+      process.startDetached("sudo", QStringList() << "python" << "/home/pi/Proyecto/epos/iotpos/scripts/mp_create_order_qr.py" << ""+ QString::number(totalSum,'f',64) +""<< ""+ QString::number(currentTransaction) +"");
+      qDebug()<<"Transaction ID:"<<QString::number(currentTransaction);
+      QMessageBox::StandardButton accept;
+      accept = QMessageBox::question(this, i18n("Send QR Request"), i18n("QR ha sido activado. Seleccione Ok para proceder con el chequeo de pago. Presione Cancelar para eliminar orden."), QMessageBox::Cancel|QMessageBox::Ok);
+      if (accept == QMessageBox::Ok) {
+          qDebug()<<"Waiting for Mercado pago";
+          process.startDetached("sudo", QStringList() << "python" << "/home/pi/Proyecto/epos/iotpos/scripts/mp_get_order_qr.py" << ""+ QString::number(currentTransaction) +"");
+          canfinish = true;
+      }
+      else if (accept == QMessageBox::Cancel) {
+        // If the credit card has not been accepted then cancel the transaction.
+        process.startDetached("sudo", QStringList() << "python" << "/home/pi/Proyecto/epos/iotpos/scripts/mp_cancel_order_qr.py");
+        cancelCurrentTransaction();
+        //
+      }
+
+      //check if card type is != none.
+      qDebug()<<"CARD TYPE index:"<<ui_mainview.comboCardType->currentIndex();
+
+      if ( ui_mainview.comboCardType->currentIndex() == 0 ) {
+          //currentIndex == 0 => Type NONE.
+          canfinish = true;
+         // msg = i18n("<html><font color=red><b>The Card Type must be of some valid type.</b></font></html>");
+          //ui_mainview.comboCardType->setFocus();
+      }
+
+      if (!msg.isEmpty())
+        tipAmount->showTip(msg, 4000);
+    }
   else {
     //Remove the Creditcard boxes as no longer tenderedChanged
     QMessageBox::StandardButton accept;
@@ -2631,7 +2666,7 @@ void iotposView::finishCurrentTransaction()
       pType = pCash;
       if (!ui_mainview.editAmount->text().isEmpty()) payWith = ui_mainview.editAmount->text().toDouble();
       changeGiven = payWith- totalSum;
-    } else if (ui_mainview.checkCard->isChecked()) {
+    } else if (ui_mainview.checkCard->isChecked() || ui_mainview.checkQR->isChecked()) {
       pType = pCard;
       qDebug()<<"Credit Card Selected";
       payWith = payTotal;

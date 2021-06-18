@@ -37,6 +37,10 @@ set(iotpos_SRCS
    nouns/BasketPriceSummary.cpp
    nouns/User.cpp
    nouns/Currency.cpp
+   #adding for keynumeric input
+   #keyboard/inputdevice.cpp
+   #keyboard/keyboard.cpp
+   #numpad.cpp
  )
 
 #qt4_add_dbus_adaptor(iotpos_SRCS org.kde.iotpos.iotpos.xml iotpos.h iotpos)
@@ -58,6 +62,9 @@ kde4_add_ui_files( iotpos_SRCS
   ui/checker.ui
   ui/datoscliente.ui
   ../iotstock/src/ui/editclient_widget.ui
+  # CM adding to for keyboard
+  #ui/keyboard.ui
+  #ui/numpad.ui
   )
 
 kde4_add_kcfg_files(iotpos_SRCS settings.kcfgc )

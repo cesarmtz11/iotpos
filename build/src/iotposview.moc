@@ -1,0 +1,591 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'iotposview.h'
+**
+** Created by: The Qt Meta Object Compiler version 63 (Qt 4.8.7)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#include "../../src/iotposview.h"
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'iotposview.h' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 63
+#error "This file was generated using the moc from 4.8.7. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+QT_BEGIN_MOC_NAMESPACE
+static const uint qt_meta_data_iotposView[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+     139,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+      20,       // signalCount
+
+ // signals: signature, parameters, type, tag, flags
+      11,   42,   47,   47, 0x05,
+      48,   42,   47,   47, 0x05,
+      77,   47,   47,   47, 0x05,
+      99,   47,   47,   47, 0x05,
+     126,   47,   47,   47, 0x05,
+     149,   47,   47,   47, 0x05,
+     177,   47,   47,   47, 0x05,
+     198,   47,   47,   47, 0x05,
+     217,   47,   47,   47, 0x05,
+     237,  260,   47,   47, 0x05,
+     265,   47,   47,   47, 0x05,
+     295,   47,   47,   47, 0x05,
+     320,   47,   47,   47, 0x05,
+     341,   47,   47,   47, 0x05,
+     362,   47,   47,   47, 0x05,
+     379,   47,   47,   47, 0x05,
+     397,   47,   47,   47, 0x05,
+     417,   47,   47,   47, 0x05,
+     438,   47,   47,   47, 0x05,
+     473,   47,   47,   47, 0x05,
+
+ // slots: signature, parameters, type, tag, flags
+     509,   47,   47,   47, 0x08,
+     522,   47,   47,   47, 0x08,
+     544,   47,   47,   47, 0x08,
+     567,   47,   47,   47, 0x08,
+     586,  624,  631,   47, 0x08,
+     636,  260,   47,   47, 0x08,
+     656,  715,  774,   47, 0x08,
+     778,  802,   47,   47, 0x08,
+     807,   47,   47,   47, 0x08,
+     828,  865,   47,   47, 0x08,
+     870,  865,   47,   47, 0x08,
+     913,   47,   47,   47, 0x08,
+     933,  865,   47,   47, 0x08,
+     968, 1006,   47,   47, 0x08,
+    1011,   47,   47,   47, 0x08,
+    1038,   47,   47,   47, 0x08,
+    1065,   47,   47,   47, 0x08,
+    1095,   47,   47,   47, 0x08,
+    1122, 1152,   47,   47, 0x08,
+    1170,   47,   47,   47, 0x08,
+    1189,   47,   47,   47, 0x08,
+    1219, 1243,   47,   47, 0x08,
+    1253,   47,   47,   47, 0x08,
+    1277, 1304,   47,   47, 0x08,
+    1308,   47,   47,   47, 0x28,
+    1331,   47,   47,   47, 0x08,
+    1350, 1374,   47,   47, 0x08,
+    1381, 1407,   47,   47, 0x08,
+    1413, 1407,   47,   47, 0x08,
+    1438,   47,   47,   47, 0x08,
+    1454,   47,   47,   47, 0x08,
+    1465,   47,   47,   47, 0x08,
+    1478, 1498,  774,   47, 0x08,
+    1500,   47,   47,   47, 0x08,
+    1513,   47,   47,   47, 0x08,
+    1529,   47,   47,   47, 0x08,
+    1545,   47,   47,   47, 0x08,
+    1559,   47,   47,   47, 0x08,
+    1575,   47,   47,   47, 0x08,
+    1589,   47,   47,   47, 0x08,
+    1604,   47,   47,   47, 0x08,
+    1626,   47,   47,   47, 0x08,
+    1644,   47,   47,   47, 0x08,
+    1674,   47,   47,   47, 0x08,
+    1682,   47,   47,   47, 0x08,
+    1692,   47,   47,   47, 0x08,
+    1706,   47,   47,   47, 0x08,
+    1721,   47,   47,   47, 0x08,
+    1736,   47,   47,   47, 0x08,
+    1758,   47,   47,   47, 0x08,
+    1783, 1816,   47,   47, 0x08,
+    1822, 1816,   47,   47, 0x08,
+    1851,   47,   47,   47, 0x08,
+    1867,   47,   47,   47, 0x08,
+    1886,   47,   47,   47, 0x08,
+    1904, 1927,   47,   47, 0x08,
+    1932,   47,   47,   47, 0x08,
+    1951,   47,   47,   47, 0x08,
+    1970,   47,   47,   47, 0x08,
+    1995,   47,   47,   47, 0x08,
+    2015,   47,   47,   47, 0x08,
+    2027,   47,   47,   47, 0x08,
+    2044,   47,   47,   47, 0x08,
+    2064,   47,   47,   47, 0x08,
+    2082,   47,   47,   47, 0x08,
+    2109, 1152,   47,   47, 0x08,
+    2148,   47,   47,   47, 0x08,
+    2165,   47,   47,   47, 0x08,
+    2184,   47,   47,   47, 0x08,
+    2201, 1816,   47,   47, 0x08,
+    2234,   47,   47,   47, 0x08,
+    2244,   47,   47,   47, 0x08,
+    2253,   47,   47,   47, 0x08,
+    2269,   47,   47,   47, 0x08,
+    2285,   47,   47,   47, 0x08,
+    2303,   47,   47,   47, 0x08,
+    2321,   47,   47,   47, 0x08,
+    2344,   47,   47,   47, 0x08,
+    2357,   47,   47,   47, 0x08,
+    2372,   47,   47,   47, 0x08,
+    2386,   47,   47,   47, 0x08,
+    2399,   47,   47,   47, 0x08,
+    2416,   47,   47,   47, 0x08,
+    2436, 2456,   47,   47, 0x08,
+    2463,   47,   47,   47, 0x08,
+    2479,   47,   47,   47, 0x08,
+    2500,   47,   47,   47, 0x08,
+    2526,   47,   47,   47, 0x08,
+    2548, 2579, 2584,   47, 0x08,
+    2591, 2627,   47,   47, 0x08,
+    2646,   47,   47,   47, 0x08,
+    2665,   47,   47,   47, 0x08,
+    2681,   47,   47,   47, 0x08,
+    2705,   47,   47,   47, 0x08,
+    2728,   47,   47,   47, 0x08,
+    2755,   47,   47,   47, 0x08,
+    2770,   47,   47,   47, 0x08,
+    2791,   47,   47,   47, 0x08,
+    2811,   47,   47,   47, 0x08,
+    2833,   47,   47,   47, 0x08,
+    2857, 2910,   47,   47, 0x08,
+    2921,   47,   47,   47, 0x08,
+    2935,   47,   47,   47, 0x08,
+    2959,   47,   47,   47, 0x08,
+    2974,   47,   47,   47, 0x08,
+    3000,   47,   47,   47, 0x08,
+    3020,   47,   47,   47, 0x08,
+    3038,   47,   47,   47, 0x08,
+    3056, 3097,   47,   47, 0x08,
+    3111,   47,   47,   47, 0x08,
+    3131,  865,   47,   47, 0x08,
+    3161,   47,   47,   47, 0x08,
+    3188,   47,   47,   47, 0x08,
+    3216,   47,   47,   47, 0x08,
+    3238,   47,   47,   47, 0x08,
+    3253,   47,   47,   47, 0x08,
+    3273,   47,   47,   47, 0x08,
+    3298,   47,   47,   47, 0x08,
+    3332,   47,   47,   47, 0x08,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_iotposView[] = {
+    "iotposView\0signalChangeStatusbar(QString)\0"
+    "text\0\0signalChangeCaption(QString)\0"
+    "signalAdminLoggedOn()\0signalSupervisorLoggedOn()\0"
+    "signalAdminLoggedOff()\0"
+    "signalSupervisorLoggedOff()\0"
+    "signalNoLoggedUser()\0signalLoggedUser()\0"
+    "signalUpdateClock()\0signalQueryDb(QString)\0"
+    "code\0signalUpdateTransactionInfo()\0"
+    "signalStartedOperation()\0signalShowProdGrid()\0"
+    "signalShowDbConfig()\0signalEnableUI()\0"
+    "signalDisableUI()\0signalEnableLogin()\0"
+    "signalDisableLogin()\0"
+    "signalEnableStartOperationAction()\0"
+    "signalDisableStartOperationAction()\0"
+    "setUpTable()\0showEnterCodeWidget()\0"
+    "showSearchItemWidget()\0doSearchItemDesc()\0"
+    "incrementTableItemQty(QString,double)\0"
+    "code,q\0bool\0insertItem(QString)\0"
+    "doInsertItem(QString,QString,double,double,double,QString)\0"
+    "itemCode,itemDesc,itemQty,itemPrice,itemDiscount,itemUnits\0"
+    "int\0updateItem(ProductInfo)\0prod\0"
+    "deleteSelectedItem()\0"
+    "itemDoubleClicked(QTableWidgetItem*)\0"
+    "item\0itemSearchDoubleClicked(QTableWidgetItem*)\0"
+    "refreshTotalLabel()\0"
+    "displayItemInfo(QTableWidgetItem*)\0"
+    "createNewTransaction(TransactionType)\0"
+    "type\0finishCurrentTransaction()\0"
+    "cancelCurrentTransaction()\0"
+    "preCancelCurrentTransaction()\0"
+    "deleteCurrentTransaction()\0"
+    "cancelTransaction(qulonglong)\0"
+    "transactionNumber\0askForIdToCancel()\0"
+    "askForTicketToReturnProduct()\0"
+    "startOperation(QString)\0adminUser\0"
+    "_slotDoStartOperation()\0"
+    "slotDoStartOperation(bool)\0ask\0"
+    "slotDoStartOperation()\0clearUsedWidgets()\0"
+    "printTicket(TicketInfo)\0ticket\0"
+    "printBalance(QStringList)\0lines\0"
+    "showBalance(QStringList)\0doCorteDeCaja()\0"
+    "endOfDay()\0startAgain()\0getItemRow(QString)\0"
+    "c\0buttonDone()\0checksChanged()\0"
+    "focusPayInput()\0plusPressed()\0"
+    "setupGridView()\0setupGraphs()\0"
+    "updateGraphs()\0doEmitSignalQueryDb()\0"
+    "settingsChanged()\0settingsChangedOnInitConfig()\0"
+    "login()\0setupDB()\0connectToDb()\0"
+    "setupClients()\0timerTimeout()\0"
+    "clearLabelSearchMsg()\0goSelectCardAuthNumber()\0"
+    "listViewOnMouseMove(QModelIndex)\0index\0"
+    "listViewOnClick(QModelIndex)\0"
+    "clientChanged()\0updateClientInfo()\0"
+    "updateModelView()\0showProductsGrid(bool)\0"
+    "show\0showPriceChecker()\0hideProductsGrid()\0"
+    "populateCategoriesHash()\0populateCardTypes()\0"
+    "setFilter()\0showChangeDate()\0"
+    "showReprintTicket()\0setupTicketView()\0"
+    "setupHistoryTicketsModel()\0"
+    "printTicketFromTransaction(qulonglong)\0"
+    "printSelTicket()\0setHistoryFilter()\0"
+    "btnTicketsDone()\0itemHIDoubleClicked(QModelIndex)\0"
+    "cashOut()\0cashIn()\0cashAvailable()\0"
+    "freezeWidgets()\0unfreezeWidgets()\0"
+    "addSpecialOrder()\0specialOrderComplete()\0"
+    "lockScreen()\0unlockScreen()\0suspendSale()\0"
+    "resumeSale()\0changeSOStatus()\0"
+    "updateTransaction()\0updateBalance(bool)\0"
+    "finish\0insertBalance()\0occasionalDiscount()\0"
+    "applyOccasionalDiscount()\0"
+    "changeDiscValidator()\0"
+    "getTotalQtyOnList(ProductInfo)\0info\0"
+    "double\0log(qulonglong,QDate,QTime,QString)\0"
+    "uid,date,time,text\0syncSettingsOnDb()\0"
+    "getCurrencies()\0comboCurrencyOnChange()\0"
+    "doCurrencyConversion()\0"
+    "acceptCurrencyConversion()\0reserveItems()\0"
+    "suspendReservation()\0resumeReservation()\0"
+    "postponeReservation()\0addReservationPayment()\0"
+    "insertCashInForReservationPayment(qulonglong,double)\0"
+    "rid,amount\0showCredits()\0"
+    "filterClientForCredit()\0filterClient()\0"
+    "calculateTotalForClient()\0showCreditPayment()\0"
+    "tenderedChanged()\0doCreditPayment()\0"
+    "insertCashInForCredit(CreditInfo,double)\0"
+    "credit,amount\0printCreditReport()\0"
+    "qtyChanged(QTableWidgetItem*)\0"
+    "modifyClientsFilterModel()\0"
+    "modifyClientsFilterModelB()\0"
+    "verifyDiscountEntry()\0createClient()\0"
+    "resizeSearchTable()\0resizeSearchTableSmall()\0"
+    "on_rbFilterByPopularity_clicked()\0"
+    "on_rbFilterByCategory_clicked()\0"
+};
+
+void iotposView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        iotposView *_t = static_cast<iotposView *>(_o);
+        switch (_id) {
+        case 0: _t->signalChangeStatusbar((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 1: _t->signalChangeCaption((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 2: _t->signalAdminLoggedOn(); break;
+        case 3: _t->signalSupervisorLoggedOn(); break;
+        case 4: _t->signalAdminLoggedOff(); break;
+        case 5: _t->signalSupervisorLoggedOff(); break;
+        case 6: _t->signalNoLoggedUser(); break;
+        case 7: _t->signalLoggedUser(); break;
+        case 8: _t->signalUpdateClock(); break;
+        case 9: _t->signalQueryDb((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 10: _t->signalUpdateTransactionInfo(); break;
+        case 11: _t->signalStartedOperation(); break;
+        case 12: _t->signalShowProdGrid(); break;
+        case 13: _t->signalShowDbConfig(); break;
+        case 14: _t->signalEnableUI(); break;
+        case 15: _t->signalDisableUI(); break;
+        case 16: _t->signalEnableLogin(); break;
+        case 17: _t->signalDisableLogin(); break;
+        case 18: _t->signalEnableStartOperationAction(); break;
+        case 19: _t->signalDisableStartOperationAction(); break;
+        case 20: _t->setUpTable(); break;
+        case 21: _t->showEnterCodeWidget(); break;
+        case 22: _t->showSearchItemWidget(); break;
+        case 23: _t->doSearchItemDesc(); break;
+        case 24: { bool _r = _t->incrementTableItemQty((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
+        case 25: _t->insertItem((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 26: { int _r = _t->doInsertItem((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< double(*)>(_a[3])),(*reinterpret_cast< double(*)>(_a[4])),(*reinterpret_cast< double(*)>(_a[5])),(*reinterpret_cast< QString(*)>(_a[6])));
+            if (_a[0]) *reinterpret_cast< int*>(_a[0]) = _r; }  break;
+        case 27: _t->updateItem((*reinterpret_cast< ProductInfo(*)>(_a[1]))); break;
+        case 28: _t->deleteSelectedItem(); break;
+        case 29: _t->itemDoubleClicked((*reinterpret_cast< QTableWidgetItem*(*)>(_a[1]))); break;
+        case 30: _t->itemSearchDoubleClicked((*reinterpret_cast< QTableWidgetItem*(*)>(_a[1]))); break;
+        case 31: _t->refreshTotalLabel(); break;
+        case 32: _t->displayItemInfo((*reinterpret_cast< QTableWidgetItem*(*)>(_a[1]))); break;
+        case 33: _t->createNewTransaction((*reinterpret_cast< TransactionType(*)>(_a[1]))); break;
+        case 34: _t->finishCurrentTransaction(); break;
+        case 35: _t->cancelCurrentTransaction(); break;
+        case 36: _t->preCancelCurrentTransaction(); break;
+        case 37: _t->deleteCurrentTransaction(); break;
+        case 38: _t->cancelTransaction((*reinterpret_cast< qulonglong(*)>(_a[1]))); break;
+        case 39: _t->askForIdToCancel(); break;
+        case 40: _t->askForTicketToReturnProduct(); break;
+        case 41: _t->startOperation((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 42: _t->_slotDoStartOperation(); break;
+        case 43: _t->slotDoStartOperation((*reinterpret_cast< const bool(*)>(_a[1]))); break;
+        case 44: _t->slotDoStartOperation(); break;
+        case 45: _t->clearUsedWidgets(); break;
+        case 46: _t->printTicket((*reinterpret_cast< TicketInfo(*)>(_a[1]))); break;
+        case 47: _t->printBalance((*reinterpret_cast< QStringList(*)>(_a[1]))); break;
+        case 48: _t->showBalance((*reinterpret_cast< QStringList(*)>(_a[1]))); break;
+        case 49: _t->doCorteDeCaja(); break;
+        case 50: _t->endOfDay(); break;
+        case 51: _t->startAgain(); break;
+        case 52: { int _r = _t->getItemRow((*reinterpret_cast< QString(*)>(_a[1])));
+            if (_a[0]) *reinterpret_cast< int*>(_a[0]) = _r; }  break;
+        case 53: _t->buttonDone(); break;
+        case 54: _t->checksChanged(); break;
+        case 55: _t->focusPayInput(); break;
+        case 56: _t->plusPressed(); break;
+        case 57: _t->setupGridView(); break;
+        case 58: _t->setupGraphs(); break;
+        case 59: _t->updateGraphs(); break;
+        case 60: _t->doEmitSignalQueryDb(); break;
+        case 61: _t->settingsChanged(); break;
+        case 62: _t->settingsChangedOnInitConfig(); break;
+        case 63: _t->login(); break;
+        case 64: _t->setupDB(); break;
+        case 65: _t->connectToDb(); break;
+        case 66: _t->setupClients(); break;
+        case 67: _t->timerTimeout(); break;
+        case 68: _t->clearLabelSearchMsg(); break;
+        case 69: _t->goSelectCardAuthNumber(); break;
+        case 70: _t->listViewOnMouseMove((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
+        case 71: _t->listViewOnClick((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
+        case 72: _t->clientChanged(); break;
+        case 73: _t->updateClientInfo(); break;
+        case 74: _t->updateModelView(); break;
+        case 75: _t->showProductsGrid((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 76: _t->showPriceChecker(); break;
+        case 77: _t->hideProductsGrid(); break;
+        case 78: _t->populateCategoriesHash(); break;
+        case 79: _t->populateCardTypes(); break;
+        case 80: _t->setFilter(); break;
+        case 81: _t->showChangeDate(); break;
+        case 82: _t->showReprintTicket(); break;
+        case 83: _t->setupTicketView(); break;
+        case 84: _t->setupHistoryTicketsModel(); break;
+        case 85: _t->printTicketFromTransaction((*reinterpret_cast< qulonglong(*)>(_a[1]))); break;
+        case 86: _t->printSelTicket(); break;
+        case 87: _t->setHistoryFilter(); break;
+        case 88: _t->btnTicketsDone(); break;
+        case 89: _t->itemHIDoubleClicked((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
+        case 90: _t->cashOut(); break;
+        case 91: _t->cashIn(); break;
+        case 92: _t->cashAvailable(); break;
+        case 93: _t->freezeWidgets(); break;
+        case 94: _t->unfreezeWidgets(); break;
+        case 95: _t->addSpecialOrder(); break;
+        case 96: _t->specialOrderComplete(); break;
+        case 97: _t->lockScreen(); break;
+        case 98: _t->unlockScreen(); break;
+        case 99: _t->suspendSale(); break;
+        case 100: _t->resumeSale(); break;
+        case 101: _t->changeSOStatus(); break;
+        case 102: _t->updateTransaction(); break;
+        case 103: _t->updateBalance((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 104: _t->insertBalance(); break;
+        case 105: _t->occasionalDiscount(); break;
+        case 106: _t->applyOccasionalDiscount(); break;
+        case 107: _t->changeDiscValidator(); break;
+        case 108: { double _r = _t->getTotalQtyOnList((*reinterpret_cast< const ProductInfo(*)>(_a[1])));
+            if (_a[0]) *reinterpret_cast< double*>(_a[0]) = _r; }  break;
+        case 109: _t->log((*reinterpret_cast< const qulonglong(*)>(_a[1])),(*reinterpret_cast< const QDate(*)>(_a[2])),(*reinterpret_cast< const QTime(*)>(_a[3])),(*reinterpret_cast< const QString(*)>(_a[4]))); break;
+        case 110: _t->syncSettingsOnDb(); break;
+        case 111: _t->getCurrencies(); break;
+        case 112: _t->comboCurrencyOnChange(); break;
+        case 113: _t->doCurrencyConversion(); break;
+        case 114: _t->acceptCurrencyConversion(); break;
+        case 115: _t->reserveItems(); break;
+        case 116: _t->suspendReservation(); break;
+        case 117: _t->resumeReservation(); break;
+        case 118: _t->postponeReservation(); break;
+        case 119: _t->addReservationPayment(); break;
+        case 120: _t->insertCashInForReservationPayment((*reinterpret_cast< const qulonglong(*)>(_a[1])),(*reinterpret_cast< const double(*)>(_a[2]))); break;
+        case 121: _t->showCredits(); break;
+        case 122: _t->filterClientForCredit(); break;
+        case 123: _t->filterClient(); break;
+        case 124: _t->calculateTotalForClient(); break;
+        case 125: _t->showCreditPayment(); break;
+        case 126: _t->tenderedChanged(); break;
+        case 127: _t->doCreditPayment(); break;
+        case 128: _t->insertCashInForCredit((*reinterpret_cast< const CreditInfo(*)>(_a[1])),(*reinterpret_cast< const double(*)>(_a[2]))); break;
+        case 129: _t->printCreditReport(); break;
+        case 130: _t->qtyChanged((*reinterpret_cast< QTableWidgetItem*(*)>(_a[1]))); break;
+        case 131: _t->modifyClientsFilterModel(); break;
+        case 132: _t->modifyClientsFilterModelB(); break;
+        case 133: _t->verifyDiscountEntry(); break;
+        case 134: _t->createClient(); break;
+        case 135: _t->resizeSearchTable(); break;
+        case 136: _t->resizeSearchTableSmall(); break;
+        case 137: _t->on_rbFilterByPopularity_clicked(); break;
+        case 138: _t->on_rbFilterByCategory_clicked(); break;
+        default: ;
+        }
+    }
+}
+
+const QMetaObjectExtraData iotposView::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject iotposView::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_iotposView,
+      qt_meta_data_iotposView, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &iotposView::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *iotposView::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *iotposView::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_iotposView))
+        return static_cast<void*>(const_cast< iotposView*>(this));
+    if (!strcmp(_clname, "Ui::mainview"))
+        return static_cast< Ui::mainview*>(const_cast< iotposView*>(this));
+    return QWidget::qt_metacast(_clname);
+}
+
+int iotposView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QWidget::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 139)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 139;
+    }
+    return _id;
+}
+
+// SIGNAL 0
+void iotposView::signalChangeStatusbar(const QString & _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
+}
+
+// SIGNAL 1
+void iotposView::signalChangeCaption(const QString & _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 1, _a);
+}
+
+// SIGNAL 2
+void iotposView::signalAdminLoggedOn()
+{
+    QMetaObject::activate(this, &staticMetaObject, 2, 0);
+}
+
+// SIGNAL 3
+void iotposView::signalSupervisorLoggedOn()
+{
+    QMetaObject::activate(this, &staticMetaObject, 3, 0);
+}
+
+// SIGNAL 4
+void iotposView::signalAdminLoggedOff()
+{
+    QMetaObject::activate(this, &staticMetaObject, 4, 0);
+}
+
+// SIGNAL 5
+void iotposView::signalSupervisorLoggedOff()
+{
+    QMetaObject::activate(this, &staticMetaObject, 5, 0);
+}
+
+// SIGNAL 6
+void iotposView::signalNoLoggedUser()
+{
+    QMetaObject::activate(this, &staticMetaObject, 6, 0);
+}
+
+// SIGNAL 7
+void iotposView::signalLoggedUser()
+{
+    QMetaObject::activate(this, &staticMetaObject, 7, 0);
+}
+
+// SIGNAL 8
+void iotposView::signalUpdateClock()
+{
+    QMetaObject::activate(this, &staticMetaObject, 8, 0);
+}
+
+// SIGNAL 9
+void iotposView::signalQueryDb(QString _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 9, _a);
+}
+
+// SIGNAL 10
+void iotposView::signalUpdateTransactionInfo()
+{
+    QMetaObject::activate(this, &staticMetaObject, 10, 0);
+}
+
+// SIGNAL 11
+void iotposView::signalStartedOperation()
+{
+    QMetaObject::activate(this, &staticMetaObject, 11, 0);
+}
+
+// SIGNAL 12
+void iotposView::signalShowProdGrid()
+{
+    QMetaObject::activate(this, &staticMetaObject, 12, 0);
+}
+
+// SIGNAL 13
+void iotposView::signalShowDbConfig()
+{
+    QMetaObject::activate(this, &staticMetaObject, 13, 0);
+}
+
+// SIGNAL 14
+void iotposView::signalEnableUI()
+{
+    QMetaObject::activate(this, &staticMetaObject, 14, 0);
+}
+
+// SIGNAL 15
+void iotposView::signalDisableUI()
+{
+    QMetaObject::activate(this, &staticMetaObject, 15, 0);
+}
+
+// SIGNAL 16
+void iotposView::signalEnableLogin()
+{
+    QMetaObject::activate(this, &staticMetaObject, 16, 0);
+}
+
+// SIGNAL 17
+void iotposView::signalDisableLogin()
+{
+    QMetaObject::activate(this, &staticMetaObject, 17, 0);
+}
+
+// SIGNAL 18
+void iotposView::signalEnableStartOperationAction()
+{
+    QMetaObject::activate(this, &staticMetaObject, 18, 0);
+}
+
+// SIGNAL 19
+void iotposView::signalDisableStartOperationAction()
+{
+    QMetaObject::activate(this, &staticMetaObject, 19, 0);
+}
+QT_END_MOC_NAMESPACE

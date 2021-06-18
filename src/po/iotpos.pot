@@ -1436,3 +1436,7 @@ msgstr ""
 #: specialordereditor.cpp:648
 msgid "%1 chars of %2 allowed."
 msgstr ""
+
+# CM Adding following for Payment button
+msgid "Process payment"
+msgstr ""

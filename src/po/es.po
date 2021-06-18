@@ -352,8 +352,8 @@ msgstr "Continuar"
 
 #: iotposview.cpp:168
 msgid "Welcome to IotPOS"
-msgstr "Bienvenido a IotPOS"
-
+msgstr "Embedded POS"
+# Changing name above
 #: iotposview.cpp:164
 msgid "Enter username and password to start using the system."
 msgstr "Escriba su usuario y contraseña para iniciar"
@@ -2348,3 +2348,7 @@ msgstr "Pago:"
 
 msgid "Enter Client Address"
 msgstr "Escriba la dirección del cliente aqui"
+
+# CM Adding following for Payment button
+msgid "Process payment"
+msgstr "Procesar pago"
