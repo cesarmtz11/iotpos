@@ -28,13 +28,13 @@ The CXX compiler identification is GNU, found in "/home/pi/Proyecto/epos/iotpos/
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_36590/fast && /usr/bin/make -f CMakeFiles/cmTC_36590.dir/build.make CMakeFiles/cmTC_36590.dir/build
+Run Build Command(s):/usr/bin/make cmTC_3617f/fast && /usr/bin/make -f CMakeFiles/cmTC_3617f.dir/build.make CMakeFiles/cmTC_3617f.dir/build
 make[1]: se entra en el directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_36590.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_36590.dir/testCCompiler.c.o   -c /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_36590
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36590.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_36590.dir/testCCompiler.c.o  -o cmTC_36590 
+Building C object CMakeFiles/cmTC_3617f.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_3617f.dir/testCCompiler.c.o   -c /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_3617f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3617f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_3617f.dir/testCCompiler.c.o  -o cmTC_3617f 
 make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
 
 
@@ -42,18 +42,18 @@ make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_542f9/fast && /usr/bin/make -f CMakeFiles/cmTC_542f9.dir/build.make CMakeFiles/cmTC_542f9.dir/build
+Run Build Command(s):/usr/bin/make cmTC_4d70d/fast && /usr/bin/make -f CMakeFiles/cmTC_4d70d.dir/build.make CMakeFiles/cmTC_4d70d.dir/build
 make[1]: Entering directory '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc   -v -o CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+Building C object CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 Target: arm-linux-gnueabihf
 Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
 Thread model: posix
 gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
- /usr/lib/gcc/arm-linux-gnueabihf/8/cc1 -quiet -v -imultilib . -imultiarch arm-linux-gnueabihf /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfloat-abi=hard -mfpu=vfp -mtls-dialect=gnu -marm -march=armv6+fp -auxbase-strip CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o -version -o /tmp/cceK6rwa.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
+ /usr/lib/gcc/arm-linux-gnueabihf/8/cc1 -quiet -v -imultilib . -imultiarch arm-linux-gnueabihf /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfloat-abi=hard -mfpu=vfp -mtls-dialect=gnu -marm -march=armv6+fp -auxbase-strip CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccvirfdp.s
 GNU C17 (Raspbian 8.3.0-6+rpi1) version 8.3.0 (arm-linux-gnueabihf)
 	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP
 
@@ -73,15 +73,15 @@ GNU C17 (Raspbian 8.3.0-6+rpi1) version 8.3.0 (arm-linux-gnueabihf)
 
 GGC heuristics: --param ggc-min-expand=93 --param ggc-min-heapsize=118299
 Compiler executable checksum: bcc8c085e8c103b65550a3bb7c44a354
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
- as -v -march=armv6 -mfloat-abi=hard -mfpu=vfp -meabi=5 -o CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o /tmp/cceK6rwa.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
+ as -v -march=armv6 -mfloat-abi=hard -mfpu=vfp -meabi=5 -o CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o /tmp/ccvirfdp.s
 GNU assembler version 2.31.1 (arm-linux-gnueabihf) using BFD version (GNU Binutils for Raspbian) 2.31.1
 COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/
 LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
-Linking C executable cmTC_542f9
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_542f9.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o  -o cmTC_542f9 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
+Linking C executable cmTC_4d70d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d70d.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o  -o cmTC_4d70d 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper
@@ -91,9 +91,9 @@ Thread model: posix
 gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) 
 COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/
 LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_542f9'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
- /usr/lib/gcc/arm-linux-gnueabihf/8/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAwlEzo.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -o cmTC_542f9 /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/8 -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_542f9'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4d70d'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
+ /usr/lib/gcc/arm-linux-gnueabihf/8/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNoP2SE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -o cmTC_4d70d /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/8 -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4d70d'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
 make[1]: Leaving directory '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
 
 
@@ -119,18 +119,18 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_542f9/fast && /usr/bin/make -f CMakeFiles/cmTC_542f9.dir/build.make CMakeFiles/cmTC_542f9.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_4d70d/fast && /usr/bin/make -f CMakeFiles/cmTC_4d70d.dir/build.make CMakeFiles/cmTC_4d70d.dir/build]
   ignore line: [make[1]: Entering directory '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [Building C object CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [Target: arm-linux-gnueabihf]
   ignore line: [Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
-  ignore line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/cc1 -quiet -v -imultilib . -imultiarch arm-linux-gnueabihf /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfloat-abi=hard -mfpu=vfp -mtls-dialect=gnu -marm -march=armv6+fp -auxbase-strip CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o -version -o /tmp/cceK6rwa.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
+  ignore line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/cc1 -quiet -v -imultilib . -imultiarch arm-linux-gnueabihf /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfloat-abi=hard -mfpu=vfp -mtls-dialect=gnu -marm -march=armv6+fp -auxbase-strip CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccvirfdp.s]
   ignore line: [GNU C17 (Raspbian 8.3.0-6+rpi1) version 8.3.0 (arm-linux-gnueabihf)]
   ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.1.2  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.20-GMP]
   ignore line: []
@@ -150,15 +150,15 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=93 --param ggc-min-heapsize=118299]
   ignore line: [Compiler executable checksum: bcc8c085e8c103b65550a3bb7c44a354]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
-  ignore line: [ as -v -march=armv6 -mfloat-abi=hard -mfpu=vfp -meabi=5 -o CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o /tmp/cceK6rwa.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
+  ignore line: [ as -v -march=armv6 -mfloat-abi=hard -mfpu=vfp -meabi=5 -o CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o /tmp/ccvirfdp.s]
   ignore line: [GNU assembler version 2.31.1 (arm-linux-gnueabihf) using BFD version (GNU Binutils for Raspbian) 2.31.1]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
-  ignore line: [Linking C executable cmTC_542f9]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_542f9.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o  -o cmTC_542f9 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
+  ignore line: [Linking C executable cmTC_4d70d]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d70d.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o  -o cmTC_4d70d ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper]
@@ -168,13 +168,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_542f9'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
-  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAwlEzo.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -o cmTC_542f9 /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/8 -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4d70d'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
+  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNoP2SE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -o cmTC_4d70d /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/8 -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o]
     arg [/usr/lib/gcc/arm-linux-gnueabihf/8/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccAwlEzo.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccNoP2SE.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -190,7 +190,7 @@ Parsed C implicit link information from above output:
     arg [-m] ==> ignore
     arg [armelf_linux_eabi] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_542f9] ==> ignore
+    arg [cmTC_4d70d] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o] ==> ignore
@@ -199,7 +199,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/gcc/arm-linux-gnueabihf/8/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/8/../../..]
     arg [-L/lib/arm-linux-gnueabihf] ==> dir [/lib/arm-linux-gnueabihf]
     arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
-    arg [CMakeFiles/cmTC_542f9.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_4d70d.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -226,13 +226,13 @@ Parsed C implicit link information from above output:
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_e1bc7/fast && /usr/bin/make -f CMakeFiles/cmTC_e1bc7.dir/build.make CMakeFiles/cmTC_e1bc7.dir/build
+Run Build Command(s):/usr/bin/make cmTC_d972e/fast && /usr/bin/make -f CMakeFiles/cmTC_d972e.dir/build.make CMakeFiles/cmTC_d972e.dir/build
 make[1]: se entra en el directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e1bc7.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_e1bc7.dir/testCXXCompiler.cxx.o -c /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_e1bc7
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1bc7.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_e1bc7.dir/testCXXCompiler.cxx.o  -o cmTC_e1bc7 
+Building CXX object CMakeFiles/cmTC_d972e.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_d972e.dir/testCXXCompiler.cxx.o -c /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_d972e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d972e.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_d972e.dir/testCXXCompiler.cxx.o  -o cmTC_d972e 
 make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
 
 
@@ -240,18 +240,18 @@ make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_64363/fast && /usr/bin/make -f CMakeFiles/cmTC_64363.dir/build.make CMakeFiles/cmTC_64363.dir/build
+Run Build Command(s):/usr/bin/make cmTC_7b2ac/fast && /usr/bin/make -f CMakeFiles/cmTC_7b2ac.dir/build.make CMakeFiles/cmTC_7b2ac.dir/build
 make[1]: Entering directory '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++    -v -o CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+Building CXX object CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++    -v -o CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 Target: arm-linux-gnueabihf
 Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
 Thread model: posix
 gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
- /usr/lib/gcc/arm-linux-gnueabihf/8/cc1plus -quiet -v -imultilib . -imultiarch arm-linux-gnueabihf -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mfloat-abi=hard -mfpu=vfp -mtls-dialect=gnu -marm -march=armv6+fp -auxbase-strip CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cch37u1t.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
+ /usr/lib/gcc/arm-linux-gnueabihf/8/cc1plus -quiet -v -imultilib . -imultiarch arm-linux-gnueabihf -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mfloat-abi=hard -mfpu=vfp -mtls-dialect=gnu -marm -march=armv6+fp -auxbase-strip CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cc6HoxlO.s
 GNU C++14 (Raspbian 8.3.0-6+rpi1) version 8.3.0 (arm-linux-gnueabihf)
 	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP
 
@@ -275,15 +275,15 @@ GNU C++14 (Raspbian 8.3.0-6+rpi1) version 8.3.0 (arm-linux-gnueabihf)
 
 GGC heuristics: --param ggc-min-expand=93 --param ggc-min-heapsize=118299
 Compiler executable checksum: 7defdc925cf5fede452fc531d54623d1
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
- as -v -march=armv6 -mfloat-abi=hard -mfpu=vfp -meabi=5 -o CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o /tmp/cch37u1t.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
+ as -v -march=armv6 -mfloat-abi=hard -mfpu=vfp -meabi=5 -o CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc6HoxlO.s
 GNU assembler version 2.31.1 (arm-linux-gnueabihf) using BFD version (GNU Binutils for Raspbian) 2.31.1
 COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/
 LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
-Linking CXX executable cmTC_64363
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64363.dir/link.txt --verbose=1
-/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_64363 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
+Linking CXX executable cmTC_7b2ac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b2ac.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_7b2ac 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper
@@ -293,9 +293,9 @@ Thread model: posix
 gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) 
 COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/
 LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_64363' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
- /usr/lib/gcc/arm-linux-gnueabihf/8/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHRvshH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -o cmTC_64363 /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/8 -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_64363' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_7b2ac' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
+ /usr/lib/gcc/arm-linux-gnueabihf/8/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGTb1J6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -o cmTC_7b2ac /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/8 -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_7b2ac' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
 make[1]: Leaving directory '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
 
 
@@ -327,18 +327,18 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_64363/fast && /usr/bin/make -f CMakeFiles/cmTC_64363.dir/build.make CMakeFiles/cmTC_64363.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_7b2ac/fast && /usr/bin/make -f CMakeFiles/cmTC_7b2ac.dir/build.make CMakeFiles/cmTC_7b2ac.dir/build]
   ignore line: [make[1]: Entering directory '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Building CXX object CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [Target: arm-linux-gnueabihf]
   ignore line: [Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
-  ignore line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/cc1plus -quiet -v -imultilib . -imultiarch arm-linux-gnueabihf -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mfloat-abi=hard -mfpu=vfp -mtls-dialect=gnu -marm -march=armv6+fp -auxbase-strip CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cch37u1t.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
+  ignore line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/cc1plus -quiet -v -imultilib . -imultiarch arm-linux-gnueabihf -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mfloat-abi=hard -mfpu=vfp -mtls-dialect=gnu -marm -march=armv6+fp -auxbase-strip CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cc6HoxlO.s]
   ignore line: [GNU C++14 (Raspbian 8.3.0-6+rpi1) version 8.3.0 (arm-linux-gnueabihf)]
   ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.1.2  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.20-GMP]
   ignore line: []
@@ -362,15 +362,15 @@ Parsed CXX implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=93 --param ggc-min-heapsize=118299]
   ignore line: [Compiler executable checksum: 7defdc925cf5fede452fc531d54623d1]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
-  ignore line: [ as -v -march=armv6 -mfloat-abi=hard -mfpu=vfp -meabi=5 -o CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o /tmp/cch37u1t.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
+  ignore line: [ as -v -march=armv6 -mfloat-abi=hard -mfpu=vfp -meabi=5 -o CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc6HoxlO.s]
   ignore line: [GNU assembler version 2.31.1 (arm-linux-gnueabihf) using BFD version (GNU Binutils for Raspbian) 2.31.1]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
-  ignore line: [Linking CXX executable cmTC_64363]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64363.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_64363 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
+  ignore line: [Linking CXX executable cmTC_7b2ac]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b2ac.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_7b2ac ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper]
@@ -380,13 +380,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_64363' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
-  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHRvshH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -o cmTC_64363 /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/8 -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_7b2ac' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
+  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGTb1J6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -o cmTC_7b2ac /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/8 -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o]
     arg [/usr/lib/gcc/arm-linux-gnueabihf/8/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccHRvshH.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccGTb1J6.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -402,7 +402,7 @@ Parsed CXX implicit link information from above output:
     arg [-m] ==> ignore
     arg [armelf_linux_eabi] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_64363] ==> ignore
+    arg [cmTC_7b2ac] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o] ==> ignore
     arg [/usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o] ==> ignore
@@ -411,7 +411,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/gcc/arm-linux-gnueabihf/8/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/8/../../..]
     arg [-L/lib/arm-linux-gnueabihf] ==> dir [/lib/arm-linux-gnueabihf]
     arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
-    arg [CMakeFiles/cmTC_64363.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_7b2ac.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -434,13 +434,13 @@ Parsed CXX implicit link information from above output:
 Determining if the Q_WS_X11 exist passed with the following output:
 Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_4e849/fast && /usr/bin/make -f CMakeFiles/cmTC_4e849.dir/build.make CMakeFiles/cmTC_4e849.dir/build
+Run Build Command(s):/usr/bin/make cmTC_0be6c/fast && /usr/bin/make -f CMakeFiles/cmTC_0be6c.dir/build.make CMakeFiles/cmTC_0be6c.dir/build
 make[1]: se entra en el directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4e849.dir/CheckSymbolExists.c.o
-/usr/bin/cc  -I/usr/include/qt4   -o CMakeFiles/cmTC_4e849.dir/CheckSymbolExists.c.o   -c /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_4e849
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e849.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_4e849.dir/CheckSymbolExists.c.o  -o cmTC_4e849 
+Building C object CMakeFiles/cmTC_0be6c.dir/CheckSymbolExists.c.o
+/usr/bin/cc  -I/usr/include/qt4   -o CMakeFiles/cmTC_0be6c.dir/CheckSymbolExists.c.o   -c /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_0be6c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0be6c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_0be6c.dir/CheckSymbolExists.c.o  -o cmTC_0be6c 
 make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
 
 
@@ -458,16 +458,16 @@ int main(int argc, char** argv)
   return 0;
 #endif
 }
-Determining if the function XOpenDisplay exists in the /usr/lib/arm-linux-gnueabihf/libX11.so;/usr/lib/arm-linux-gnueabihf/libXau.so;/usr/lib/arm-linux-gnueabihf/libXdmcp.so passed with the following output:
+Determining if the function XOpenDisplay exists in the /usr/lib/arm-linux-gnueabihf/libX11.so;/usr/lib/arm-linux-gnueabihf/libXext.so;/usr/lib/arm-linux-gnueabihf/libXft.so;/usr/lib/arm-linux-gnueabihf/libXau.so;/usr/lib/arm-linux-gnueabihf/libXdmcp.so passed with the following output:
 Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_4522e/fast && /usr/bin/make -f CMakeFiles/cmTC_4522e.dir/build.make CMakeFiles/cmTC_4522e.dir/build
+Run Build Command(s):/usr/bin/make cmTC_74049/fast && /usr/bin/make -f CMakeFiles/cmTC_74049.dir/build.make CMakeFiles/cmTC_74049.dir/build
 make[1]: se entra en el directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4522e.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTC_4522e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_4522e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4522e.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay    -rdynamic CMakeFiles/cmTC_4522e.dir/CheckFunctionExists.c.o  -o cmTC_4522e  /usr/lib/arm-linux-gnueabihf/libX11.so /usr/lib/arm-linux-gnueabihf/libXau.so /usr/lib/arm-linux-gnueabihf/libXdmcp.so 
+Building C object CMakeFiles/cmTC_74049.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTC_74049.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_74049
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74049.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay    -rdynamic CMakeFiles/cmTC_74049.dir/CheckFunctionExists.c.o  -o cmTC_74049  /usr/lib/arm-linux-gnueabihf/libX11.so /usr/lib/arm-linux-gnueabihf/libXext.so /usr/lib/arm-linux-gnueabihf/libXft.so /usr/lib/arm-linux-gnueabihf/libXau.so /usr/lib/arm-linux-gnueabihf/libXdmcp.so 
 make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
 
 
@@ -475,13 +475,13 @@ make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/
 Determining if the function gethostbyname exists passed with the following output:
 Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_0c1a2/fast && /usr/bin/make -f CMakeFiles/cmTC_0c1a2.dir/build.make CMakeFiles/cmTC_0c1a2.dir/build
+Run Build Command(s):/usr/bin/make cmTC_6f9d4/fast && /usr/bin/make -f CMakeFiles/cmTC_6f9d4.dir/build.make CMakeFiles/cmTC_6f9d4.dir/build
 make[1]: se entra en el directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0c1a2.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_0c1a2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_0c1a2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c1a2.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname    -rdynamic CMakeFiles/cmTC_0c1a2.dir/CheckFunctionExists.c.o  -o cmTC_0c1a2 
+Building C object CMakeFiles/cmTC_6f9d4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_6f9d4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6f9d4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f9d4.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname    -rdynamic CMakeFiles/cmTC_6f9d4.dir/CheckFunctionExists.c.o  -o cmTC_6f9d4 
 make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
 
 
@@ -489,13 +489,13 @@ make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/
 Determining if the function connect exists passed with the following output:
 Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_e3d7d/fast && /usr/bin/make -f CMakeFiles/cmTC_e3d7d.dir/build.make CMakeFiles/cmTC_e3d7d.dir/build
+Run Build Command(s):/usr/bin/make cmTC_44a68/fast && /usr/bin/make -f CMakeFiles/cmTC_44a68.dir/build.make CMakeFiles/cmTC_44a68.dir/build
 make[1]: se entra en el directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e3d7d.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_e3d7d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_e3d7d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3d7d.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect    -rdynamic CMakeFiles/cmTC_e3d7d.dir/CheckFunctionExists.c.o  -o cmTC_e3d7d 
+Building C object CMakeFiles/cmTC_44a68.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_44a68.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_44a68
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44a68.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect    -rdynamic CMakeFiles/cmTC_44a68.dir/CheckFunctionExists.c.o  -o cmTC_44a68 
 make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
 
 
@@ -503,13 +503,13 @@ make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/
 Determining if the function remove exists passed with the following output:
 Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_d521c/fast && /usr/bin/make -f CMakeFiles/cmTC_d521c.dir/build.make CMakeFiles/cmTC_d521c.dir/build
+Run Build Command(s):/usr/bin/make cmTC_b5cb7/fast && /usr/bin/make -f CMakeFiles/cmTC_b5cb7.dir/build.make CMakeFiles/cmTC_b5cb7.dir/build
 make[1]: se entra en el directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d521c.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTC_d521c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_d521c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d521c.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove    -rdynamic CMakeFiles/cmTC_d521c.dir/CheckFunctionExists.c.o  -o cmTC_d521c 
+Building C object CMakeFiles/cmTC_b5cb7.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTC_b5cb7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b5cb7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5cb7.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove    -rdynamic CMakeFiles/cmTC_b5cb7.dir/CheckFunctionExists.c.o  -o cmTC_b5cb7 
 make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
 
 
@@ -517,13 +517,27 @@ make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/
 Determining if the function shmat exists passed with the following output:
 Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_f49b0/fast && /usr/bin/make -f CMakeFiles/cmTC_f49b0.dir/build.make CMakeFiles/cmTC_f49b0.dir/build
+Run Build Command(s):/usr/bin/make cmTC_5ec4d/fast && /usr/bin/make -f CMakeFiles/cmTC_5ec4d.dir/build.make CMakeFiles/cmTC_5ec4d.dir/build
 make[1]: se entra en el directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f49b0.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTC_f49b0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_f49b0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f49b0.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat    -rdynamic CMakeFiles/cmTC_f49b0.dir/CheckFunctionExists.c.o  -o cmTC_f49b0 
+Building C object CMakeFiles/cmTC_5ec4d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTC_5ec4d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5ec4d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ec4d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat    -rdynamic CMakeFiles/cmTC_5ec4d.dir/CheckFunctionExists.c.o  -o cmTC_5ec4d 
+make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c5c31/fast && /usr/bin/make -f CMakeFiles/cmTC_c5c31.dir/build.make CMakeFiles/cmTC_c5c31.dir/build
+make[1]: se entra en el directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c5c31.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTC_c5c31.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c5c31
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5c31.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    -rdynamic CMakeFiles/cmTC_c5c31.dir/CheckFunctionExists.c.o  -o cmTC_c5c31  -lICE 
 make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
 
 
@@ -531,13 +545,13 @@ make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_01780/fast && /usr/bin/make -f CMakeFiles/cmTC_01780.dir/build.make CMakeFiles/cmTC_01780.dir/build
+Run Build Command(s):/usr/bin/make cmTC_4d164/fast && /usr/bin/make -f CMakeFiles/cmTC_4d164.dir/build.make CMakeFiles/cmTC_4d164.dir/build
 make[1]: se entra en el directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_01780.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_01780.dir/CheckIncludeFile.c.o   -c /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_01780
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01780.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_01780.dir/CheckIncludeFile.c.o  -o cmTC_01780 
+Building C object CMakeFiles/cmTC_4d164.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_4d164.dir/CheckIncludeFile.c.o   -c /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_4d164
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d164.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_4d164.dir/CheckIncludeFile.c.o  -o cmTC_4d164 
 make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
 
 
@@ -545,13 +559,13 @@ make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/
 Determining if the function pthread_create exists in the pthread passed with the following output:
 Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_ce8c4/fast && /usr/bin/make -f CMakeFiles/cmTC_ce8c4.dir/build.make CMakeFiles/cmTC_ce8c4.dir/build
+Run Build Command(s):/usr/bin/make cmTC_ab465/fast && /usr/bin/make -f CMakeFiles/cmTC_ab465.dir/build.make CMakeFiles/cmTC_ab465.dir/build
 make[1]: se entra en el directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ce8c4.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ce8c4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_ce8c4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce8c4.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_ce8c4.dir/CheckFunctionExists.c.o  -o cmTC_ce8c4  -lpthread 
+Building C object CMakeFiles/cmTC_ab465.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ab465.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ab465
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab465.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_ab465.dir/CheckFunctionExists.c.o  -o cmTC_ab465  -lpthread 
 make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
 
 
@@ -559,13 +573,13 @@ make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/
 Determining if the _POSIX_TIMERS exist passed with the following output:
 Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_97325/fast && /usr/bin/make -f CMakeFiles/cmTC_97325.dir/build.make CMakeFiles/cmTC_97325.dir/build
+Run Build Command(s):/usr/bin/make cmTC_6d254/fast && /usr/bin/make -f CMakeFiles/cmTC_6d254.dir/build.make CMakeFiles/cmTC_6d254.dir/build
 make[1]: se entra en el directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_97325.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_97325.dir/CheckSymbolExists.c.o   -c /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_97325
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97325.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_97325.dir/CheckSymbolExists.c.o  -o cmTC_97325  -lrt 
+Building C object CMakeFiles/cmTC_6d254.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_6d254.dir/CheckSymbolExists.c.o   -c /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_6d254
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d254.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6d254.dir/CheckSymbolExists.c.o  -o cmTC_6d254  -lrt 
 make[1]: se sale del directorio '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
 
 
@@ -587,13 +601,13 @@ int main(int argc, char** argv)
 Performing C++ SOURCE FILE Test HAVE_FPIE_SUPPORT succeeded with the following output:
 Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_2fe0b/fast && /usr/bin/make -f CMakeFiles/cmTC_2fe0b.dir/build.make CMakeFiles/cmTC_2fe0b.dir/build
+Run Build Command(s):/usr/bin/make cmTC_35c34/fast && /usr/bin/make -f CMakeFiles/cmTC_35c34.dir/build.make CMakeFiles/cmTC_35c34.dir/build
 make[1]: Entering directory '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_2fe0b.dir/src.cxx.o
-/usr/bin/c++    -Wnon-virtual-dtor -Wno-long-long -Wundef -Wcast-align -Wchar-subscripts -Wall -W -Wpointer-arith -Wformat-security -fno-exceptions -DQT_NO_EXCEPTIONS -fno-check-new -fno-common -DHAVE_FPIE_SUPPORT   -fPIE -o CMakeFiles/cmTC_2fe0b.dir/src.cxx.o -c /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_2fe0b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2fe0b.dir/link.txt --verbose=1
-/usr/bin/c++   -Wnon-virtual-dtor -Wno-long-long -Wundef -Wcast-align -Wchar-subscripts -Wall -W -Wpointer-arith -Wformat-security -fno-exceptions -DQT_NO_EXCEPTIONS -fno-check-new -fno-common -DHAVE_FPIE_SUPPORT    -rdynamic CMakeFiles/cmTC_2fe0b.dir/src.cxx.o  -o cmTC_2fe0b 
+Building CXX object CMakeFiles/cmTC_35c34.dir/src.cxx.o
+/usr/bin/c++    -Wnon-virtual-dtor -Wno-long-long -Wundef -Wcast-align -Wchar-subscripts -Wall -W -Wpointer-arith -Wformat-security -fno-exceptions -DQT_NO_EXCEPTIONS -fno-check-new -fno-common -DHAVE_FPIE_SUPPORT   -fPIE -o CMakeFiles/cmTC_35c34.dir/src.cxx.o -c /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_35c34
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35c34.dir/link.txt --verbose=1
+/usr/bin/c++   -Wnon-virtual-dtor -Wno-long-long -Wundef -Wcast-align -Wchar-subscripts -Wall -W -Wpointer-arith -Wformat-security -fno-exceptions -DQT_NO_EXCEPTIONS -fno-check-new -fno-common -DHAVE_FPIE_SUPPORT    -rdynamic CMakeFiles/cmTC_35c34.dir/src.cxx.o  -o cmTC_35c34 
 make[1]: Leaving directory '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
 
 
@@ -602,13 +616,13 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test __KDE_HAVE_W_OVERLOADED_VIRTUAL succeeded with the following output:
 Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_a3ae9/fast && /usr/bin/make -f CMakeFiles/cmTC_a3ae9.dir/build.make CMakeFiles/cmTC_a3ae9.dir/build
+Run Build Command(s):/usr/bin/make cmTC_2fa10/fast && /usr/bin/make -f CMakeFiles/cmTC_2fa10.dir/build.make CMakeFiles/cmTC_2fa10.dir/build
 make[1]: Entering directory '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a3ae9.dir/src.cxx.o
-/usr/bin/c++    -Wnon-virtual-dtor -Wno-long-long -Wundef -Wcast-align -Wchar-subscripts -Wall -W -Wpointer-arith -Wformat-security -fno-exceptions -DQT_NO_EXCEPTIONS -fno-check-new -fno-common -D__KDE_HAVE_W_OVERLOADED_VIRTUAL   -Woverloaded-virtual -o CMakeFiles/cmTC_a3ae9.dir/src.cxx.o -c /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_a3ae9
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3ae9.dir/link.txt --verbose=1
-/usr/bin/c++   -Wnon-virtual-dtor -Wno-long-long -Wundef -Wcast-align -Wchar-subscripts -Wall -W -Wpointer-arith -Wformat-security -fno-exceptions -DQT_NO_EXCEPTIONS -fno-check-new -fno-common -D__KDE_HAVE_W_OVERLOADED_VIRTUAL    -rdynamic CMakeFiles/cmTC_a3ae9.dir/src.cxx.o  -o cmTC_a3ae9 
+Building CXX object CMakeFiles/cmTC_2fa10.dir/src.cxx.o
+/usr/bin/c++    -Wnon-virtual-dtor -Wno-long-long -Wundef -Wcast-align -Wchar-subscripts -Wall -W -Wpointer-arith -Wformat-security -fno-exceptions -DQT_NO_EXCEPTIONS -fno-check-new -fno-common -D__KDE_HAVE_W_OVERLOADED_VIRTUAL   -Woverloaded-virtual -o CMakeFiles/cmTC_2fa10.dir/src.cxx.o -c /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2fa10
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2fa10.dir/link.txt --verbose=1
+/usr/bin/c++   -Wnon-virtual-dtor -Wno-long-long -Wundef -Wcast-align -Wchar-subscripts -Wall -W -Wpointer-arith -Wformat-security -fno-exceptions -DQT_NO_EXCEPTIONS -fno-check-new -fno-common -D__KDE_HAVE_W_OVERLOADED_VIRTUAL    -rdynamic CMakeFiles/cmTC_2fa10.dir/src.cxx.o  -o cmTC_2fa10 
 make[1]: Leaving directory '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
 
 
@@ -617,13 +631,13 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test __KDE_HAVE_GCC_VISIBILITY succeeded with the following output:
 Change Dir: /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_f09f6/fast && /usr/bin/make -f CMakeFiles/cmTC_f09f6.dir/build.make CMakeFiles/cmTC_f09f6.dir/build
+Run Build Command(s):/usr/bin/make cmTC_be360/fast && /usr/bin/make -f CMakeFiles/cmTC_be360.dir/build.make CMakeFiles/cmTC_be360.dir/build
 make[1]: Entering directory '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f09f6.dir/src.cxx.o
-/usr/bin/c++    -Wnon-virtual-dtor -Wno-long-long -Wundef -Wcast-align -Wchar-subscripts -Wall -W -Wpointer-arith -Wformat-security -fno-exceptions -DQT_NO_EXCEPTIONS -fno-check-new -fno-common -Woverloaded-virtual -D__KDE_HAVE_GCC_VISIBILITY   -fvisibility=hidden -o CMakeFiles/cmTC_f09f6.dir/src.cxx.o -c /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_f09f6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f09f6.dir/link.txt --verbose=1
-/usr/bin/c++   -Wnon-virtual-dtor -Wno-long-long -Wundef -Wcast-align -Wchar-subscripts -Wall -W -Wpointer-arith -Wformat-security -fno-exceptions -DQT_NO_EXCEPTIONS -fno-check-new -fno-common -Woverloaded-virtual -D__KDE_HAVE_GCC_VISIBILITY    -rdynamic CMakeFiles/cmTC_f09f6.dir/src.cxx.o  -o cmTC_f09f6 
+Building CXX object CMakeFiles/cmTC_be360.dir/src.cxx.o
+/usr/bin/c++    -Wnon-virtual-dtor -Wno-long-long -Wundef -Wcast-align -Wchar-subscripts -Wall -W -Wpointer-arith -Wformat-security -fno-exceptions -DQT_NO_EXCEPTIONS -fno-check-new -fno-common -Woverloaded-virtual -D__KDE_HAVE_GCC_VISIBILITY   -fvisibility=hidden -o CMakeFiles/cmTC_be360.dir/src.cxx.o -c /home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_be360
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be360.dir/link.txt --verbose=1
+/usr/bin/c++   -Wnon-virtual-dtor -Wno-long-long -Wundef -Wcast-align -Wchar-subscripts -Wall -W -Wpointer-arith -Wformat-security -fno-exceptions -DQT_NO_EXCEPTIONS -fno-check-new -fno-common -Woverloaded-virtual -D__KDE_HAVE_GCC_VISIBILITY    -rdynamic CMakeFiles/cmTC_be360.dir/src.cxx.o  -o cmTC_be360 
 make[1]: Leaving directory '/home/pi/Proyecto/epos/iotpos/build/CMakeFiles/CMakeTmp'
 
 

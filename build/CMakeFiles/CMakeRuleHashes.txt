@@ -13,6 +13,7 @@ acc4a07fe67b2f841c61b0996e28f24d iotstock/src/ui_producteditor.h
 8ef686d6daf9cdee40a6f633b1d62b30 iotstock/src/ui_purchaseeditor.h
 f33eb730dc0dff2d4895ca2126af2ccb iotstock/src/ui_subcategoryeditor.h
 b09f2da9062216027e780a8397675f0b src/CMakeFiles/iotpos_automoc
+bde0f1292850512f76f46300741835b6 src/qrc_mpAPI_AccountInfo.cxx
 b1da51ab5c1c7f3826895c18af193c08 src/settings.h
 f73a4995cb827fdc741d1cf32a5eb60c src/ui_checker.h
 3e82dfc42bc83ec2501ab0f5717d758c src/ui_datoscliente.h

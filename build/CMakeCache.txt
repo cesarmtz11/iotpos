@@ -37,7 +37,7 @@ CMAKE_BUILD_TYPE:STRING=
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//CXX compiler
+//No help, variable specified on the command line.
 CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
@@ -63,7 +63,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG -DQT_NO_DEBUG
 //Flags used by the compiler during Release with Debug Info builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG -DQT_NO_DEBUG
 
-//C compiler
+//No help, variable specified on the command line.
 CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
@@ -147,6 +147,9 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 
 //Path to a program.
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
+
+//No help, variable specified on the command line.
+CMAKE_PREFIX_PATH:STRING=/usr
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -280,7 +283,7 @@ QT_DBUSCPP2XML_EXECUTABLE:FILEPATH=/usr/lib/arm-linux-gnueabihf/qt4/bin/qdbuscpp
 QT_DBUSXML2CPP_EXECUTABLE:FILEPATH=/usr/lib/arm-linux-gnueabihf/qt4/bin/qdbusxml2cpp
 
 //Path to a library.
-QT_DBUS_LIBRARY:FILEPATH=QT_DBUS_LIBRARY-NOTFOUND
+QT_DBUS_LIBRARY:FILEPATH=/usr/lib/arm-linux-gnueabihf/libdbus-1.so
 
 //Path to a program.
 QT_DESIGNER_EXECUTABLE:FILEPATH=/usr/lib/arm-linux-gnueabihf/qt4/bin/designer
@@ -289,19 +292,19 @@ QT_DESIGNER_EXECUTABLE:FILEPATH=/usr/lib/arm-linux-gnueabihf/qt4/bin/designer
 QT_DOC_DIR:PATH=/usr/share/qt4/doc
 
 //Path to a library.
-QT_FONTCONFIG_LIBRARY:FILEPATH=QT_FONTCONFIG_LIBRARY-NOTFOUND
+QT_FONTCONFIG_LIBRARY:FILEPATH=/usr/lib/arm-linux-gnueabihf/libfontconfig.so
 
 //Path to a library.
 QT_FREETYPE_LIBRARY:FILEPATH=/usr/lib/arm-linux-gnueabihf/libfreetype.so
 
 //Path to a library.
-QT_GLIB_LIBRARY:FILEPATH=QT_GLIB_LIBRARY-NOTFOUND
+QT_GLIB_LIBRARY:FILEPATH=/usr/lib/arm-linux-gnueabihf/libglib-2.0.so
 
 //Path to a library.
-QT_GOBJECT_LIBRARY:FILEPATH=QT_GOBJECT_LIBRARY-NOTFOUND
+QT_GOBJECT_LIBRARY:FILEPATH=/usr/lib/arm-linux-gnueabihf/libgobject-2.0.so
 
 //Path to a library.
-QT_GTHREAD_LIBRARY:FILEPATH=QT_GTHREAD_LIBRARY-NOTFOUND
+QT_GTHREAD_LIBRARY:FILEPATH=/usr/lib/arm-linux-gnueabihf/libgthread-2.0.so
 
 //The location of the Qt imports
 QT_IMPORTS_DIR:PATH=QT_IMPORTS_DIR-NOTFOUND
@@ -344,7 +347,7 @@ QT_PNG_LIBRARY:FILEPATH=/usr/lib/arm-linux-gnueabihf/libpng.so
 //Path to a program.
 QT_QCOLLECTIONGENERATOR_EXECUTABLE:FILEPATH=/usr/lib/arm-linux-gnueabihf/qt4/bin/qcollectiongenerator
 
-//The qmake executable for the Qt installation to use
+//No help, variable specified on the command line.
 QT_QMAKE_EXECUTABLE:FILEPATH=/usr/bin/qmake
 
 //Path to a file.
@@ -588,37 +591,37 @@ QT_UIC3_EXECUTABLE:FILEPATH=/usr/lib/arm-linux-gnueabihf/qt4/bin/uic3
 QT_UIC_EXECUTABLE:FILEPATH=/usr/lib/arm-linux-gnueabihf/qt4/bin/uic
 
 //Path to a library.
-QT_X11_ICE_LIBRARY:FILEPATH=QT_X11_ICE_LIBRARY-NOTFOUND
+QT_X11_ICE_LIBRARY:FILEPATH=/usr/lib/arm-linux-gnueabihf/libICE.so
 
 //Path to a library.
-QT_X11_SM_LIBRARY:FILEPATH=QT_X11_SM_LIBRARY-NOTFOUND
+QT_X11_SM_LIBRARY:FILEPATH=/usr/lib/arm-linux-gnueabihf/libSM.so
 
 //Path to a library.
 QT_X11_X11_LIBRARY:FILEPATH=/usr/lib/arm-linux-gnueabihf/libX11.so
 
 //Path to a library.
-QT_X11_Xext_LIBRARY:FILEPATH=QT_X11_Xext_LIBRARY-NOTFOUND
+QT_X11_Xext_LIBRARY:FILEPATH=/usr/lib/arm-linux-gnueabihf/libXext.so
 
 //Path to a library.
 QT_X11_m_LIBRARY:FILEPATH=/usr/lib/arm-linux-gnueabihf/libm.so
 
 //Path to a library.
-QT_XRENDER_LIBRARY:FILEPATH=QT_XRENDER_LIBRARY-NOTFOUND
+QT_XRENDER_LIBRARY:FILEPATH=/usr/lib/arm-linux-gnueabihf/libXrender.so
 
 //Path to a library.
 QT_ZLIB_LIBRARY:FILEPATH=/usr/lib/arm-linux-gnueabihf/libz.so
 
 //Path to a file.
-X11_ICE_INCLUDE_PATH:PATH=X11_ICE_INCLUDE_PATH-NOTFOUND
+X11_ICE_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_ICE_LIB:FILEPATH=X11_ICE_LIB-NOTFOUND
+X11_ICE_LIB:FILEPATH=/usr/lib/arm-linux-gnueabihf/libICE.so
 
 //Path to a file.
-X11_SM_INCLUDE_PATH:PATH=X11_SM_INCLUDE_PATH-NOTFOUND
+X11_SM_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_SM_LIB:FILEPATH=X11_SM_LIB-NOTFOUND
+X11_SM_LIB:FILEPATH=/usr/lib/arm-linux-gnueabihf/libSM.so
 
 //Path to a file.
 X11_X11_INCLUDE_PATH:PATH=/usr/include
@@ -627,16 +630,16 @@ X11_X11_INCLUDE_PATH:PATH=/usr/include
 X11_X11_LIB:FILEPATH=/usr/lib/arm-linux-gnueabihf/libX11.so
 
 //Path to a file.
-X11_XShm_INCLUDE_PATH:PATH=X11_XShm_INCLUDE_PATH-NOTFOUND
+X11_XShm_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a file.
-X11_XSync_INCLUDE_PATH:PATH=X11_XSync_INCLUDE_PATH-NOTFOUND
+X11_XSync_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a file.
-X11_XTest_INCLUDE_PATH:PATH=X11_XTest_INCLUDE_PATH-NOTFOUND
+X11_XTest_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_XTest_LIB:FILEPATH=X11_XTest_LIB-NOTFOUND
+X11_XTest_LIB:FILEPATH=/usr/lib/arm-linux-gnueabihf/libXtst.so
 
 //Path to a file.
 X11_Xaccessrules_INCLUDE_PATH:PATH=X11_Xaccessrules_INCLUDE_PATH-NOTFOUND
@@ -651,22 +654,22 @@ X11_Xau_INCLUDE_PATH:PATH=/usr/include
 X11_Xau_LIB:FILEPATH=/usr/lib/arm-linux-gnueabihf/libXau.so
 
 //Path to a file.
-X11_Xcomposite_INCLUDE_PATH:PATH=X11_Xcomposite_INCLUDE_PATH-NOTFOUND
+X11_Xcomposite_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xcomposite_LIB:FILEPATH=X11_Xcomposite_LIB-NOTFOUND
+X11_Xcomposite_LIB:FILEPATH=/usr/lib/arm-linux-gnueabihf/libXcomposite.so
 
 //Path to a file.
-X11_Xcursor_INCLUDE_PATH:PATH=X11_Xcursor_INCLUDE_PATH-NOTFOUND
+X11_Xcursor_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xcursor_LIB:FILEPATH=X11_Xcursor_LIB-NOTFOUND
+X11_Xcursor_LIB:FILEPATH=/usr/lib/arm-linux-gnueabihf/libXcursor.so
 
 //Path to a file.
-X11_Xdamage_INCLUDE_PATH:PATH=X11_Xdamage_INCLUDE_PATH-NOTFOUND
+X11_Xdamage_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xdamage_LIB:FILEPATH=X11_Xdamage_LIB-NOTFOUND
+X11_Xdamage_LIB:FILEPATH=/usr/lib/arm-linux-gnueabihf/libXdamage.so
 
 //Path to a file.
 X11_Xdmcp_INCLUDE_PATH:PATH=/usr/include
@@ -675,31 +678,31 @@ X11_Xdmcp_INCLUDE_PATH:PATH=/usr/include
 X11_Xdmcp_LIB:FILEPATH=/usr/lib/arm-linux-gnueabihf/libXdmcp.so
 
 //Path to a library.
-X11_Xext_LIB:FILEPATH=X11_Xext_LIB-NOTFOUND
+X11_Xext_LIB:FILEPATH=/usr/lib/arm-linux-gnueabihf/libXext.so
 
 //Path to a file.
-X11_Xfixes_INCLUDE_PATH:PATH=X11_Xfixes_INCLUDE_PATH-NOTFOUND
+X11_Xfixes_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xfixes_LIB:FILEPATH=X11_Xfixes_LIB-NOTFOUND
+X11_Xfixes_LIB:FILEPATH=/usr/lib/arm-linux-gnueabihf/libXfixes.so
 
 //Path to a file.
-X11_Xft_INCLUDE_PATH:PATH=X11_Xft_INCLUDE_PATH-NOTFOUND
+X11_Xft_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xft_LIB:FILEPATH=X11_Xft_LIB-NOTFOUND
+X11_Xft_LIB:FILEPATH=/usr/lib/arm-linux-gnueabihf/libXft.so
 
 //Path to a file.
-X11_Xinerama_INCLUDE_PATH:PATH=X11_Xinerama_INCLUDE_PATH-NOTFOUND
+X11_Xinerama_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xinerama_LIB:FILEPATH=X11_Xinerama_LIB-NOTFOUND
+X11_Xinerama_LIB:FILEPATH=/usr/lib/arm-linux-gnueabihf/libXinerama.so
 
 //Path to a file.
-X11_Xinput_INCLUDE_PATH:PATH=X11_Xinput_INCLUDE_PATH-NOTFOUND
+X11_Xinput_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xinput_LIB:FILEPATH=X11_Xinput_LIB-NOTFOUND
+X11_Xinput_LIB:FILEPATH=/usr/lib/arm-linux-gnueabihf/libXi.so
 
 //Path to a file.
 X11_Xkb_INCLUDE_PATH:PATH=/usr/include
@@ -723,31 +726,31 @@ X11_Xpm_INCLUDE_PATH:PATH=X11_Xpm_INCLUDE_PATH-NOTFOUND
 X11_Xpm_LIB:FILEPATH=X11_Xpm_LIB-NOTFOUND
 
 //Path to a file.
-X11_Xrandr_INCLUDE_PATH:PATH=X11_Xrandr_INCLUDE_PATH-NOTFOUND
+X11_Xrandr_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xrandr_LIB:FILEPATH=X11_Xrandr_LIB-NOTFOUND
+X11_Xrandr_LIB:FILEPATH=/usr/lib/arm-linux-gnueabihf/libXrandr.so
 
 //Path to a file.
-X11_Xrender_INCLUDE_PATH:PATH=X11_Xrender_INCLUDE_PATH-NOTFOUND
+X11_Xrender_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xrender_LIB:FILEPATH=X11_Xrender_LIB-NOTFOUND
+X11_Xrender_LIB:FILEPATH=/usr/lib/arm-linux-gnueabihf/libXrender.so
 
 //Path to a file.
-X11_Xscreensaver_INCLUDE_PATH:PATH=X11_Xscreensaver_INCLUDE_PATH-NOTFOUND
+X11_Xscreensaver_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xscreensaver_LIB:FILEPATH=X11_Xscreensaver_LIB-NOTFOUND
+X11_Xscreensaver_LIB:FILEPATH=/usr/lib/arm-linux-gnueabihf/libXss.so
 
 //Path to a file.
-X11_Xshape_INCLUDE_PATH:PATH=X11_Xshape_INCLUDE_PATH-NOTFOUND
+X11_Xshape_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a file.
-X11_Xt_INCLUDE_PATH:PATH=X11_Xt_INCLUDE_PATH-NOTFOUND
+X11_Xt_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xt_LIB:FILEPATH=X11_Xt_LIB-NOTFOUND
+X11_Xt_LIB:FILEPATH=/usr/lib/arm-linux-gnueabihf/libXt.so
 
 //Path to a file.
 X11_Xutil_INCLUDE_PATH:PATH=/usr/include
@@ -762,7 +765,7 @@ X11_Xv_LIB:FILEPATH=X11_Xv_LIB-NOTFOUND
 X11_Xxf86misc_LIB:FILEPATH=X11_Xxf86misc_LIB-NOTFOUND
 
 //Path to a file.
-X11_dpms_INCLUDE_PATH:PATH=X11_dpms_INCLUDE_PATH-NOTFOUND
+X11_dpms_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a file.
 X11_xf86misc_INCLUDE_PATH:PATH=X11_xf86misc_INCLUDE_PATH-NOTFOUND
@@ -890,6 +893,8 @@ CMAKE_HAVE_SHMAT:INTERNAL=1
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/pi/Proyecto/epos/iotpos
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
+//Have library ICE
+CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MAKE_PROGRAM
@@ -1205,7 +1210,7 @@ Q_WS_X11:INTERNAL=1
 X11_ICE_INCLUDE_PATH-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: X11_ICE_LIB
 X11_ICE_LIB-ADVANCED:INTERNAL=1
-//Have library /usr/lib/arm-linux-gnueabihf/libX11.so;/usr/lib/arm-linux-gnueabihf/libXau.so;/usr/lib/arm-linux-gnueabihf/libXdmcp.so
+//Have library /usr/lib/arm-linux-gnueabihf/libX11.so;/usr/lib/arm-linux-gnueabihf/libXext.so;/usr/lib/arm-linux-gnueabihf/libXft.so;/usr/lib/arm-linux-gnueabihf/libXau.so;/usr/lib/arm-linux-gnueabihf/libXdmcp.so
 X11_LIB_X11_SOLO:INTERNAL=1
 //ADVANCED property for variable: X11_SM_INCLUDE_PATH
 X11_SM_INCLUDE_PATH-ADVANCED:INTERNAL=1

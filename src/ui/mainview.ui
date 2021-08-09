@@ -35,7 +35,16 @@
    <property name="spacing">
     <number>0</number>
    </property>
-   <property name="margin">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
     <number>0</number>
    </property>
    <item>
@@ -90,7 +99,16 @@
        <property name="spacing">
         <number>0</number>
        </property>
-       <property name="margin">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
         <number>0</number>
        </property>
        <item>
@@ -129,7 +147,16 @@
           <property name="spacing">
            <number>0</number>
           </property>
-          <property name="margin">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
            <number>0</number>
           </property>
           <item>
@@ -891,7 +918,16 @@
         <property name="sizeConstraint">
          <enum>QLayout::SetNoConstraint</enum>
         </property>
-        <property name="margin">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
          <number>0</number>
         </property>
         <item>
@@ -936,6 +972,98 @@
            <property name="spacing">
             <number>0</number>
            </property>
+           <item row="0" column="0">
+            <widget class="QWidget" name="widget_3" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_10">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QRadioButton" name="rbFilterByDesc">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="MibitLineEdit" name="editItemCode">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="frame">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="rbFilterByCategory">
+                <property name="text">
+                 <string>Category:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="comboFilterByCategory">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+             <zorder>comboFilterByCategory</zorder>
+             <zorder>rbFilterByDesc</zorder>
+             <zorder>rbFilterByCategory</zorder>
+             <zorder>editItemCode</zorder>
+            </widget>
+           </item>
            <item row="1" column="0">
             <widget class="QSplitter" name="splitterGrid">
              <property name="sizePolicy">
@@ -988,14 +1116,23 @@
                <enum>QFrame::Raised</enum>
               </property>
               <layout class="QGridLayout">
+               <property name="leftMargin">
+                <number>2</number>
+               </property>
+               <property name="topMargin">
+                <number>2</number>
+               </property>
+               <property name="rightMargin">
+                <number>2</number>
+               </property>
+               <property name="bottomMargin">
+                <number>2</number>
+               </property>
                <property name="horizontalSpacing">
                 <number>2</number>
                </property>
                <property name="verticalSpacing">
                 <number>0</number>
-               </property>
-               <property name="margin">
-                <number>2</number>
                </property>
                <item row="4" column="0" colspan="4">
                 <widget class="QListView" name="listView">
@@ -1153,89 +1290,6 @@
                </property>
               </column>
              </widget>
-            </widget>
-           </item>
-           <item row="0" column="0">
-            <widget class="QWidget" name="widget_3" native="true">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>30</height>
-              </size>
-             </property>
-             <layout class="QHBoxLayout" name="horizontalLayout_10">
-              <property name="spacing">
-               <number>0</number>
-              </property>
-              <property name="margin">
-               <number>0</number>
-              </property>
-              <item>
-               <widget class="QRadioButton" name="rbFilterByDesc">
-                <property name="text">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="MibitLineEdit" name="editItemCode">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>16777215</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <property name="frame">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QRadioButton" name="rbFilterByCategory">
-                <property name="text">
-                 <string>Category:</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QComboBox" name="comboFilterByCategory">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>16777215</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-               </widget>
-              </item>
-             </layout>
-             <zorder>comboFilterByCategory</zorder>
-             <zorder>rbFilterByDesc</zorder>
-             <zorder>rbFilterByCategory</zorder>
-             <zorder>editItemCode</zorder>
             </widget>
            </item>
            <item row="2" column="0">
@@ -1828,7 +1882,16 @@ color:black;</string>
                </widget>
                <widget class="QWidget" name="page_4">
                 <layout class="QVBoxLayout">
-                 <property name="margin">
+                 <property name="leftMargin">
+                  <number>4</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>4</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>4</number>
+                 </property>
+                 <property name="bottomMargin">
                   <number>4</number>
                  </property>
                  <item>
@@ -1844,9 +1907,47 @@ color:black;</string>
                 </layout>
                </widget>
               </widget>
-              <zorder>layoutWidget</zorder>
-              <zorder>stackedWidget</zorder>
-              <zorder>labelCashAmount</zorder>
+              <widget class="QWidget" name="verticalLayoutWidget">
+               <property name="geometry">
+                <rect>
+                 <x>540</x>
+                 <y>0</y>
+                 <width>111</width>
+                 <height>71</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="page_cancelBtn">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>2</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>5</number>
+                </property>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontal_cancelBtn">
+                  <item>
+                   <widget class="QPushButton" name="btnCancelPay">
+                    <property name="enabled">
+                     <bool>true</bool>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>107</width>
+                      <height>65</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Cancel</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
              </widget>
              <widget class="QWidget" name="page_6">
               <widget class="QWidget" name="horizontalLayoutWidget_3">
@@ -2079,7 +2180,16 @@ color:black;</string>
                 <property name="spacing">
                  <number>0</number>
                 </property>
-                <property name="margin">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
                  <number>0</number>
                 </property>
                 <item>
@@ -2192,7 +2302,16 @@ color:black;</string>
                     <property name="spacing">
                      <number>2</number>
                     </property>
-                    <property name="margin">
+                    <property name="leftMargin">
+                     <number>2</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>2</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>2</number>
+                    </property>
+                    <property name="bottomMargin">
                      <number>2</number>
                     </property>
                    </layout>
@@ -2204,7 +2323,16 @@ color:black;</string>
                   </widget>
                   <widget class="QWidget" name="pageSearchItem">
                    <layout class="QVBoxLayout">
-                    <property name="margin">
+                    <property name="leftMargin">
+                     <number>2</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>2</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>2</number>
+                    </property>
+                    <property name="bottomMargin">
                      <number>2</number>
                     </property>
                     <item>
@@ -2332,7 +2460,7 @@ color:black;</string>
                <property name="lineWidth">
                 <number>0</number>
                </property>
-               <property name="backgroundColor">
+               <property name="backgroundColor" stdset="0">
                 <color>
                  <red>0</red>
                  <green>51</green>
@@ -2995,7 +3123,16 @@ font: 75 9pt &quot;Lucida Grande&quot;;</string>
          <property name="spacing">
           <number>4</number>
          </property>
-         <property name="margin">
+         <property name="leftMargin">
+          <number>4</number>
+         </property>
+         <property name="topMargin">
+          <number>4</number>
+         </property>
+         <property name="rightMargin">
+          <number>4</number>
+         </property>
+         <property name="bottomMargin">
           <number>4</number>
          </property>
          <item>
@@ -3052,7 +3189,16 @@ p, li { white-space: pre-wrap; }
             <property name="spacing">
              <number>4</number>
             </property>
-            <property name="margin">
+            <property name="leftMargin">
+             <number>4</number>
+            </property>
+            <property name="topMargin">
+             <number>4</number>
+            </property>
+            <property name="rightMargin">
+             <number>4</number>
+            </property>
+            <property name="bottomMargin">
              <number>4</number>
             </property>
             <item>
@@ -3413,15 +3559,15 @@ p, li { white-space: pre-wrap; }
  </widget>
  <customwidgets>
   <customwidget>
+   <class>MibitLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>../../mibitWidgets/mibitlineedit.h</header>
+  </customwidget>
+  <customwidget>
    <class>KPlotWidget</class>
    <extends>QFrame</extends>
    <header>kplotwidget.h</header>
    <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>MibitLineEdit</class>
-   <extends>QLineEdit</extends>
-   <header>../../mibitWidgets/mibitlineedit.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

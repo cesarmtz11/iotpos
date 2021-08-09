@@ -31,9 +31,9 @@
 #include <kstandarddirs.h>
 #include "../dataAccess/azahar.h"
 
-
 #include <QSqlDatabase>
 #include <QTimer>
+#include <QMessageBox>
 
 LoginWindow::LoginWindow(QString caption,
                          QString prompt,
@@ -331,6 +331,7 @@ void LoginWindow::acceptIt()
  // int y = (QApplication::desktop()->height());
   process.startDetached("sudo", QStringList() << "python" << "/home/pi/iotpos/py-thermal-printer-master/printer2.py");
   process.startDetached("/bin/sh", QStringList()<< "/home/pi/iotpos/scripts/signMail.sh");
+
 }
 
 

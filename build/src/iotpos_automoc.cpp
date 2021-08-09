@@ -2,6 +2,7 @@
 -D_DEFAULT_SOURCE -D_BSD_SOURCE
 */
 #include "moc_mibittip.cpp"
+#include "moc_qJob.cpp"
 #include "moc_mibitlineedit.cpp"
 #include "moc_soselector.cpp"
 #include "moc_resume.cpp"
@@ -10,5 +11,7 @@
 #include "moc_reservations.cpp"
 #include "moc_mibitpassworddlg.cpp"
 #include "moc_mibitnotifier.cpp"
+#include "moc_qJobManager.cpp"
 #include "moc_mibitfloatpanel.cpp"
 #include "moc_bundlelist.cpp"
+#include "moc_mpDedicated_Server.cpp"

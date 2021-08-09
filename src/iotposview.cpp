@@ -86,9 +86,10 @@
 #include <kstandarddirs.h>
 #include <kmessagebox.h>
 #include <kpassivepopup.h>
-#include <KNotification>
+
 #include <QFile>
 #include <iostream>
+#include <QFlag>
 using namespace std;
 
 /* Widgets zone                                                                                                         */
@@ -272,6 +273,16 @@ iotposView::iotposView() //: QWidget(parent)
 
   loggedUserRole = roleBasic;
 
+  mpGETQR_OrderStatus_Timer = new QTimer(this);
+  mpGETQR_OrderStatus_Timer->setInterval(2500);
+  mpDedicated_Server mpServer;
+
+
+
+  connect(mpGETQR_OrderStatus_Timer,SIGNAL(timeout()),this,SLOT(slotmp_GETOrderRequest()));
+
+
+
   //Signals
   connect(timerClock, SIGNAL(timeout()), SLOT(timerTimeout()) );
   connect(ui_mainview.editItemDescSearch, SIGNAL(returnPressed()), this, SLOT(doSearchItemDesc()));
@@ -337,6 +348,12 @@ iotposView::iotposView() //: QWidget(parent)
   connect(ui_mainview.editClientIdForCredit, SIGNAL(returnPressed()), SLOT(filterClientForCredit()));
   connect(ui_mainview.btnAddClient, SIGNAL(clicked()), SLOT(createClient()) );
  // connect(timerUpdateGraphs, SIGNAL(timeout()), this, SLOT(updateGraphs()));
+  connect(this,SIGNAL(signalMP_continueTransaction()),&wait_RequestStatus,SLOT(quit()));
+  // CM - Adding connector to receive Order ID from Mercado Pago
+
+  connect(this, SIGNAL(mpSignal_QRStatusOrder(QString)), this, SLOT(mpSlot_QRStatusOrder(QString mpOrder_StatusID)));
+  connect(ui_mainview.btnCancelPay, SIGNAL(clicked()),SLOT(slotCancelButton_Pressed()));
+
 
   timerClock->start(1000);
 
@@ -2518,14 +2535,88 @@ void iotposView::createNewTransaction(TransactionType type)
   bundlesHash->clear();
 }
 
+bool iotposView::getQROrder_Status() const
+{
+    return QROrder_Status;
+}
+
+void iotposView::setQROrder_Status(const bool &QRstatus)
+{
+    QROrder_Status = QRstatus;
+}
+
+void iotposView::slotmp_GETOrderRequest(){
+    bool status;
+    if (currentTransaction_Type == "QR") status = mpAPI.GETRequest_QROrder_status(currentTransaction);
+    else if (currentTransaction_Type == "Card") status = mpAPI.GETRequest_CardOrder_status(mp_CardOrderID);
+    qDebug() << "Status: " << status;
+    if(status == true){
+        qDebug() << "Stoping timer start";
+        mpGETQR_OrderStatus_Timer->stop();
+        canfinish = true;
+        emit signalMP_continueTransaction();
+        qDebug() << "Timer stoped";
+    }
+    setQROrder_Status(status);
+    qDebug() << "Inside slote QR Status: " << status;
+}
+
+void iotposView::notification_popup(KNotification *notification_MP, QString notification_text, bool timeout){
+
+    notification_MP->setText(notification_text);
+    KNotification::NotificationFlags flags;
+    if(timeout == true) {
+        flags |= KNotification::CloseOnTimeout;
+        QTimer::singleShot(5000, notification_MP, SLOT(close()));
+    }
+    flags |= KNotification::Persistent;
+    notification_MP->setFlags(flags);
+    notification_MP->sendEvent();
+
+}
+
+void iotposView::slotCancelButton_Pressed(){
+    if (currentTransaction_Type == "QR") mpAPI.deleteQROrder_request();
+    else if (currentTransaction_Type == "Card") mpAPI.deleteCardPayOrder_request();
+    orderStatus_forNotification = false;
+    cancelCurrentTransaction();
+    mpGETQR_OrderStatus_Timer->stop();
+    emit signalMP_continueTransaction();
+}
+
+void iotposView::slotReceive_ServerNotification(){
+    qDebug() << "-------- Entering slotReceive_ServerNotification --------";
+    mpGETQR_OrderStatus_Timer->start();
+}
+
 void iotposView::finishCurrentTransaction()
 {
-  bool canfinish = true;
+  canfinish = true;
   completingOrder = false; //reset flag..
+  orderStatus_forNotification = false;
   TicketInfo ticket;
-
   refreshTotalLabel();
   QString msg;
+  QJsonDocument order_JsonDoc;
+  KNotification *notification_MPDone = new KNotification("information", this);
+  KNotification *notification_MPRequestCreated = new KNotification("information", this);
+  KNotification *notification_MPError = new KNotification("information", this);
+  mpServer.run();
+
+  mpDialogs mpMessages;
+  mpMessages.mpNotification_QROrderCreated = "Se ha creado el QR de la transacción. Proceda a realizar el pago o presione en CANCELAR para eliminar la orden.";
+  mpMessages.mpNotification_CardOrderCreated = "Se ha creado la orden en el dispositivo Android. Proceda a realizar el cobro con la terminal POINT o presione en CANCELAR para eliminar la orden.";
+  mpMessages.mpNotification_OrderPaid = "Pago realizado, proceda a imprimir el ticket.";
+  mpMessages.mpNotification_OrderCancelled = "Pago cancelado. Presione la notificación para cerrarla.";
+  mpMessages.mpNotification_OrderError = "Error con la API de MercadoPago.";
+
+
+  connect(this, SIGNAL(signalMP_continueTransaction()),notification_MPRequestCreated, SLOT(close()));
+  connect(this, SIGNAL(notification_PrintStarting()),notification_MPDone, SLOT(close()));
+  connect(ui_mainview.btnCancelPay, SIGNAL(clicked()), notification_MPRequestCreated, SLOT(close()));
+  connect(&mpServer,SIGNAL(signalServer_Notification()),this,SLOT(slotReceive_ServerNotification()));
+
+
   ui_mainview.mainPanel->setCurrentIndex(pageMain);
   if (ui_mainview.editAmount->text().isEmpty()) ui_mainview.editAmount->setText("0.0");
   if (ui_mainview.checkCash->isChecked() || ui_mainview.checkOwnCredit->isChecked()) {
@@ -2568,26 +2659,30 @@ void iotposView::finishCurrentTransaction()
       }
     }
   }
-  // CM Adding QR code
+   /*    MercadoPago - Integracion con QR
+    *    1. Crea un documento JSON con la informacion necesaria para crear una orden a traves de la API de MercadoPago.
+    *    2. Envia la orden QR a traves de una solicitud PUT.
+    *    3. Crea una notificacion en la pantalla.
+    *    4. Si se concreto el pago, se continua el proceso de la transaccion.
+    *    -> Si no se creo la orden en la API, se cancela la transaccion.
+    *    -> Si se presiona el boton de cancelar, se cancela la transaccion.
+    */
   else if(ui_mainview.checkQR->isChecked()){
-      QProcess process;
-      process.startDetached("sudo", QStringList() << "python" << "/home/pi/Proyecto/epos/iotpos/scripts/mp_create_order_qr.py" << ""+ QString::number(totalSum,'f',64) +""<< ""+ QString::number(currentTransaction) +"");
-      qDebug()<<"Transaction ID:"<<QString::number(currentTransaction);
-      QMessageBox::StandardButton accept;
-      accept = QMessageBox::question(this, i18n("Send QR Request"), i18n("QR ha sido activado. Seleccione Ok para proceder con el chequeo de pago. Presione Cancelar para eliminar orden."), QMessageBox::Cancel|QMessageBox::Ok);
-      if (accept == QMessageBox::Ok) {
-          qDebug()<<"Waiting for Mercado pago";
-          process.startDetached("sudo", QStringList() << "python" << "/home/pi/Proyecto/epos/iotpos/scripts/mp_get_order_qr.py" << ""+ QString::number(currentTransaction) +"");
+      currentTransaction_Type = "QR";
+      // Create QR Payment in Mercado Pago
+      order_JsonDoc = mpAPI.create_QRJsonDoc(totalSum,currentTransaction);
+      if(mpAPI.send_QRPutRequest(order_JsonDoc) == true){
+          notification_popup(notification_MPRequestCreated, mpMessages.mpNotification_QROrderCreated,false);
+          orderStatus_forNotification = true;
           canfinish = true;
+          wait_RequestStatus.exec();
+      }else {
+          notification_popup(notification_MPError, mpMessages.mpNotification_OrderError,true);
+          cancelCurrentTransaction();
       }
-      else if (accept == QMessageBox::Cancel) {
-        // If the credit card has not been accepted then cancel the transaction.
-        process.startDetached("sudo", QStringList() << "python" << "/home/pi/Proyecto/epos/iotpos/scripts/mp_cancel_order_qr.py");
-        cancelCurrentTransaction();
-        //
-      }
-
-      //check if card type is != none.
+      delete notification_MPRequestCreated;
+      if( orderStatus_forNotification == true) notification_popup(notification_MPDone, mpMessages.mpNotification_OrderPaid, false);
+      else notification_popup(notification_MPDone, mpMessages.mpNotification_OrderCancelled, true);
       qDebug()<<"CARD TYPE index:"<<ui_mainview.comboCardType->currentIndex();
 
       if ( ui_mainview.comboCardType->currentIndex() == 0 ) {
@@ -2601,21 +2696,31 @@ void iotposView::finishCurrentTransaction()
         tipAmount->showTip(msg, 4000);
     }
   else {
-    //Remove the Creditcard boxes as no longer tenderedChanged
-    QMessageBox::StandardButton accept;
-    accept = QMessageBox::question(this, i18n("Credit Card Accepted?"), i18n("Please refer to EFTPOS terminal\n Has payment been accepted?"), QMessageBox::No|QMessageBox::Yes);
-    if (accept == QMessageBox::Yes) {
-      // If the credit card has been accepted then continue on
-      qDebug() << "Credit card payment accepted";
-      canfinish = true;
-    }
-    else if (accept == QMessageBox::No) {
-      // If the credit card has not been accepted then cancel the transaction.
-      cancelCurrentTransaction();
-      qDebug() << "Transaction canceled due to filed credit card";
-      //
-    }
+   /*    MercadoPago - Integracion de pago con tarjeta de credito/debito.
+    *    1. Crea un documento JSON con la informacion necesaria para crear una orden a traves de la API de MercadoPago.
+    *    2. Envia la orden QR a traves de una solicitud PUT.
+    *    3. Crea una notificacion en la pantalla.
+    *    4. Si se concreto el pago, se continua el proceso de la transaccion.
+    *    -> Si no se creo la orden en la API, se cancela la transaccion.
+    *    -> Si se presiona el boton de cancelar, se cancela la transaccion.
+    */
+      currentTransaction_Type = "Card";
+      order_JsonDoc = mpAPI.create_cardPay(totalSum, currentTransaction);
+      mp_CardOrderID = mpAPI.send_CardPayPostRequest(order_JsonDoc);
 
+      if(mp_CardOrderID == 0){
+          notification_popup(notification_MPError, mpMessages.mpNotification_OrderError,true);
+          cancelCurrentTransaction();
+      }else {
+          notification_popup(notification_MPRequestCreated, mpMessages.mpNotification_CardOrderCreated,false);
+          //mpGETQR_OrderStatus_Timer->start();
+          orderStatus_forNotification = true;
+          canfinish = true;
+          wait_RequestStatus.exec();
+      }
+      delete notification_MPRequestCreated;
+      if( orderStatus_forNotification == true) notification_popup(notification_MPDone, mpMessages.mpNotification_OrderPaid,false);
+      else notification_popup(notification_MPDone, mpMessages.mpNotification_OrderCancelled,true);
     //check if card type is != none.
     qDebug()<<"CARD TYPE index:"<<ui_mainview.comboCardType->currentIndex();
 
@@ -3135,7 +3240,9 @@ void iotposView::finishCurrentTransaction()
     //ticket.total = summary.getGross() ;
     ticket.clientDiscMoney = 0.0;
 
+
     qDebug() << "KB: sub and total " << ticket.subTotal << " / " << ticket.totalTax;
+
     //ptInfo.totDisc = summary.getDiscountGross().toDouble();
     if (printDTticket)
         printTicket(ticket);
@@ -3165,11 +3272,11 @@ void iotposView::finishCurrentTransaction()
       notify->setPixmap(pixmap);
       notify->sendEvent();
     }
-
+    delete notification_MPDone;
     delete myDb;
    }
 
-   if (!ui_mainview.groupSaleDate->isHidden()) ui_mainview.groupSaleDate->hide(); //finally we hide the sale date group
+  if (!ui_mainview.groupSaleDate->isHidden()) ui_mainview.groupSaleDate->hide(); //finally we hide the sale date group
    completingOrder = false; //cleaning flag
    oDiscountMoney = 0; //reset discount money... the new discount type.
    if (loggedUserRole == roleAdmin) {/*updateGraphs();*/}
@@ -3614,7 +3721,7 @@ ptInfo.tDisc = KGlobal::locale()->formatMoney(-discMoney, QString(), 2);
       }
     }//soticket
   } //printTicket
-
+  emit notification_PrintStarting();
   freezeWidgets();
 
   if (Settings::showDialogOnPrinting())
@@ -6753,3 +6860,5 @@ void iotposView::on_rbFilterByPopularity_clicked()
 {
     ui_mainview.editItemCode->clear();
 }
+
+

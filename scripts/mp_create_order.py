@@ -7,6 +7,13 @@ url = "https://api.mercadopago.com/instore/qr/seller/collectors/774407572/stores
 total_amount = sys.argv[1]
 unit_price = total_amount
 external_reference_id = sys.argv[2]
+payment_type = sys.argv[3]
+
+
+if payment_type == "qr":
+    notification_url = " /qr"
+elif payment_type == "credit":
+    notification_url = " /credit"
 
 #total_amount = 150
 #unit_price = total_amount
@@ -21,6 +28,7 @@ data = """
 {
     "external_reference": "EMPOS""" + str(external_reference_id) + """",
     "total_amount": """ + str(total_amount) + """,
+    "notification_url": """ + str(notification_url) + """,
     "items": [
         {
             "sku_number": "KS955RUR",

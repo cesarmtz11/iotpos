@@ -125,9 +125,14 @@ src/settings.h: ../src/settings.kcfgc
 src/settings.cpp: src/settings.h
 	@$(CMAKE_COMMAND) -E touch_nocreate src/settings.cpp
 
+src/qrc_mpAPI_AccountInfo.cxx: ../src/mercadopago/Resources/mpAPI_AccountInfo.txt
+src/qrc_mpAPI_AccountInfo.cxx: ../src/mercadopago/mpAPI_AccountInfo.qrc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating qrc_mpAPI_AccountInfo.cxx"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/lib/arm-linux-gnueabihf/qt4/bin/rcc -name mpAPI_AccountInfo -o /home/pi/Proyecto/epos/iotpos/build/src/qrc_mpAPI_AccountInfo.cxx /home/pi/Proyecto/epos/iotpos/src/mercadopago/mpAPI_AccountInfo.qrc
+
 src/CMakeFiles/iotpos.dir/iotpos_automoc.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/iotpos_automoc.o: src/iotpos_automoc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/iotpos.dir/iotpos_automoc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/iotpos.dir/iotpos_automoc.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/iotpos_automoc.o -c /home/pi/Proyecto/epos/iotpos/build/src/iotpos_automoc.cpp
 
 src/CMakeFiles/iotpos.dir/iotpos_automoc.i: cmake_force
@@ -140,7 +145,7 @@ src/CMakeFiles/iotpos.dir/iotpos_automoc.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/iotpos.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/iotpos.o: ../src/iotpos.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/iotpos.dir/iotpos.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/iotpos.dir/iotpos.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/iotpos.o -c /home/pi/Proyecto/epos/iotpos/src/iotpos.cpp
 
 src/CMakeFiles/iotpos.dir/iotpos.i: cmake_force
@@ -153,7 +158,7 @@ src/CMakeFiles/iotpos.dir/iotpos.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/main.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/main.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/iotpos.dir/main.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/iotpos.dir/main.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/main.o -c /home/pi/Proyecto/epos/iotpos/src/main.cpp
 
 src/CMakeFiles/iotpos.dir/main.i: cmake_force
@@ -166,7 +171,7 @@ src/CMakeFiles/iotpos.dir/main.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/iotposview.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/iotposview.o: ../src/iotposview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/iotpos.dir/iotposview.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/iotpos.dir/iotposview.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/iotposview.o -c /home/pi/Proyecto/epos/iotpos/src/iotposview.cpp
 
 src/CMakeFiles/iotpos.dir/iotposview.i: cmake_force
@@ -179,7 +184,7 @@ src/CMakeFiles/iotpos.dir/iotposview.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/sha1.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/sha1.o: ../src/sha1.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/iotpos.dir/sha1.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/iotpos.dir/sha1.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/sha1.o -c /home/pi/Proyecto/epos/iotpos/src/sha1.cc
 
 src/CMakeFiles/iotpos.dir/sha1.i: cmake_force
@@ -192,7 +197,7 @@ src/CMakeFiles/iotpos.dir/sha1.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/hash.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/hash.o: ../src/hash.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/iotpos.dir/hash.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/iotpos.dir/hash.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/hash.o -c /home/pi/Proyecto/epos/iotpos/src/hash.cpp
 
 src/CMakeFiles/iotpos.dir/hash.i: cmake_force
@@ -205,7 +210,7 @@ src/CMakeFiles/iotpos.dir/hash.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/gaveta.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/gaveta.o: ../src/gaveta.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/iotpos.dir/gaveta.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/iotpos.dir/gaveta.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/gaveta.o -c /home/pi/Proyecto/epos/iotpos/src/gaveta.cpp
 
 src/CMakeFiles/iotpos.dir/gaveta.i: cmake_force
@@ -218,7 +223,7 @@ src/CMakeFiles/iotpos.dir/gaveta.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/inputdialog.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/inputdialog.o: ../src/inputdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/iotpos.dir/inputdialog.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/iotpos.dir/inputdialog.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/inputdialog.o -c /home/pi/Proyecto/epos/iotpos/src/inputdialog.cpp
 
 src/CMakeFiles/iotpos.dir/inputdialog.i: cmake_force
@@ -231,7 +236,7 @@ src/CMakeFiles/iotpos.dir/inputdialog.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/loginwindow.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/loginwindow.o: ../src/loginwindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/iotpos.dir/loginwindow.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/iotpos.dir/loginwindow.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/loginwindow.o -c /home/pi/Proyecto/epos/iotpos/src/loginwindow.cpp
 
 src/CMakeFiles/iotpos.dir/loginwindow.i: cmake_force
@@ -244,7 +249,7 @@ src/CMakeFiles/iotpos.dir/loginwindow.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/productdelegate.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/productdelegate.o: ../src/productdelegate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/iotpos.dir/productdelegate.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/iotpos.dir/productdelegate.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/productdelegate.o -c /home/pi/Proyecto/epos/iotpos/src/productdelegate.cpp
 
 src/CMakeFiles/iotpos.dir/productdelegate.i: cmake_force
@@ -257,7 +262,7 @@ src/CMakeFiles/iotpos.dir/productdelegate.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/misc.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/misc.o: ../src/misc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/iotpos.dir/misc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/iotpos.dir/misc.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/misc.o -c /home/pi/Proyecto/epos/iotpos/src/misc.cpp
 
 src/CMakeFiles/iotpos.dir/misc.i: cmake_force
@@ -270,7 +275,7 @@ src/CMakeFiles/iotpos.dir/misc.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/specialordereditor.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/specialordereditor.o: ../src/specialordereditor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/iotpos.dir/specialordereditor.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/CMakeFiles/iotpos.dir/specialordereditor.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/specialordereditor.o -c /home/pi/Proyecto/epos/iotpos/src/specialordereditor.cpp
 
 src/CMakeFiles/iotpos.dir/specialordereditor.i: cmake_force
@@ -283,7 +288,7 @@ src/CMakeFiles/iotpos.dir/specialordereditor.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/__/dataAccess/azahar.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/__/dataAccess/azahar.o: ../dataAccess/azahar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/CMakeFiles/iotpos.dir/__/dataAccess/azahar.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/iotpos.dir/__/dataAccess/azahar.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/__/dataAccess/azahar.o -c /home/pi/Proyecto/epos/iotpos/dataAccess/azahar.cpp
 
 src/CMakeFiles/iotpos.dir/__/dataAccess/azahar.i: cmake_force
@@ -296,7 +301,7 @@ src/CMakeFiles/iotpos.dir/__/dataAccess/azahar.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/pricechecker.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/pricechecker.o: ../src/pricechecker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/iotpos.dir/pricechecker.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/CMakeFiles/iotpos.dir/pricechecker.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/pricechecker.o -c /home/pi/Proyecto/epos/iotpos/src/pricechecker.cpp
 
 src/CMakeFiles/iotpos.dir/pricechecker.i: cmake_force
@@ -309,7 +314,7 @@ src/CMakeFiles/iotpos.dir/pricechecker.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/ticketpopup.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/ticketpopup.o: ../src/ticketpopup.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/CMakeFiles/iotpos.dir/ticketpopup.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object src/CMakeFiles/iotpos.dir/ticketpopup.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/ticketpopup.o -c /home/pi/Proyecto/epos/iotpos/src/ticketpopup.cpp
 
 src/CMakeFiles/iotpos.dir/ticketpopup.i: cmake_force
@@ -322,7 +327,7 @@ src/CMakeFiles/iotpos.dir/ticketpopup.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/__/printing/print-dev.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/__/printing/print-dev.o: ../printing/print-dev.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object src/CMakeFiles/iotpos.dir/__/printing/print-dev.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object src/CMakeFiles/iotpos.dir/__/printing/print-dev.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/__/printing/print-dev.o -c /home/pi/Proyecto/epos/iotpos/printing/print-dev.cpp
 
 src/CMakeFiles/iotpos.dir/__/printing/print-dev.i: cmake_force
@@ -335,7 +340,7 @@ src/CMakeFiles/iotpos.dir/__/printing/print-dev.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/__/printing/print-cups.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/__/printing/print-cups.o: ../printing/print-cups.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object src/CMakeFiles/iotpos.dir/__/printing/print-cups.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object src/CMakeFiles/iotpos.dir/__/printing/print-cups.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/__/printing/print-cups.o -c /home/pi/Proyecto/epos/iotpos/printing/print-cups.cpp
 
 src/CMakeFiles/iotpos.dir/__/printing/print-cups.i: cmake_force
@@ -348,7 +353,7 @@ src/CMakeFiles/iotpos.dir/__/printing/print-cups.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitfloatpanel.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitfloatpanel.o: ../mibitWidgets/mibitfloatpanel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitfloatpanel.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitfloatpanel.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/__/mibitWidgets/mibitfloatpanel.o -c /home/pi/Proyecto/epos/iotpos/mibitWidgets/mibitfloatpanel.cpp
 
 src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitfloatpanel.i: cmake_force
@@ -361,7 +366,7 @@ src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitfloatpanel.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitlineedit.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitlineedit.o: ../mibitWidgets/mibitlineedit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitlineedit.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitlineedit.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/__/mibitWidgets/mibitlineedit.o -c /home/pi/Proyecto/epos/iotpos/mibitWidgets/mibitlineedit.cpp
 
 src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitlineedit.i: cmake_force
@@ -374,7 +379,7 @@ src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitlineedit.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibittip.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibittip.o: ../mibitWidgets/mibittip.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibittip.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibittip.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/__/mibitWidgets/mibittip.o -c /home/pi/Proyecto/epos/iotpos/mibitWidgets/mibittip.cpp
 
 src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibittip.i: cmake_force
@@ -387,7 +392,7 @@ src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibittip.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitpassworddlg.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitpassworddlg.o: ../mibitWidgets/mibitpassworddlg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitpassworddlg.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitpassworddlg.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/__/mibitWidgets/mibitpassworddlg.o -c /home/pi/Proyecto/epos/iotpos/mibitWidgets/mibitpassworddlg.cpp
 
 src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitpassworddlg.i: cmake_force
@@ -400,7 +405,7 @@ src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitpassworddlg.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitnotifier.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitnotifier.o: ../mibitWidgets/mibitnotifier.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitnotifier.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitnotifier.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/__/mibitWidgets/mibitnotifier.o -c /home/pi/Proyecto/epos/iotpos/mibitWidgets/mibitnotifier.cpp
 
 src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitnotifier.i: cmake_force
@@ -413,7 +418,7 @@ src/CMakeFiles/iotpos.dir/__/mibitWidgets/mibitnotifier.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/soselector.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/soselector.o: ../src/soselector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object src/CMakeFiles/iotpos.dir/soselector.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object src/CMakeFiles/iotpos.dir/soselector.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/soselector.o -c /home/pi/Proyecto/epos/iotpos/src/soselector.cpp
 
 src/CMakeFiles/iotpos.dir/soselector.i: cmake_force
@@ -426,7 +431,7 @@ src/CMakeFiles/iotpos.dir/soselector.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/sostatus.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/sostatus.o: ../src/sostatus.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object src/CMakeFiles/iotpos.dir/sostatus.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object src/CMakeFiles/iotpos.dir/sostatus.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/sostatus.o -c /home/pi/Proyecto/epos/iotpos/src/sostatus.cpp
 
 src/CMakeFiles/iotpos.dir/sostatus.i: cmake_force
@@ -439,7 +444,7 @@ src/CMakeFiles/iotpos.dir/sostatus.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/resume.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/resume.o: ../src/resume.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object src/CMakeFiles/iotpos.dir/resume.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object src/CMakeFiles/iotpos.dir/resume.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/resume.o -c /home/pi/Proyecto/epos/iotpos/src/resume.cpp
 
 src/CMakeFiles/iotpos.dir/resume.i: cmake_force
@@ -452,7 +457,7 @@ src/CMakeFiles/iotpos.dir/resume.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/reservations.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/reservations.o: ../src/reservations.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object src/CMakeFiles/iotpos.dir/reservations.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object src/CMakeFiles/iotpos.dir/reservations.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/reservations.o -c /home/pi/Proyecto/epos/iotpos/src/reservations.cpp
 
 src/CMakeFiles/iotpos.dir/reservations.i: cmake_force
@@ -465,7 +470,7 @@ src/CMakeFiles/iotpos.dir/reservations.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/saleqtydelegate.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/saleqtydelegate.o: ../src/saleqtydelegate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object src/CMakeFiles/iotpos.dir/saleqtydelegate.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object src/CMakeFiles/iotpos.dir/saleqtydelegate.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/saleqtydelegate.o -c /home/pi/Proyecto/epos/iotpos/src/saleqtydelegate.cpp
 
 src/CMakeFiles/iotpos.dir/saleqtydelegate.i: cmake_force
@@ -478,7 +483,7 @@ src/CMakeFiles/iotpos.dir/saleqtydelegate.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/dialogclientdata.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/dialogclientdata.o: ../src/dialogclientdata.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object src/CMakeFiles/iotpos.dir/dialogclientdata.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object src/CMakeFiles/iotpos.dir/dialogclientdata.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/dialogclientdata.o -c /home/pi/Proyecto/epos/iotpos/src/dialogclientdata.cpp
 
 src/CMakeFiles/iotpos.dir/dialogclientdata.i: cmake_force
@@ -491,7 +496,7 @@ src/CMakeFiles/iotpos.dir/dialogclientdata.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/__/iotstock/src/clienteditor.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/__/iotstock/src/clienteditor.o: ../iotstock/src/clienteditor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object src/CMakeFiles/iotpos.dir/__/iotstock/src/clienteditor.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object src/CMakeFiles/iotpos.dir/__/iotstock/src/clienteditor.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/__/iotstock/src/clienteditor.o -c /home/pi/Proyecto/epos/iotpos/iotstock/src/clienteditor.cpp
 
 src/CMakeFiles/iotpos.dir/__/iotstock/src/clienteditor.i: cmake_force
@@ -504,7 +509,7 @@ src/CMakeFiles/iotpos.dir/__/iotstock/src/clienteditor.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/bundlelist.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/bundlelist.o: ../src/bundlelist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object src/CMakeFiles/iotpos.dir/bundlelist.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object src/CMakeFiles/iotpos.dir/bundlelist.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/bundlelist.o -c /home/pi/Proyecto/epos/iotpos/src/bundlelist.cpp
 
 src/CMakeFiles/iotpos.dir/bundlelist.i: cmake_force
@@ -517,7 +522,7 @@ src/CMakeFiles/iotpos.dir/bundlelist.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/BasketPriceCalculationService.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/BasketPriceCalculationService.o: ../src/BasketPriceCalculationService.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object src/CMakeFiles/iotpos.dir/BasketPriceCalculationService.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object src/CMakeFiles/iotpos.dir/BasketPriceCalculationService.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/BasketPriceCalculationService.o -c /home/pi/Proyecto/epos/iotpos/src/BasketPriceCalculationService.cpp
 
 src/CMakeFiles/iotpos.dir/BasketPriceCalculationService.i: cmake_force
@@ -530,7 +535,7 @@ src/CMakeFiles/iotpos.dir/BasketPriceCalculationService.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/nouns/BasketEntryPriceSummary.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/nouns/BasketEntryPriceSummary.o: ../src/nouns/BasketEntryPriceSummary.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object src/CMakeFiles/iotpos.dir/nouns/BasketEntryPriceSummary.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object src/CMakeFiles/iotpos.dir/nouns/BasketEntryPriceSummary.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/nouns/BasketEntryPriceSummary.o -c /home/pi/Proyecto/epos/iotpos/src/nouns/BasketEntryPriceSummary.cpp
 
 src/CMakeFiles/iotpos.dir/nouns/BasketEntryPriceSummary.i: cmake_force
@@ -543,7 +548,7 @@ src/CMakeFiles/iotpos.dir/nouns/BasketEntryPriceSummary.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/nouns/BasketPriceSummary.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/nouns/BasketPriceSummary.o: ../src/nouns/BasketPriceSummary.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object src/CMakeFiles/iotpos.dir/nouns/BasketPriceSummary.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object src/CMakeFiles/iotpos.dir/nouns/BasketPriceSummary.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/nouns/BasketPriceSummary.o -c /home/pi/Proyecto/epos/iotpos/src/nouns/BasketPriceSummary.cpp
 
 src/CMakeFiles/iotpos.dir/nouns/BasketPriceSummary.i: cmake_force
@@ -556,7 +561,7 @@ src/CMakeFiles/iotpos.dir/nouns/BasketPriceSummary.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/nouns/User.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/nouns/User.o: ../src/nouns/User.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object src/CMakeFiles/iotpos.dir/nouns/User.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object src/CMakeFiles/iotpos.dir/nouns/User.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/nouns/User.o -c /home/pi/Proyecto/epos/iotpos/src/nouns/User.cpp
 
 src/CMakeFiles/iotpos.dir/nouns/User.i: cmake_force
@@ -569,7 +574,7 @@ src/CMakeFiles/iotpos.dir/nouns/User.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/nouns/Currency.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/nouns/Currency.o: ../src/nouns/Currency.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object src/CMakeFiles/iotpos.dir/nouns/Currency.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object src/CMakeFiles/iotpos.dir/nouns/Currency.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/nouns/Currency.o -c /home/pi/Proyecto/epos/iotpos/src/nouns/Currency.cpp
 
 src/CMakeFiles/iotpos.dir/nouns/Currency.i: cmake_force
@@ -582,7 +587,7 @@ src/CMakeFiles/iotpos.dir/nouns/Currency.s: cmake_force
 
 src/CMakeFiles/iotpos.dir/settings.o: src/CMakeFiles/iotpos.dir/flags.make
 src/CMakeFiles/iotpos.dir/settings.o: src/settings.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object src/CMakeFiles/iotpos.dir/settings.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object src/CMakeFiles/iotpos.dir/settings.o"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/settings.o -c /home/pi/Proyecto/epos/iotpos/build/src/settings.cpp
 
 src/CMakeFiles/iotpos.dir/settings.i: cmake_force
@@ -592,6 +597,175 @@ src/CMakeFiles/iotpos.dir/settings.i: cmake_force
 src/CMakeFiles/iotpos.dir/settings.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iotpos.dir/settings.s"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Proyecto/epos/iotpos/build/src/settings.cpp -o CMakeFiles/iotpos.dir/settings.s
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonArray.o: src/CMakeFiles/iotpos.dir/flags.make
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonArray.o: ../src/mercadopago/QJsonSource/QJsonArray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonArray.o"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonArray.o -c /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonArray.cpp
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonArray.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonArray.i"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonArray.cpp > CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonArray.i
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonArray.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonArray.s"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonArray.cpp -o CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonArray.s
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonDocument.o: src/CMakeFiles/iotpos.dir/flags.make
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonDocument.o: ../src/mercadopago/QJsonSource/QJsonDocument.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonDocument.o"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonDocument.o -c /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonDocument.cpp
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonDocument.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonDocument.i"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonDocument.cpp > CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonDocument.i
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonDocument.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonDocument.s"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonDocument.cpp -o CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonDocument.s
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonObject.o: src/CMakeFiles/iotpos.dir/flags.make
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonObject.o: ../src/mercadopago/QJsonSource/QJsonObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonObject.o"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonObject.o -c /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonObject.cpp
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonObject.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonObject.i"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonObject.cpp > CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonObject.i
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonObject.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonObject.s"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonObject.cpp -o CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonObject.s
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParseError.o: src/CMakeFiles/iotpos.dir/flags.make
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParseError.o: ../src/mercadopago/QJsonSource/QJsonParseError.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParseError.o"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParseError.o -c /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonParseError.cpp
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParseError.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParseError.i"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonParseError.cpp > CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParseError.i
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParseError.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParseError.s"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonParseError.cpp -o CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParseError.s
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParser.o: src/CMakeFiles/iotpos.dir/flags.make
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParser.o: ../src/mercadopago/QJsonSource/QJsonParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParser.o"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParser.o -c /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonParser.cpp
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParser.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParser.i"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonParser.cpp > CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParser.i
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParser.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParser.s"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonParser.cpp -o CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParser.s
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValue.o: src/CMakeFiles/iotpos.dir/flags.make
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValue.o: ../src/mercadopago/QJsonSource/QJsonValue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValue.o"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValue.o -c /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonValue.cpp
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValue.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValue.i"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonValue.cpp > CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValue.i
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValue.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValue.s"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonValue.cpp -o CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValue.s
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValueRef.o: src/CMakeFiles/iotpos.dir/flags.make
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValueRef.o: ../src/mercadopago/QJsonSource/QJsonValueRef.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValueRef.o"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValueRef.o -c /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonValueRef.cpp
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValueRef.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValueRef.i"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonValueRef.cpp > CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValueRef.i
+
+src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValueRef.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValueRef.s"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Proyecto/epos/iotpos/src/mercadopago/QJsonSource/QJsonValueRef.cpp -o CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValueRef.s
+
+src/CMakeFiles/iotpos.dir/mercadopago/mpAPI_Integration.o: src/CMakeFiles/iotpos.dir/flags.make
+src/CMakeFiles/iotpos.dir/mercadopago/mpAPI_Integration.o: ../src/mercadopago/mpAPI_Integration.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object src/CMakeFiles/iotpos.dir/mercadopago/mpAPI_Integration.o"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/mercadopago/mpAPI_Integration.o -c /home/pi/Proyecto/epos/iotpos/src/mercadopago/mpAPI_Integration.cpp
+
+src/CMakeFiles/iotpos.dir/mercadopago/mpAPI_Integration.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iotpos.dir/mercadopago/mpAPI_Integration.i"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Proyecto/epos/iotpos/src/mercadopago/mpAPI_Integration.cpp > CMakeFiles/iotpos.dir/mercadopago/mpAPI_Integration.i
+
+src/CMakeFiles/iotpos.dir/mercadopago/mpAPI_Integration.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iotpos.dir/mercadopago/mpAPI_Integration.s"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Proyecto/epos/iotpos/src/mercadopago/mpAPI_Integration.cpp -o CMakeFiles/iotpos.dir/mercadopago/mpAPI_Integration.s
+
+src/CMakeFiles/iotpos.dir/mercadopago/mpAPI_AccountInfo.o: src/CMakeFiles/iotpos.dir/flags.make
+src/CMakeFiles/iotpos.dir/mercadopago/mpAPI_AccountInfo.o: ../src/mercadopago/mpAPI_AccountInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object src/CMakeFiles/iotpos.dir/mercadopago/mpAPI_AccountInfo.o"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/mercadopago/mpAPI_AccountInfo.o -c /home/pi/Proyecto/epos/iotpos/src/mercadopago/mpAPI_AccountInfo.cpp
+
+src/CMakeFiles/iotpos.dir/mercadopago/mpAPI_AccountInfo.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iotpos.dir/mercadopago/mpAPI_AccountInfo.i"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Proyecto/epos/iotpos/src/mercadopago/mpAPI_AccountInfo.cpp > CMakeFiles/iotpos.dir/mercadopago/mpAPI_AccountInfo.i
+
+src/CMakeFiles/iotpos.dir/mercadopago/mpAPI_AccountInfo.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iotpos.dir/mercadopago/mpAPI_AccountInfo.s"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Proyecto/epos/iotpos/src/mercadopago/mpAPI_AccountInfo.cpp -o CMakeFiles/iotpos.dir/mercadopago/mpAPI_AccountInfo.s
+
+src/CMakeFiles/iotpos.dir/mercadopago/mpDedicated_Server.o: src/CMakeFiles/iotpos.dir/flags.make
+src/CMakeFiles/iotpos.dir/mercadopago/mpDedicated_Server.o: ../src/mercadopago/mpDedicated_Server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object src/CMakeFiles/iotpos.dir/mercadopago/mpDedicated_Server.o"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/mercadopago/mpDedicated_Server.o -c /home/pi/Proyecto/epos/iotpos/src/mercadopago/mpDedicated_Server.cpp
+
+src/CMakeFiles/iotpos.dir/mercadopago/mpDedicated_Server.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iotpos.dir/mercadopago/mpDedicated_Server.i"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Proyecto/epos/iotpos/src/mercadopago/mpDedicated_Server.cpp > CMakeFiles/iotpos.dir/mercadopago/mpDedicated_Server.i
+
+src/CMakeFiles/iotpos.dir/mercadopago/mpDedicated_Server.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iotpos.dir/mercadopago/mpDedicated_Server.s"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Proyecto/epos/iotpos/src/mercadopago/mpDedicated_Server.cpp -o CMakeFiles/iotpos.dir/mercadopago/mpDedicated_Server.s
+
+src/CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJob.o: src/CMakeFiles/iotpos.dir/flags.make
+src/CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJob.o: ../src/mercadopago/QServerThreadProcess/qJob.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object src/CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJob.o"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJob.o -c /home/pi/Proyecto/epos/iotpos/src/mercadopago/QServerThreadProcess/qJob.cpp
+
+src/CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJob.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJob.i"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Proyecto/epos/iotpos/src/mercadopago/QServerThreadProcess/qJob.cpp > CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJob.i
+
+src/CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJob.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJob.s"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Proyecto/epos/iotpos/src/mercadopago/QServerThreadProcess/qJob.cpp -o CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJob.s
+
+src/CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJobManager.o: src/CMakeFiles/iotpos.dir/flags.make
+src/CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJobManager.o: ../src/mercadopago/QServerThreadProcess/qJobManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object src/CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJobManager.o"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJobManager.o -c /home/pi/Proyecto/epos/iotpos/src/mercadopago/QServerThreadProcess/qJobManager.cpp
+
+src/CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJobManager.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJobManager.i"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Proyecto/epos/iotpos/src/mercadopago/QServerThreadProcess/qJobManager.cpp > CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJobManager.i
+
+src/CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJobManager.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJobManager.s"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Proyecto/epos/iotpos/src/mercadopago/QServerThreadProcess/qJobManager.cpp -o CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJobManager.s
+
+src/CMakeFiles/iotpos.dir/qrc_mpAPI_AccountInfo.o: src/CMakeFiles/iotpos.dir/flags.make
+src/CMakeFiles/iotpos.dir/qrc_mpAPI_AccountInfo.o: src/qrc_mpAPI_AccountInfo.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object src/CMakeFiles/iotpos.dir/qrc_mpAPI_AccountInfo.o"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/iotpos.dir/qrc_mpAPI_AccountInfo.o -c /home/pi/Proyecto/epos/iotpos/build/src/qrc_mpAPI_AccountInfo.cxx
+
+src/CMakeFiles/iotpos.dir/qrc_mpAPI_AccountInfo.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/iotpos.dir/qrc_mpAPI_AccountInfo.i"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Proyecto/epos/iotpos/build/src/qrc_mpAPI_AccountInfo.cxx > CMakeFiles/iotpos.dir/qrc_mpAPI_AccountInfo.i
+
+src/CMakeFiles/iotpos.dir/qrc_mpAPI_AccountInfo.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/iotpos.dir/qrc_mpAPI_AccountInfo.s"
+	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Proyecto/epos/iotpos/build/src/qrc_mpAPI_AccountInfo.cxx -o CMakeFiles/iotpos.dir/qrc_mpAPI_AccountInfo.s
 
 # Object files for target iotpos
 iotpos_OBJECTS = \
@@ -630,7 +804,20 @@ iotpos_OBJECTS = \
 "CMakeFiles/iotpos.dir/nouns/BasketPriceSummary.o" \
 "CMakeFiles/iotpos.dir/nouns/User.o" \
 "CMakeFiles/iotpos.dir/nouns/Currency.o" \
-"CMakeFiles/iotpos.dir/settings.o"
+"CMakeFiles/iotpos.dir/settings.o" \
+"CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonArray.o" \
+"CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonDocument.o" \
+"CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonObject.o" \
+"CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParseError.o" \
+"CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParser.o" \
+"CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValue.o" \
+"CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValueRef.o" \
+"CMakeFiles/iotpos.dir/mercadopago/mpAPI_Integration.o" \
+"CMakeFiles/iotpos.dir/mercadopago/mpAPI_AccountInfo.o" \
+"CMakeFiles/iotpos.dir/mercadopago/mpDedicated_Server.o" \
+"CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJob.o" \
+"CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJobManager.o" \
+"CMakeFiles/iotpos.dir/qrc_mpAPI_AccountInfo.o"
 
 # External object files for target iotpos
 iotpos_EXTERNAL_OBJECTS =
@@ -671,6 +858,19 @@ src/iotpos: src/CMakeFiles/iotpos.dir/nouns/BasketPriceSummary.o
 src/iotpos: src/CMakeFiles/iotpos.dir/nouns/User.o
 src/iotpos: src/CMakeFiles/iotpos.dir/nouns/Currency.o
 src/iotpos: src/CMakeFiles/iotpos.dir/settings.o
+src/iotpos: src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonArray.o
+src/iotpos: src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonDocument.o
+src/iotpos: src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonObject.o
+src/iotpos: src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParseError.o
+src/iotpos: src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParser.o
+src/iotpos: src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValue.o
+src/iotpos: src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValueRef.o
+src/iotpos: src/CMakeFiles/iotpos.dir/mercadopago/mpAPI_Integration.o
+src/iotpos: src/CMakeFiles/iotpos.dir/mercadopago/mpAPI_AccountInfo.o
+src/iotpos: src/CMakeFiles/iotpos.dir/mercadopago/mpDedicated_Server.o
+src/iotpos: src/CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJob.o
+src/iotpos: src/CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJobManager.o
+src/iotpos: src/CMakeFiles/iotpos.dir/qrc_mpAPI_AccountInfo.o
 src/iotpos: src/CMakeFiles/iotpos.dir/build.make
 src/iotpos: /usr/lib/libkio.so.5.14.38
 src/iotpos: /usr/lib/arm-linux-gnueabihf/libQtSql.so
@@ -683,7 +883,7 @@ src/iotpos: /usr/lib/arm-linux-gnueabihf/libQtGui.so
 src/iotpos: /usr/lib/arm-linux-gnueabihf/libQtNetwork.so
 src/iotpos: /usr/lib/arm-linux-gnueabihf/libQtXml.so
 src/iotpos: src/CMakeFiles/iotpos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Linking CXX executable iotpos"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/Proyecto/epos/iotpos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Linking CXX executable iotpos"
 	cd /home/pi/Proyecto/epos/iotpos/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/iotpos.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/pi/Proyecto/epos/iotpos/build/src && /usr/bin/cmake -D_filename=/home/pi/Proyecto/epos/iotpos/build/src/iotpos.shell -D_library_path_variable=LD_LIBRARY_PATH -D_ld_library_path="/home/pi/Proyecto/epos/iotpos/build/lib/./:/usr/lib:/usr/lib:/usr/lib/arm-linux-gnueabihf" -D_executable=/home/pi/Proyecto/epos/iotpos/build/src/iotpos -P /usr/share/kde4/apps/cmake/modules/kde4_exec_via_sh.cmake
 
@@ -713,6 +913,7 @@ src/CMakeFiles/iotpos.dir/depend: src/ui_datoscliente.h
 src/CMakeFiles/iotpos.dir/depend: src/ui_editclient_widget.h
 src/CMakeFiles/iotpos.dir/depend: src/settings.h
 src/CMakeFiles/iotpos.dir/depend: src/settings.cpp
+src/CMakeFiles/iotpos.dir/depend: src/qrc_mpAPI_AccountInfo.cxx
 	cd /home/pi/Proyecto/epos/iotpos/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Proyecto/epos/iotpos /home/pi/Proyecto/epos/iotpos/src /home/pi/Proyecto/epos/iotpos/build /home/pi/Proyecto/epos/iotpos/build/src /home/pi/Proyecto/epos/iotpos/build/src/CMakeFiles/iotpos.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/iotpos.dir/depend
 

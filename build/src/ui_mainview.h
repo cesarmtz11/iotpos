@@ -69,17 +69,17 @@ public:
     QHBoxLayout *hboxLayout1;
     QFrame *frame;
     QGridLayout *gridLayout_2;
-    QSplitter *splitterGrid;
-    QFrame *frameGridView;
-    QGridLayout *gridLayout;
-    QListView *listView;
-    QTableWidget *tableWidget;
     QWidget *widget_3;
     QHBoxLayout *horizontalLayout_10;
     QRadioButton *rbFilterByDesc;
     MibitLineEdit *editItemCode;
     QRadioButton *rbFilterByCategory;
     QComboBox *comboFilterByCategory;
+    QSplitter *splitterGrid;
+    QFrame *frameGridView;
+    QGridLayout *gridLayout;
+    QListView *listView;
+    QTableWidget *tableWidget;
     QStackedWidget *stackedWidget_3;
     QWidget *page_10;
     QWidget *horizontalLayoutWidget;
@@ -116,6 +116,10 @@ public:
     QWidget *page_4;
     QVBoxLayout *vboxLayout1;
     QHBoxLayout *horizontalLayout_7;
+    QWidget *verticalLayoutWidget;
+    QVBoxLayout *page_cancelBtn;
+    QHBoxLayout *horizontal_cancelBtn;
+    QPushButton *btnCancelPay;
     QWidget *page_6;
     QWidget *horizontalLayoutWidget_3;
     QHBoxLayout *horizontalLayout_13;
@@ -254,8 +258,8 @@ public:
         mainview->setMaximumSize(QSize(16777215, 16777215));
         hboxLayout = new QHBoxLayout(mainview);
         hboxLayout->setSpacing(0);
-        hboxLayout->setContentsMargins(0, 0, 0, 0);
         hboxLayout->setObjectName(QString::fromUtf8("hboxLayout"));
+        hboxLayout->setContentsMargins(0, 0, 0, 0);
         splitter = new QSplitter(mainview);
         splitter->setObjectName(QString::fromUtf8("splitter"));
         sizePolicy.setHeightForWidth(splitter->sizePolicy().hasHeightForWidth());
@@ -276,8 +280,8 @@ public:
         frameLeft->setFrameShadow(QFrame::Plain);
         vboxLayout = new QVBoxLayout(frameLeft);
         vboxLayout->setSpacing(0);
-        vboxLayout->setContentsMargins(0, 0, 0, 0);
         vboxLayout->setObjectName(QString::fromUtf8("vboxLayout"));
+        vboxLayout->setContentsMargins(0, 0, 0, 0);
         groupDetails = new QGroupBox(frameLeft);
         groupDetails->setObjectName(QString::fromUtf8("groupDetails"));
         QSizePolicy sizePolicy2(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
@@ -292,8 +296,8 @@ public:
         groupDetails->setAlignment(Qt::AlignHCenter|Qt::AlignTop);
         _2 = new QVBoxLayout(groupDetails);
         _2->setSpacing(0);
-        _2->setContentsMargins(0, 0, 0, 0);
         _2->setObjectName(QString::fromUtf8("_2"));
+        _2->setContentsMargins(0, 0, 0, 0);
         labelDetailDesc = new QLabel(groupDetails);
         labelDetailDesc->setObjectName(QString::fromUtf8("labelDetailDesc"));
         QSizePolicy sizePolicy3(QSizePolicy::Minimum, QSizePolicy::Preferred);
@@ -508,9 +512,9 @@ public:
         page_Main->setSizePolicy(sizePolicy);
         hboxLayout1 = new QHBoxLayout(page_Main);
         hboxLayout1->setSpacing(0);
-        hboxLayout1->setContentsMargins(0, 0, 0, 0);
         hboxLayout1->setObjectName(QString::fromUtf8("hboxLayout1"));
         hboxLayout1->setSizeConstraint(QLayout::SetNoConstraint);
+        hboxLayout1->setContentsMargins(0, 0, 0, 0);
         frame = new QFrame(page_Main);
         frame->setObjectName(QString::fromUtf8("frame"));
         sizePolicy.setHeightForWidth(frame->sizePolicy().hasHeightForWidth());
@@ -525,13 +529,63 @@ public:
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         gridLayout_2->setSizeConstraint(QLayout::SetDefaultConstraint);
         gridLayout_2->setContentsMargins(0, 2, 0, 0);
-        splitterGrid = new QSplitter(frame);
-        splitterGrid->setObjectName(QString::fromUtf8("splitterGrid"));
-        QSizePolicy sizePolicy7(QSizePolicy::Expanding, QSizePolicy::MinimumExpanding);
+        widget_3 = new QWidget(frame);
+        widget_3->setObjectName(QString::fromUtf8("widget_3"));
+        QSizePolicy sizePolicy7(QSizePolicy::Expanding, QSizePolicy::Preferred);
         sizePolicy7.setHorizontalStretch(0);
         sizePolicy7.setVerticalStretch(0);
-        sizePolicy7.setHeightForWidth(splitterGrid->sizePolicy().hasHeightForWidth());
-        splitterGrid->setSizePolicy(sizePolicy7);
+        sizePolicy7.setHeightForWidth(widget_3->sizePolicy().hasHeightForWidth());
+        widget_3->setSizePolicy(sizePolicy7);
+        widget_3->setMinimumSize(QSize(0, 30));
+        horizontalLayout_10 = new QHBoxLayout(widget_3);
+        horizontalLayout_10->setSpacing(0);
+        horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
+        horizontalLayout_10->setContentsMargins(0, 0, 0, 0);
+        rbFilterByDesc = new QRadioButton(widget_3);
+        rbFilterByDesc->setObjectName(QString::fromUtf8("rbFilterByDesc"));
+
+        horizontalLayout_10->addWidget(rbFilterByDesc);
+
+        editItemCode = new MibitLineEdit(widget_3);
+        editItemCode->setObjectName(QString::fromUtf8("editItemCode"));
+        QSizePolicy sizePolicy8(QSizePolicy::Expanding, QSizePolicy::Fixed);
+        sizePolicy8.setHorizontalStretch(0);
+        sizePolicy8.setVerticalStretch(0);
+        sizePolicy8.setHeightForWidth(editItemCode->sizePolicy().hasHeightForWidth());
+        editItemCode->setSizePolicy(sizePolicy8);
+        editItemCode->setMinimumSize(QSize(0, 0));
+        editItemCode->setMaximumSize(QSize(16777215, 16777215));
+        editItemCode->setFrame(true);
+
+        horizontalLayout_10->addWidget(editItemCode);
+
+        rbFilterByCategory = new QRadioButton(widget_3);
+        rbFilterByCategory->setObjectName(QString::fromUtf8("rbFilterByCategory"));
+
+        horizontalLayout_10->addWidget(rbFilterByCategory);
+
+        comboFilterByCategory = new QComboBox(widget_3);
+        comboFilterByCategory->setObjectName(QString::fromUtf8("comboFilterByCategory"));
+        sizePolicy4.setHeightForWidth(comboFilterByCategory->sizePolicy().hasHeightForWidth());
+        comboFilterByCategory->setSizePolicy(sizePolicy4);
+        comboFilterByCategory->setMaximumSize(QSize(16777215, 16777215));
+
+        horizontalLayout_10->addWidget(comboFilterByCategory);
+
+        comboFilterByCategory->raise();
+        rbFilterByDesc->raise();
+        rbFilterByCategory->raise();
+        editItemCode->raise();
+
+        gridLayout_2->addWidget(widget_3, 0, 0, 1, 1);
+
+        splitterGrid = new QSplitter(frame);
+        splitterGrid->setObjectName(QString::fromUtf8("splitterGrid"));
+        QSizePolicy sizePolicy9(QSizePolicy::Expanding, QSizePolicy::MinimumExpanding);
+        sizePolicy9.setHorizontalStretch(0);
+        sizePolicy9.setVerticalStretch(0);
+        sizePolicy9.setHeightForWidth(splitterGrid->sizePolicy().hasHeightForWidth());
+        splitterGrid->setSizePolicy(sizePolicy9);
         splitterGrid->setMinimumSize(QSize(0, 180));
         splitterGrid->setMaximumSize(QSize(16777215, 16777215));
         splitterGrid->setOrientation(Qt::Vertical);
@@ -545,17 +599,17 @@ public:
         frameGridView->setFrameShape(QFrame::NoFrame);
         frameGridView->setFrameShadow(QFrame::Raised);
         gridLayout = new QGridLayout(frameGridView);
-        gridLayout->setContentsMargins(2, 2, 2, 2);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setHorizontalSpacing(2);
         gridLayout->setVerticalSpacing(0);
+        gridLayout->setContentsMargins(2, 2, 2, 2);
         listView = new QListView(frameGridView);
         listView->setObjectName(QString::fromUtf8("listView"));
-        QSizePolicy sizePolicy8(QSizePolicy::Expanding, QSizePolicy::Minimum);
-        sizePolicy8.setHorizontalStretch(0);
-        sizePolicy8.setVerticalStretch(0);
-        sizePolicy8.setHeightForWidth(listView->sizePolicy().hasHeightForWidth());
-        listView->setSizePolicy(sizePolicy8);
+        QSizePolicy sizePolicy10(QSizePolicy::Expanding, QSizePolicy::Minimum);
+        sizePolicy10.setHorizontalStretch(0);
+        sizePolicy10.setVerticalStretch(0);
+        sizePolicy10.setHeightForWidth(listView->sizePolicy().hasHeightForWidth());
+        listView->setSizePolicy(sizePolicy10);
         listView->setMinimumSize(QSize(0, 110));
         listView->setMaximumSize(QSize(16777215, 16777215));
         listView->setLayoutDirection(Qt::LeftToRight);
@@ -589,8 +643,8 @@ public:
         tableWidget->setHorizontalHeaderItem(6, __qtablewidgetitem6);
         tableWidget->setObjectName(QString::fromUtf8("tableWidget"));
         tableWidget->setEnabled(true);
-        sizePolicy7.setHeightForWidth(tableWidget->sizePolicy().hasHeightForWidth());
-        tableWidget->setSizePolicy(sizePolicy7);
+        sizePolicy9.setHeightForWidth(tableWidget->sizePolicy().hasHeightForWidth());
+        tableWidget->setSizePolicy(sizePolicy9);
         tableWidget->setMinimumSize(QSize(0, 56));
         tableWidget->setMaximumSize(QSize(16777215, 16777215));
         QFont font5;
@@ -618,56 +672,6 @@ public:
         tableWidget->verticalHeader()->setVisible(false);
 
         gridLayout_2->addWidget(splitterGrid, 1, 0, 1, 1);
-
-        widget_3 = new QWidget(frame);
-        widget_3->setObjectName(QString::fromUtf8("widget_3"));
-        QSizePolicy sizePolicy9(QSizePolicy::Expanding, QSizePolicy::Preferred);
-        sizePolicy9.setHorizontalStretch(0);
-        sizePolicy9.setVerticalStretch(0);
-        sizePolicy9.setHeightForWidth(widget_3->sizePolicy().hasHeightForWidth());
-        widget_3->setSizePolicy(sizePolicy9);
-        widget_3->setMinimumSize(QSize(0, 30));
-        horizontalLayout_10 = new QHBoxLayout(widget_3);
-        horizontalLayout_10->setSpacing(0);
-        horizontalLayout_10->setContentsMargins(0, 0, 0, 0);
-        horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
-        rbFilterByDesc = new QRadioButton(widget_3);
-        rbFilterByDesc->setObjectName(QString::fromUtf8("rbFilterByDesc"));
-
-        horizontalLayout_10->addWidget(rbFilterByDesc);
-
-        editItemCode = new MibitLineEdit(widget_3);
-        editItemCode->setObjectName(QString::fromUtf8("editItemCode"));
-        QSizePolicy sizePolicy10(QSizePolicy::Expanding, QSizePolicy::Fixed);
-        sizePolicy10.setHorizontalStretch(0);
-        sizePolicy10.setVerticalStretch(0);
-        sizePolicy10.setHeightForWidth(editItemCode->sizePolicy().hasHeightForWidth());
-        editItemCode->setSizePolicy(sizePolicy10);
-        editItemCode->setMinimumSize(QSize(0, 0));
-        editItemCode->setMaximumSize(QSize(16777215, 16777215));
-        editItemCode->setFrame(true);
-
-        horizontalLayout_10->addWidget(editItemCode);
-
-        rbFilterByCategory = new QRadioButton(widget_3);
-        rbFilterByCategory->setObjectName(QString::fromUtf8("rbFilterByCategory"));
-
-        horizontalLayout_10->addWidget(rbFilterByCategory);
-
-        comboFilterByCategory = new QComboBox(widget_3);
-        comboFilterByCategory->setObjectName(QString::fromUtf8("comboFilterByCategory"));
-        sizePolicy4.setHeightForWidth(comboFilterByCategory->sizePolicy().hasHeightForWidth());
-        comboFilterByCategory->setSizePolicy(sizePolicy4);
-        comboFilterByCategory->setMaximumSize(QSize(16777215, 16777215));
-
-        horizontalLayout_10->addWidget(comboFilterByCategory);
-
-        comboFilterByCategory->raise();
-        rbFilterByDesc->raise();
-        rbFilterByCategory->raise();
-        editItemCode->raise();
-
-        gridLayout_2->addWidget(widget_3, 0, 0, 1, 1);
 
         stackedWidget_3 = new QStackedWidget(frame);
         stackedWidget_3->setObjectName(QString::fromUtf8("stackedWidget_3"));
@@ -850,8 +854,8 @@ public:
 
         checkOwnCredit = new QRadioButton(layoutWidget1);
         checkOwnCredit->setObjectName(QString::fromUtf8("checkOwnCredit"));
-        sizePolicy10.setHeightForWidth(checkOwnCredit->sizePolicy().hasHeightForWidth());
-        checkOwnCredit->setSizePolicy(sizePolicy10);
+        sizePolicy8.setHeightForWidth(checkOwnCredit->sizePolicy().hasHeightForWidth());
+        checkOwnCredit->setSizePolicy(sizePolicy8);
         checkOwnCredit->setMaximumSize(QSize(160, 16777215));
 
         horizontalLayout_4->addWidget(checkOwnCredit);
@@ -926,8 +930,8 @@ public:
         page_4 = new QWidget();
         page_4->setObjectName(QString::fromUtf8("page_4"));
         vboxLayout1 = new QVBoxLayout(page_4);
-        vboxLayout1->setContentsMargins(4, 4, 4, 4);
         vboxLayout1->setObjectName(QString::fromUtf8("vboxLayout1"));
+        vboxLayout1->setContentsMargins(4, 4, 4, 4);
         horizontalLayout_7 = new QHBoxLayout();
         horizontalLayout_7->setSpacing(2);
         horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
@@ -936,10 +940,26 @@ public:
         vboxLayout1->addLayout(horizontalLayout_7);
 
         stackedWidget->addWidget(page_4);
+        verticalLayoutWidget = new QWidget(page_7);
+        verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
+        verticalLayoutWidget->setGeometry(QRect(540, 0, 111, 71));
+        page_cancelBtn = new QVBoxLayout(verticalLayoutWidget);
+        page_cancelBtn->setSpacing(0);
+        page_cancelBtn->setObjectName(QString::fromUtf8("page_cancelBtn"));
+        page_cancelBtn->setContentsMargins(0, 2, 0, 5);
+        horizontal_cancelBtn = new QHBoxLayout();
+        horizontal_cancelBtn->setObjectName(QString::fromUtf8("horizontal_cancelBtn"));
+        btnCancelPay = new QPushButton(verticalLayoutWidget);
+        btnCancelPay->setObjectName(QString::fromUtf8("btnCancelPay"));
+        btnCancelPay->setEnabled(true);
+        btnCancelPay->setMaximumSize(QSize(107, 65));
+
+        horizontal_cancelBtn->addWidget(btnCancelPay);
+
+
+        page_cancelBtn->addLayout(horizontal_cancelBtn);
+
         stackedWidget_3->addWidget(page_7);
-        layoutWidget->raise();
-        stackedWidget->raise();
-        labelCashAmount->raise();
         page_6 = new QWidget();
         page_6->setObjectName(QString::fromUtf8("page_6"));
         horizontalLayoutWidget_3 = new QWidget(page_6);
@@ -1009,8 +1029,8 @@ public:
         groupPayment = new QGroupBox(page_8);
         groupPayment->setObjectName(QString::fromUtf8("groupPayment"));
         groupPayment->setGeometry(QRect(20, -10, 380, 65));
-        sizePolicy8.setHeightForWidth(groupPayment->sizePolicy().hasHeightForWidth());
-        groupPayment->setSizePolicy(sizePolicy8);
+        sizePolicy10.setHeightForWidth(groupPayment->sizePolicy().hasHeightForWidth());
+        groupPayment->setSizePolicy(sizePolicy10);
         groupPayment->setMinimumSize(QSize(380, 65));
         groupPayment->setMaximumSize(QSize(16777215, 115));
         groupPayment->setAutoFillBackground(false);
@@ -1018,8 +1038,8 @@ public:
         groupPayment->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
         verticalLayout_10 = new QVBoxLayout(groupPayment);
         verticalLayout_10->setSpacing(0);
-        verticalLayout_10->setContentsMargins(0, 0, 0, 0);
         verticalLayout_10->setObjectName(QString::fromUtf8("verticalLayout_10"));
+        verticalLayout_10->setContentsMargins(0, 0, 0, 0);
         editFilterByDesc = new QLineEdit(groupPayment);
         editFilterByDesc->setObjectName(QString::fromUtf8("editFilterByDesc"));
 
@@ -1066,8 +1086,8 @@ public:
         pageIntro->setSizePolicy(sizePolicy3);
         vboxLayout2 = new QVBoxLayout(pageIntro);
         vboxLayout2->setSpacing(2);
-        vboxLayout2->setContentsMargins(2, 2, 2, 2);
         vboxLayout2->setObjectName(QString::fromUtf8("vboxLayout2"));
+        vboxLayout2->setContentsMargins(2, 2, 2, 2);
         groupWidgets->addWidget(pageIntro);
         pageEnterCode = new QWidget();
         pageEnterCode->setObjectName(QString::fromUtf8("pageEnterCode"));
@@ -1076,8 +1096,8 @@ public:
         pageSearchItem = new QWidget();
         pageSearchItem->setObjectName(QString::fromUtf8("pageSearchItem"));
         vboxLayout3 = new QVBoxLayout(pageSearchItem);
-        vboxLayout3->setContentsMargins(2, 2, 2, 2);
         vboxLayout3->setObjectName(QString::fromUtf8("vboxLayout3"));
+        vboxLayout3->setContentsMargins(2, 2, 2, 2);
         lblSaleTaxesPre = new QLabel(pageSearchItem);
         lblSaleTaxesPre->setObjectName(QString::fromUtf8("lblSaleTaxesPre"));
         lblSaleTaxesPre->setScaledContents(true);
@@ -1123,7 +1143,7 @@ public:
         plotSales->setMaximumSize(QSize(360, 80));
         plotSales->setLayoutDirection(Qt::RightToLeft);
         plotSales->setLineWidth(0);
-        plotSales->setBackgroundColor(QColor(0, 51, 153));
+        plotSales->setProperty("backgroundColor", QVariant(QColor(0, 51, 153)));
         groupSaleDate = new QGroupBox(plotSales);
         groupSaleDate->setObjectName(QString::fromUtf8("groupSaleDate"));
         groupSaleDate->setGeometry(QRect(60, 0, 342, 62));
@@ -1530,8 +1550,8 @@ public:
         resumeWidget->setMinimumSize(QSize(580, 380));
         verticalLayout_7 = new QVBoxLayout(resumeWidget);
         verticalLayout_7->setSpacing(4);
-        verticalLayout_7->setContentsMargins(4, 4, 4, 4);
         verticalLayout_7->setObjectName(QString::fromUtf8("verticalLayout_7"));
+        verticalLayout_7->setContentsMargins(4, 4, 4, 4);
         lblTitle = new QLabel(resumeWidget);
         lblTitle->setObjectName(QString::fromUtf8("lblTitle"));
         lblTitle->setWordWrap(true);
@@ -1554,8 +1574,8 @@ public:
         groupBox_2->setMinimumSize(QSize(0, 100));
         verticalLayout_6 = new QVBoxLayout(groupBox_2);
         verticalLayout_6->setSpacing(4);
-        verticalLayout_6->setContentsMargins(4, 4, 4, 4);
         verticalLayout_6->setObjectName(QString::fromUtf8("verticalLayout_6"));
+        verticalLayout_6->setContentsMargins(4, 4, 4, 4);
         contentTable = new QTableWidget(groupBox_2);
         if (contentTable->columnCount() < 2)
             contentTable->setColumnCount(2);
@@ -1609,8 +1629,8 @@ public:
 
         editClientIdForCredit = new QLineEdit(widget_2);
         editClientIdForCredit->setObjectName(QString::fromUtf8("editClientIdForCredit"));
-        sizePolicy10.setHeightForWidth(editClientIdForCredit->sizePolicy().hasHeightForWidth());
-        editClientIdForCredit->setSizePolicy(sizePolicy10);
+        sizePolicy8.setHeightForWidth(editClientIdForCredit->sizePolicy().hasHeightForWidth());
+        editClientIdForCredit->setSizePolicy(sizePolicy8);
         editClientIdForCredit->setMaximumSize(QSize(172, 16777215));
 
         verticalLayout_9->addWidget(editClientIdForCredit);
@@ -1665,8 +1685,8 @@ public:
 
         editCreditTendered = new MibitLineEdit(creditPaymentWidget);
         editCreditTendered->setObjectName(QString::fromUtf8("editCreditTendered"));
-        sizePolicy10.setHeightForWidth(editCreditTendered->sizePolicy().hasHeightForWidth());
-        editCreditTendered->setSizePolicy(sizePolicy10);
+        sizePolicy8.setHeightForWidth(editCreditTendered->sizePolicy().hasHeightForWidth());
+        editCreditTendered->setSizePolicy(sizePolicy8);
         editCreditTendered->setMinimumSize(QSize(60, 30));
         editCreditTendered->setMaximumSize(QSize(92, 16777215));
         editCreditTendered->setFont(font9);
@@ -1755,6 +1775,8 @@ public:
         labelDetailTax1->setText(tr2i18n("label", 0));
         labelDetailPhoto->setText(QString());
         labelBanner->setText(QString());
+        rbFilterByDesc->setText(QString());
+        rbFilterByCategory->setText(tr2i18n("Category:", 0));
         QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
         ___qtablewidgetitem->setText(tr2i18n("Code", 0));
         QTableWidgetItem *___qtablewidgetitem1 = tableWidget->horizontalHeaderItem(1);
@@ -1769,8 +1791,6 @@ public:
         ___qtablewidgetitem5->setText(tr2i18n("Discount", 0));
         QTableWidgetItem *___qtablewidgetitem6 = tableWidget->horizontalHeaderItem(6);
         ___qtablewidgetitem6->setText(tr2i18n("Total", 0));
-        rbFilterByDesc->setText(QString());
-        rbFilterByCategory->setText(tr2i18n("Category:", 0));
         labelTotalpre->setText(tr2i18n("Total:", 0));
         labelTotal->setText(QString());
         labelTotalDiscountpre->setText(tr2i18n("Discount:", 0));
@@ -1786,6 +1806,7 @@ public:
         editAmount->setInputMask(QString());
         editAmount->setText(QString());
         btnProcessPayment->setText(tr2i18n("Process payment", 0));
+        btnCancelPay->setText(tr2i18n("Cancel", 0));
         labelChangepre->setText(tr2i18n("Change:", 0));
         labelChange->setText(QString());
         rbFilterByPopularity->setText(tr2i18n("Best sellers", 0));

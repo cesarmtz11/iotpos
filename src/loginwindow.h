@@ -24,7 +24,7 @@
 #include <QDialog>
 #include <QHash>
 #include <QtSql>
-
+#include "qobject.h"
 #include "structs.h"
 
 class QLineEdit;
@@ -36,6 +36,7 @@ class QVBoxLayout;
 class QGridLayout;
 class QSpacerItem;
 class QSqlDatabase;
+class QObject;
 
 /** This class is for asking login and password.
  *  Derived from QDialog, but to use full screen and no borders.
@@ -102,7 +103,6 @@ class LoginWindow : public QDialog
     void reloadUsers();
   private:
     int  userRole;
-    
   protected slots:
     void acceptIt();
     void setQuit();

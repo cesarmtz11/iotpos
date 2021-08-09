@@ -513,6 +513,186 @@ main.s:
 .PHONY : main.s
 
 # target to build an object file
+mercadopago/QJsonSource/QJsonArray.o:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonArray.o
+.PHONY : mercadopago/QJsonSource/QJsonArray.o
+
+# target to preprocess a source file
+mercadopago/QJsonSource/QJsonArray.i:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonArray.i
+.PHONY : mercadopago/QJsonSource/QJsonArray.i
+
+# target to generate assembly for a file
+mercadopago/QJsonSource/QJsonArray.s:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonArray.s
+.PHONY : mercadopago/QJsonSource/QJsonArray.s
+
+# target to build an object file
+mercadopago/QJsonSource/QJsonDocument.o:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonDocument.o
+.PHONY : mercadopago/QJsonSource/QJsonDocument.o
+
+# target to preprocess a source file
+mercadopago/QJsonSource/QJsonDocument.i:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonDocument.i
+.PHONY : mercadopago/QJsonSource/QJsonDocument.i
+
+# target to generate assembly for a file
+mercadopago/QJsonSource/QJsonDocument.s:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonDocument.s
+.PHONY : mercadopago/QJsonSource/QJsonDocument.s
+
+# target to build an object file
+mercadopago/QJsonSource/QJsonObject.o:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonObject.o
+.PHONY : mercadopago/QJsonSource/QJsonObject.o
+
+# target to preprocess a source file
+mercadopago/QJsonSource/QJsonObject.i:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonObject.i
+.PHONY : mercadopago/QJsonSource/QJsonObject.i
+
+# target to generate assembly for a file
+mercadopago/QJsonSource/QJsonObject.s:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonObject.s
+.PHONY : mercadopago/QJsonSource/QJsonObject.s
+
+# target to build an object file
+mercadopago/QJsonSource/QJsonParseError.o:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParseError.o
+.PHONY : mercadopago/QJsonSource/QJsonParseError.o
+
+# target to preprocess a source file
+mercadopago/QJsonSource/QJsonParseError.i:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParseError.i
+.PHONY : mercadopago/QJsonSource/QJsonParseError.i
+
+# target to generate assembly for a file
+mercadopago/QJsonSource/QJsonParseError.s:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParseError.s
+.PHONY : mercadopago/QJsonSource/QJsonParseError.s
+
+# target to build an object file
+mercadopago/QJsonSource/QJsonParser.o:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParser.o
+.PHONY : mercadopago/QJsonSource/QJsonParser.o
+
+# target to preprocess a source file
+mercadopago/QJsonSource/QJsonParser.i:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParser.i
+.PHONY : mercadopago/QJsonSource/QJsonParser.i
+
+# target to generate assembly for a file
+mercadopago/QJsonSource/QJsonParser.s:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonParser.s
+.PHONY : mercadopago/QJsonSource/QJsonParser.s
+
+# target to build an object file
+mercadopago/QJsonSource/QJsonValue.o:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValue.o
+.PHONY : mercadopago/QJsonSource/QJsonValue.o
+
+# target to preprocess a source file
+mercadopago/QJsonSource/QJsonValue.i:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValue.i
+.PHONY : mercadopago/QJsonSource/QJsonValue.i
+
+# target to generate assembly for a file
+mercadopago/QJsonSource/QJsonValue.s:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValue.s
+.PHONY : mercadopago/QJsonSource/QJsonValue.s
+
+# target to build an object file
+mercadopago/QJsonSource/QJsonValueRef.o:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValueRef.o
+.PHONY : mercadopago/QJsonSource/QJsonValueRef.o
+
+# target to preprocess a source file
+mercadopago/QJsonSource/QJsonValueRef.i:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValueRef.i
+.PHONY : mercadopago/QJsonSource/QJsonValueRef.i
+
+# target to generate assembly for a file
+mercadopago/QJsonSource/QJsonValueRef.s:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QJsonSource/QJsonValueRef.s
+.PHONY : mercadopago/QJsonSource/QJsonValueRef.s
+
+# target to build an object file
+mercadopago/QServerThreadProcess/qJob.o:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJob.o
+.PHONY : mercadopago/QServerThreadProcess/qJob.o
+
+# target to preprocess a source file
+mercadopago/QServerThreadProcess/qJob.i:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJob.i
+.PHONY : mercadopago/QServerThreadProcess/qJob.i
+
+# target to generate assembly for a file
+mercadopago/QServerThreadProcess/qJob.s:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJob.s
+.PHONY : mercadopago/QServerThreadProcess/qJob.s
+
+# target to build an object file
+mercadopago/QServerThreadProcess/qJobManager.o:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJobManager.o
+.PHONY : mercadopago/QServerThreadProcess/qJobManager.o
+
+# target to preprocess a source file
+mercadopago/QServerThreadProcess/qJobManager.i:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJobManager.i
+.PHONY : mercadopago/QServerThreadProcess/qJobManager.i
+
+# target to generate assembly for a file
+mercadopago/QServerThreadProcess/qJobManager.s:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/QServerThreadProcess/qJobManager.s
+.PHONY : mercadopago/QServerThreadProcess/qJobManager.s
+
+# target to build an object file
+mercadopago/mpAPI_AccountInfo.o:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/mpAPI_AccountInfo.o
+.PHONY : mercadopago/mpAPI_AccountInfo.o
+
+# target to preprocess a source file
+mercadopago/mpAPI_AccountInfo.i:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/mpAPI_AccountInfo.i
+.PHONY : mercadopago/mpAPI_AccountInfo.i
+
+# target to generate assembly for a file
+mercadopago/mpAPI_AccountInfo.s:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/mpAPI_AccountInfo.s
+.PHONY : mercadopago/mpAPI_AccountInfo.s
+
+# target to build an object file
+mercadopago/mpAPI_Integration.o:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/mpAPI_Integration.o
+.PHONY : mercadopago/mpAPI_Integration.o
+
+# target to preprocess a source file
+mercadopago/mpAPI_Integration.i:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/mpAPI_Integration.i
+.PHONY : mercadopago/mpAPI_Integration.i
+
+# target to generate assembly for a file
+mercadopago/mpAPI_Integration.s:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/mpAPI_Integration.s
+.PHONY : mercadopago/mpAPI_Integration.s
+
+# target to build an object file
+mercadopago/mpDedicated_Server.o:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/mpDedicated_Server.o
+.PHONY : mercadopago/mpDedicated_Server.o
+
+# target to preprocess a source file
+mercadopago/mpDedicated_Server.i:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/mpDedicated_Server.i
+.PHONY : mercadopago/mpDedicated_Server.i
+
+# target to generate assembly for a file
+mercadopago/mpDedicated_Server.s:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/mercadopago/mpDedicated_Server.s
+.PHONY : mercadopago/mpDedicated_Server.s
+
+# target to build an object file
 misc.o:
 	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/misc.o
 .PHONY : misc.o
@@ -616,6 +796,21 @@ productdelegate.i:
 productdelegate.s:
 	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/productdelegate.s
 .PHONY : productdelegate.s
+
+# target to build an object file
+qrc_mpAPI_AccountInfo.o:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/qrc_mpAPI_AccountInfo.o
+.PHONY : qrc_mpAPI_AccountInfo.o
+
+# target to preprocess a source file
+qrc_mpAPI_AccountInfo.i:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/qrc_mpAPI_AccountInfo.i
+.PHONY : qrc_mpAPI_AccountInfo.i
+
+# target to generate assembly for a file
+qrc_mpAPI_AccountInfo.s:
+	cd /home/pi/Proyecto/epos/iotpos/build && $(MAKE) -f src/CMakeFiles/iotpos.dir/build.make src/CMakeFiles/iotpos.dir/qrc_mpAPI_AccountInfo.s
+.PHONY : qrc_mpAPI_AccountInfo.s
 
 # target to build an object file
 reservations.o:
@@ -828,6 +1023,42 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mercadopago/QJsonSource/QJsonArray.o"
+	@echo "... mercadopago/QJsonSource/QJsonArray.i"
+	@echo "... mercadopago/QJsonSource/QJsonArray.s"
+	@echo "... mercadopago/QJsonSource/QJsonDocument.o"
+	@echo "... mercadopago/QJsonSource/QJsonDocument.i"
+	@echo "... mercadopago/QJsonSource/QJsonDocument.s"
+	@echo "... mercadopago/QJsonSource/QJsonObject.o"
+	@echo "... mercadopago/QJsonSource/QJsonObject.i"
+	@echo "... mercadopago/QJsonSource/QJsonObject.s"
+	@echo "... mercadopago/QJsonSource/QJsonParseError.o"
+	@echo "... mercadopago/QJsonSource/QJsonParseError.i"
+	@echo "... mercadopago/QJsonSource/QJsonParseError.s"
+	@echo "... mercadopago/QJsonSource/QJsonParser.o"
+	@echo "... mercadopago/QJsonSource/QJsonParser.i"
+	@echo "... mercadopago/QJsonSource/QJsonParser.s"
+	@echo "... mercadopago/QJsonSource/QJsonValue.o"
+	@echo "... mercadopago/QJsonSource/QJsonValue.i"
+	@echo "... mercadopago/QJsonSource/QJsonValue.s"
+	@echo "... mercadopago/QJsonSource/QJsonValueRef.o"
+	@echo "... mercadopago/QJsonSource/QJsonValueRef.i"
+	@echo "... mercadopago/QJsonSource/QJsonValueRef.s"
+	@echo "... mercadopago/QServerThreadProcess/qJob.o"
+	@echo "... mercadopago/QServerThreadProcess/qJob.i"
+	@echo "... mercadopago/QServerThreadProcess/qJob.s"
+	@echo "... mercadopago/QServerThreadProcess/qJobManager.o"
+	@echo "... mercadopago/QServerThreadProcess/qJobManager.i"
+	@echo "... mercadopago/QServerThreadProcess/qJobManager.s"
+	@echo "... mercadopago/mpAPI_AccountInfo.o"
+	@echo "... mercadopago/mpAPI_AccountInfo.i"
+	@echo "... mercadopago/mpAPI_AccountInfo.s"
+	@echo "... mercadopago/mpAPI_Integration.o"
+	@echo "... mercadopago/mpAPI_Integration.i"
+	@echo "... mercadopago/mpAPI_Integration.s"
+	@echo "... mercadopago/mpDedicated_Server.o"
+	@echo "... mercadopago/mpDedicated_Server.i"
+	@echo "... mercadopago/mpDedicated_Server.s"
 	@echo "... misc.o"
 	@echo "... misc.i"
 	@echo "... misc.s"
@@ -849,6 +1080,9 @@ help:
 	@echo "... productdelegate.o"
 	@echo "... productdelegate.i"
 	@echo "... productdelegate.s"
+	@echo "... qrc_mpAPI_AccountInfo.o"
+	@echo "... qrc_mpAPI_AccountInfo.i"
+	@echo "... qrc_mpAPI_AccountInfo.s"
 	@echo "... reservations.o"
 	@echo "... reservations.i"
 	@echo "... reservations.s"

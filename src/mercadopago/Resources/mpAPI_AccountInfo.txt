@@ -1,0 +1,5 @@
+cardPayOrder_token=Bearer APP_USR-4686251094415031-062700-f6f7f81573c13b847611c4a61aee8dd6-774407572
+cardPayOrder_deviceName=m2
+qrOrder_token=Bearer TEST-6276998153361564-061323-c67a08cf105c6c3de44b262d5313348e-774407572
+qrOrder_url=https://api.mercadopago.com/instore/qr/seller/collectors/774407572/stores/EMPOS/pos/EMPOS001/orders
+qrOrderDelete_url=https://api.mercadopago.com/instore/qr/seller/collectors/774407572/pos/EMPOS001/orders

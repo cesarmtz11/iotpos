@@ -22,12 +22,12 @@ static const uint qt_meta_data_iotposView[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-     139,   14, // methods
+     146,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-      20,       // signalCount
+      24,       // signalCount
 
  // signals: signature, parameters, type, tag, flags
       11,   42,   47,   47, 0x05,
@@ -50,127 +50,134 @@ static const uint qt_meta_data_iotposView[] = {
      417,   47,   47,   47, 0x05,
      438,   47,   47,   47, 0x05,
      473,   47,   47,   47, 0x05,
+     509,   47,   47,   47, 0x05,
+     540,  572,   47,   47, 0x05,
+     583,  615,   47,   47, 0x05,
+     629,   47,   47,   47, 0x05,
 
  // slots: signature, parameters, type, tag, flags
-     509,   47,   47,   47, 0x08,
-     522,   47,   47,   47, 0x08,
-     544,   47,   47,   47, 0x08,
-     567,   47,   47,   47, 0x08,
-     586,  624,  631,   47, 0x08,
-     636,  260,   47,   47, 0x08,
-     656,  715,  774,   47, 0x08,
-     778,  802,   47,   47, 0x08,
-     807,   47,   47,   47, 0x08,
-     828,  865,   47,   47, 0x08,
-     870,  865,   47,   47, 0x08,
-     913,   47,   47,   47, 0x08,
-     933,  865,   47,   47, 0x08,
-     968, 1006,   47,   47, 0x08,
-    1011,   47,   47,   47, 0x08,
-    1038,   47,   47,   47, 0x08,
-    1065,   47,   47,   47, 0x08,
-    1095,   47,   47,   47, 0x08,
-    1122, 1152,   47,   47, 0x08,
-    1170,   47,   47,   47, 0x08,
-    1189,   47,   47,   47, 0x08,
-    1219, 1243,   47,   47, 0x08,
-    1253,   47,   47,   47, 0x08,
-    1277, 1304,   47,   47, 0x08,
-    1308,   47,   47,   47, 0x28,
-    1331,   47,   47,   47, 0x08,
-    1350, 1374,   47,   47, 0x08,
-    1381, 1407,   47,   47, 0x08,
-    1413, 1407,   47,   47, 0x08,
-    1438,   47,   47,   47, 0x08,
-    1454,   47,   47,   47, 0x08,
-    1465,   47,   47,   47, 0x08,
-    1478, 1498,  774,   47, 0x08,
-    1500,   47,   47,   47, 0x08,
-    1513,   47,   47,   47, 0x08,
-    1529,   47,   47,   47, 0x08,
-    1545,   47,   47,   47, 0x08,
-    1559,   47,   47,   47, 0x08,
-    1575,   47,   47,   47, 0x08,
-    1589,   47,   47,   47, 0x08,
-    1604,   47,   47,   47, 0x08,
-    1626,   47,   47,   47, 0x08,
-    1644,   47,   47,   47, 0x08,
-    1674,   47,   47,   47, 0x08,
-    1682,   47,   47,   47, 0x08,
-    1692,   47,   47,   47, 0x08,
-    1706,   47,   47,   47, 0x08,
-    1721,   47,   47,   47, 0x08,
-    1736,   47,   47,   47, 0x08,
-    1758,   47,   47,   47, 0x08,
-    1783, 1816,   47,   47, 0x08,
-    1822, 1816,   47,   47, 0x08,
-    1851,   47,   47,   47, 0x08,
-    1867,   47,   47,   47, 0x08,
-    1886,   47,   47,   47, 0x08,
-    1904, 1927,   47,   47, 0x08,
-    1932,   47,   47,   47, 0x08,
-    1951,   47,   47,   47, 0x08,
-    1970,   47,   47,   47, 0x08,
-    1995,   47,   47,   47, 0x08,
-    2015,   47,   47,   47, 0x08,
-    2027,   47,   47,   47, 0x08,
-    2044,   47,   47,   47, 0x08,
-    2064,   47,   47,   47, 0x08,
-    2082,   47,   47,   47, 0x08,
-    2109, 1152,   47,   47, 0x08,
-    2148,   47,   47,   47, 0x08,
-    2165,   47,   47,   47, 0x08,
-    2184,   47,   47,   47, 0x08,
-    2201, 1816,   47,   47, 0x08,
-    2234,   47,   47,   47, 0x08,
-    2244,   47,   47,   47, 0x08,
-    2253,   47,   47,   47, 0x08,
-    2269,   47,   47,   47, 0x08,
-    2285,   47,   47,   47, 0x08,
-    2303,   47,   47,   47, 0x08,
-    2321,   47,   47,   47, 0x08,
-    2344,   47,   47,   47, 0x08,
-    2357,   47,   47,   47, 0x08,
-    2372,   47,   47,   47, 0x08,
-    2386,   47,   47,   47, 0x08,
-    2399,   47,   47,   47, 0x08,
-    2416,   47,   47,   47, 0x08,
-    2436, 2456,   47,   47, 0x08,
-    2463,   47,   47,   47, 0x08,
-    2479,   47,   47,   47, 0x08,
-    2500,   47,   47,   47, 0x08,
-    2526,   47,   47,   47, 0x08,
-    2548, 2579, 2584,   47, 0x08,
-    2591, 2627,   47,   47, 0x08,
-    2646,   47,   47,   47, 0x08,
-    2665,   47,   47,   47, 0x08,
-    2681,   47,   47,   47, 0x08,
-    2705,   47,   47,   47, 0x08,
-    2728,   47,   47,   47, 0x08,
-    2755,   47,   47,   47, 0x08,
-    2770,   47,   47,   47, 0x08,
-    2791,   47,   47,   47, 0x08,
-    2811,   47,   47,   47, 0x08,
-    2833,   47,   47,   47, 0x08,
-    2857, 2910,   47,   47, 0x08,
-    2921,   47,   47,   47, 0x08,
-    2935,   47,   47,   47, 0x08,
-    2959,   47,   47,   47, 0x08,
-    2974,   47,   47,   47, 0x08,
-    3000,   47,   47,   47, 0x08,
-    3020,   47,   47,   47, 0x08,
-    3038,   47,   47,   47, 0x08,
-    3056, 3097,   47,   47, 0x08,
-    3111,   47,   47,   47, 0x08,
-    3131,  865,   47,   47, 0x08,
-    3161,   47,   47,   47, 0x08,
-    3188,   47,   47,   47, 0x08,
-    3216,   47,   47,   47, 0x08,
-    3238,   47,   47,   47, 0x08,
-    3253,   47,   47,   47, 0x08,
-    3273,   47,   47,   47, 0x08,
-    3298,   47,   47,   47, 0x08,
-    3332,   47,   47,   47, 0x08,
+     658,   47,   47,   47, 0x08,
+     671,   47,   47,   47, 0x08,
+     693,   47,   47,   47, 0x08,
+     716,   47,   47,   47, 0x08,
+     735,  773,  780,   47, 0x08,
+     785,  260,   47,   47, 0x08,
+     805,  864,  923,   47, 0x08,
+     927,  951,   47,   47, 0x08,
+     956,   47,   47,   47, 0x08,
+     977, 1014,   47,   47, 0x08,
+    1019, 1014,   47,   47, 0x08,
+    1062,   47,   47,   47, 0x08,
+    1082, 1014,   47,   47, 0x08,
+    1117, 1155,   47,   47, 0x08,
+    1160,   47,   47,   47, 0x08,
+    1187,   47,   47,   47, 0x08,
+    1214,   47,   47,   47, 0x08,
+    1244,   47,   47,   47, 0x08,
+    1271, 1301,   47,   47, 0x08,
+    1319,   47,   47,   47, 0x08,
+    1338,   47,   47,   47, 0x08,
+    1368, 1392,   47,   47, 0x08,
+    1402,   47,   47,   47, 0x08,
+    1426, 1453,   47,   47, 0x08,
+    1457,   47,   47,   47, 0x28,
+    1480,   47,   47,   47, 0x08,
+    1499, 1523,   47,   47, 0x08,
+    1530, 1556,   47,   47, 0x08,
+    1562, 1556,   47,   47, 0x08,
+    1587,   47,   47,   47, 0x08,
+    1603,   47,   47,   47, 0x08,
+    1614,   47,   47,   47, 0x08,
+    1627, 1647,  923,   47, 0x08,
+    1649,   47,   47,   47, 0x08,
+    1662,   47,   47,   47, 0x08,
+    1678,   47,   47,   47, 0x08,
+    1694,   47,   47,   47, 0x08,
+    1708,   47,   47,   47, 0x08,
+    1724,   47,   47,   47, 0x08,
+    1738,   47,   47,   47, 0x08,
+    1753,   47,   47,   47, 0x08,
+    1775,   47,   47,   47, 0x08,
+    1793,   47,   47,   47, 0x08,
+    1823,   47,   47,   47, 0x08,
+    1831,   47,   47,   47, 0x08,
+    1841,   47,   47,   47, 0x08,
+    1855,   47,   47,   47, 0x08,
+    1870,   47,   47,   47, 0x08,
+    1885,   47,   47,   47, 0x08,
+    1907,   47,   47,   47, 0x08,
+    1932, 1965,   47,   47, 0x08,
+    1971, 1965,   47,   47, 0x08,
+    2000,   47,   47,   47, 0x08,
+    2016,   47,   47,   47, 0x08,
+    2035,   47,   47,   47, 0x08,
+    2053, 2076,   47,   47, 0x08,
+    2081,   47,   47,   47, 0x08,
+    2100,   47,   47,   47, 0x08,
+    2119,   47,   47,   47, 0x08,
+    2144,   47,   47,   47, 0x08,
+    2164,   47,   47,   47, 0x08,
+    2176,   47,   47,   47, 0x08,
+    2193,   47,   47,   47, 0x08,
+    2213,   47,   47,   47, 0x08,
+    2231,   47,   47,   47, 0x08,
+    2258, 1301,   47,   47, 0x08,
+    2297,   47,   47,   47, 0x08,
+    2314,   47,   47,   47, 0x08,
+    2333,   47,   47,   47, 0x08,
+    2350, 1965,   47,   47, 0x08,
+    2383,   47,   47,   47, 0x08,
+    2393,   47,   47,   47, 0x08,
+    2402,   47,   47,   47, 0x08,
+    2418,   47,   47,   47, 0x08,
+    2434,   47,   47,   47, 0x08,
+    2452,   47,   47,   47, 0x08,
+    2470,   47,   47,   47, 0x08,
+    2493,   47,   47,   47, 0x08,
+    2506,   47,   47,   47, 0x08,
+    2521,   47,   47,   47, 0x08,
+    2535,   47,   47,   47, 0x08,
+    2548,   47,   47,   47, 0x08,
+    2565,   47,   47,   47, 0x08,
+    2585, 2605,   47,   47, 0x08,
+    2612,   47,   47,   47, 0x08,
+    2628,   47,   47,   47, 0x08,
+    2649,   47,   47,   47, 0x08,
+    2675,   47,   47,   47, 0x08,
+    2697, 2728, 2733,   47, 0x08,
+    2740, 2776,   47,   47, 0x08,
+    2795,   47,   47,   47, 0x08,
+    2814,   47,   47,   47, 0x08,
+    2830,   47,   47,   47, 0x08,
+    2854,   47,   47,   47, 0x08,
+    2877,   47,   47,   47, 0x08,
+    2904,   47,   47,   47, 0x08,
+    2919,   47,   47,   47, 0x08,
+    2940,   47,   47,   47, 0x08,
+    2960,   47,   47,   47, 0x08,
+    2982,   47,   47,   47, 0x08,
+    3006, 3059,   47,   47, 0x08,
+    3070,   47,   47,   47, 0x08,
+    3084,   47,   47,   47, 0x08,
+    3108,   47,   47,   47, 0x08,
+    3123,   47,   47,   47, 0x08,
+    3149,   47,   47,   47, 0x08,
+    3169,   47,   47,   47, 0x08,
+    3187,   47,   47,   47, 0x08,
+    3205, 3246,   47,   47, 0x08,
+    3260,   47,   47,   47, 0x08,
+    3280, 1014,   47,   47, 0x08,
+    3310,   47,   47,   47, 0x08,
+    3337,   47,   47,   47, 0x08,
+    3365,   47,   47,   47, 0x08,
+    3387,   47,   47,   47, 0x08,
+    3402,   47,   47,   47, 0x08,
+    3422,   47,   47,   47, 0x08,
+    3447,   47,   47,   47, 0x08,
+    3481,   47,   47,   47, 0x08,
+    3513,   47,   47,   47, 0x08,
+    3538,   47,   47,   47, 0x08,
+    3565,   47,   47,   47, 0x08,
 
        0        // eod
 };
@@ -190,6 +197,10 @@ static const char qt_meta_stringdata_iotposView[] = {
     "signalDisableLogin()\0"
     "signalEnableStartOperationAction()\0"
     "signalDisableStartOperationAction()\0"
+    "signalMP_continueTransaction()\0"
+    "mpSend_getOrderRequest(QString)\0"
+    "mpOrder_ID\0mpSignal_QRStatusOrder(QString)\0"
+    "mpQR_StatusID\0notification_PrintStarting()\0"
     "setUpTable()\0showEnterCodeWidget()\0"
     "showSearchItemWidget()\0doSearchItemDesc()\0"
     "incrementTableItemQty(QString,double)\0"
@@ -269,6 +280,9 @@ static const char qt_meta_stringdata_iotposView[] = {
     "resizeSearchTable()\0resizeSearchTableSmall()\0"
     "on_rbFilterByPopularity_clicked()\0"
     "on_rbFilterByCategory_clicked()\0"
+    "slotmp_GETOrderRequest()\0"
+    "slotCancelButton_Pressed()\0"
+    "slotReceive_ServerNotification()\0"
 };
 
 void iotposView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -297,129 +311,136 @@ void iotposView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 17: _t->signalDisableLogin(); break;
         case 18: _t->signalEnableStartOperationAction(); break;
         case 19: _t->signalDisableStartOperationAction(); break;
-        case 20: _t->setUpTable(); break;
-        case 21: _t->showEnterCodeWidget(); break;
-        case 22: _t->showSearchItemWidget(); break;
-        case 23: _t->doSearchItemDesc(); break;
-        case 24: { bool _r = _t->incrementTableItemQty((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])));
+        case 20: _t->signalMP_continueTransaction(); break;
+        case 21: _t->mpSend_getOrderRequest((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 22: _t->mpSignal_QRStatusOrder((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 23: _t->notification_PrintStarting(); break;
+        case 24: _t->setUpTable(); break;
+        case 25: _t->showEnterCodeWidget(); break;
+        case 26: _t->showSearchItemWidget(); break;
+        case 27: _t->doSearchItemDesc(); break;
+        case 28: { bool _r = _t->incrementTableItemQty((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
-        case 25: _t->insertItem((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 26: { int _r = _t->doInsertItem((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< double(*)>(_a[3])),(*reinterpret_cast< double(*)>(_a[4])),(*reinterpret_cast< double(*)>(_a[5])),(*reinterpret_cast< QString(*)>(_a[6])));
+        case 29: _t->insertItem((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 30: { int _r = _t->doInsertItem((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< double(*)>(_a[3])),(*reinterpret_cast< double(*)>(_a[4])),(*reinterpret_cast< double(*)>(_a[5])),(*reinterpret_cast< QString(*)>(_a[6])));
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = _r; }  break;
-        case 27: _t->updateItem((*reinterpret_cast< ProductInfo(*)>(_a[1]))); break;
-        case 28: _t->deleteSelectedItem(); break;
-        case 29: _t->itemDoubleClicked((*reinterpret_cast< QTableWidgetItem*(*)>(_a[1]))); break;
-        case 30: _t->itemSearchDoubleClicked((*reinterpret_cast< QTableWidgetItem*(*)>(_a[1]))); break;
-        case 31: _t->refreshTotalLabel(); break;
-        case 32: _t->displayItemInfo((*reinterpret_cast< QTableWidgetItem*(*)>(_a[1]))); break;
-        case 33: _t->createNewTransaction((*reinterpret_cast< TransactionType(*)>(_a[1]))); break;
-        case 34: _t->finishCurrentTransaction(); break;
-        case 35: _t->cancelCurrentTransaction(); break;
-        case 36: _t->preCancelCurrentTransaction(); break;
-        case 37: _t->deleteCurrentTransaction(); break;
-        case 38: _t->cancelTransaction((*reinterpret_cast< qulonglong(*)>(_a[1]))); break;
-        case 39: _t->askForIdToCancel(); break;
-        case 40: _t->askForTicketToReturnProduct(); break;
-        case 41: _t->startOperation((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 42: _t->_slotDoStartOperation(); break;
-        case 43: _t->slotDoStartOperation((*reinterpret_cast< const bool(*)>(_a[1]))); break;
-        case 44: _t->slotDoStartOperation(); break;
-        case 45: _t->clearUsedWidgets(); break;
-        case 46: _t->printTicket((*reinterpret_cast< TicketInfo(*)>(_a[1]))); break;
-        case 47: _t->printBalance((*reinterpret_cast< QStringList(*)>(_a[1]))); break;
-        case 48: _t->showBalance((*reinterpret_cast< QStringList(*)>(_a[1]))); break;
-        case 49: _t->doCorteDeCaja(); break;
-        case 50: _t->endOfDay(); break;
-        case 51: _t->startAgain(); break;
-        case 52: { int _r = _t->getItemRow((*reinterpret_cast< QString(*)>(_a[1])));
+        case 31: _t->updateItem((*reinterpret_cast< ProductInfo(*)>(_a[1]))); break;
+        case 32: _t->deleteSelectedItem(); break;
+        case 33: _t->itemDoubleClicked((*reinterpret_cast< QTableWidgetItem*(*)>(_a[1]))); break;
+        case 34: _t->itemSearchDoubleClicked((*reinterpret_cast< QTableWidgetItem*(*)>(_a[1]))); break;
+        case 35: _t->refreshTotalLabel(); break;
+        case 36: _t->displayItemInfo((*reinterpret_cast< QTableWidgetItem*(*)>(_a[1]))); break;
+        case 37: _t->createNewTransaction((*reinterpret_cast< TransactionType(*)>(_a[1]))); break;
+        case 38: _t->finishCurrentTransaction(); break;
+        case 39: _t->cancelCurrentTransaction(); break;
+        case 40: _t->preCancelCurrentTransaction(); break;
+        case 41: _t->deleteCurrentTransaction(); break;
+        case 42: _t->cancelTransaction((*reinterpret_cast< qulonglong(*)>(_a[1]))); break;
+        case 43: _t->askForIdToCancel(); break;
+        case 44: _t->askForTicketToReturnProduct(); break;
+        case 45: _t->startOperation((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 46: _t->_slotDoStartOperation(); break;
+        case 47: _t->slotDoStartOperation((*reinterpret_cast< const bool(*)>(_a[1]))); break;
+        case 48: _t->slotDoStartOperation(); break;
+        case 49: _t->clearUsedWidgets(); break;
+        case 50: _t->printTicket((*reinterpret_cast< TicketInfo(*)>(_a[1]))); break;
+        case 51: _t->printBalance((*reinterpret_cast< QStringList(*)>(_a[1]))); break;
+        case 52: _t->showBalance((*reinterpret_cast< QStringList(*)>(_a[1]))); break;
+        case 53: _t->doCorteDeCaja(); break;
+        case 54: _t->endOfDay(); break;
+        case 55: _t->startAgain(); break;
+        case 56: { int _r = _t->getItemRow((*reinterpret_cast< QString(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = _r; }  break;
-        case 53: _t->buttonDone(); break;
-        case 54: _t->checksChanged(); break;
-        case 55: _t->focusPayInput(); break;
-        case 56: _t->plusPressed(); break;
-        case 57: _t->setupGridView(); break;
-        case 58: _t->setupGraphs(); break;
-        case 59: _t->updateGraphs(); break;
-        case 60: _t->doEmitSignalQueryDb(); break;
-        case 61: _t->settingsChanged(); break;
-        case 62: _t->settingsChangedOnInitConfig(); break;
-        case 63: _t->login(); break;
-        case 64: _t->setupDB(); break;
-        case 65: _t->connectToDb(); break;
-        case 66: _t->setupClients(); break;
-        case 67: _t->timerTimeout(); break;
-        case 68: _t->clearLabelSearchMsg(); break;
-        case 69: _t->goSelectCardAuthNumber(); break;
-        case 70: _t->listViewOnMouseMove((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
-        case 71: _t->listViewOnClick((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
-        case 72: _t->clientChanged(); break;
-        case 73: _t->updateClientInfo(); break;
-        case 74: _t->updateModelView(); break;
-        case 75: _t->showProductsGrid((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 76: _t->showPriceChecker(); break;
-        case 77: _t->hideProductsGrid(); break;
-        case 78: _t->populateCategoriesHash(); break;
-        case 79: _t->populateCardTypes(); break;
-        case 80: _t->setFilter(); break;
-        case 81: _t->showChangeDate(); break;
-        case 82: _t->showReprintTicket(); break;
-        case 83: _t->setupTicketView(); break;
-        case 84: _t->setupHistoryTicketsModel(); break;
-        case 85: _t->printTicketFromTransaction((*reinterpret_cast< qulonglong(*)>(_a[1]))); break;
-        case 86: _t->printSelTicket(); break;
-        case 87: _t->setHistoryFilter(); break;
-        case 88: _t->btnTicketsDone(); break;
-        case 89: _t->itemHIDoubleClicked((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
-        case 90: _t->cashOut(); break;
-        case 91: _t->cashIn(); break;
-        case 92: _t->cashAvailable(); break;
-        case 93: _t->freezeWidgets(); break;
-        case 94: _t->unfreezeWidgets(); break;
-        case 95: _t->addSpecialOrder(); break;
-        case 96: _t->specialOrderComplete(); break;
-        case 97: _t->lockScreen(); break;
-        case 98: _t->unlockScreen(); break;
-        case 99: _t->suspendSale(); break;
-        case 100: _t->resumeSale(); break;
-        case 101: _t->changeSOStatus(); break;
-        case 102: _t->updateTransaction(); break;
-        case 103: _t->updateBalance((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 104: _t->insertBalance(); break;
-        case 105: _t->occasionalDiscount(); break;
-        case 106: _t->applyOccasionalDiscount(); break;
-        case 107: _t->changeDiscValidator(); break;
-        case 108: { double _r = _t->getTotalQtyOnList((*reinterpret_cast< const ProductInfo(*)>(_a[1])));
+        case 57: _t->buttonDone(); break;
+        case 58: _t->checksChanged(); break;
+        case 59: _t->focusPayInput(); break;
+        case 60: _t->plusPressed(); break;
+        case 61: _t->setupGridView(); break;
+        case 62: _t->setupGraphs(); break;
+        case 63: _t->updateGraphs(); break;
+        case 64: _t->doEmitSignalQueryDb(); break;
+        case 65: _t->settingsChanged(); break;
+        case 66: _t->settingsChangedOnInitConfig(); break;
+        case 67: _t->login(); break;
+        case 68: _t->setupDB(); break;
+        case 69: _t->connectToDb(); break;
+        case 70: _t->setupClients(); break;
+        case 71: _t->timerTimeout(); break;
+        case 72: _t->clearLabelSearchMsg(); break;
+        case 73: _t->goSelectCardAuthNumber(); break;
+        case 74: _t->listViewOnMouseMove((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
+        case 75: _t->listViewOnClick((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
+        case 76: _t->clientChanged(); break;
+        case 77: _t->updateClientInfo(); break;
+        case 78: _t->updateModelView(); break;
+        case 79: _t->showProductsGrid((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 80: _t->showPriceChecker(); break;
+        case 81: _t->hideProductsGrid(); break;
+        case 82: _t->populateCategoriesHash(); break;
+        case 83: _t->populateCardTypes(); break;
+        case 84: _t->setFilter(); break;
+        case 85: _t->showChangeDate(); break;
+        case 86: _t->showReprintTicket(); break;
+        case 87: _t->setupTicketView(); break;
+        case 88: _t->setupHistoryTicketsModel(); break;
+        case 89: _t->printTicketFromTransaction((*reinterpret_cast< qulonglong(*)>(_a[1]))); break;
+        case 90: _t->printSelTicket(); break;
+        case 91: _t->setHistoryFilter(); break;
+        case 92: _t->btnTicketsDone(); break;
+        case 93: _t->itemHIDoubleClicked((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
+        case 94: _t->cashOut(); break;
+        case 95: _t->cashIn(); break;
+        case 96: _t->cashAvailable(); break;
+        case 97: _t->freezeWidgets(); break;
+        case 98: _t->unfreezeWidgets(); break;
+        case 99: _t->addSpecialOrder(); break;
+        case 100: _t->specialOrderComplete(); break;
+        case 101: _t->lockScreen(); break;
+        case 102: _t->unlockScreen(); break;
+        case 103: _t->suspendSale(); break;
+        case 104: _t->resumeSale(); break;
+        case 105: _t->changeSOStatus(); break;
+        case 106: _t->updateTransaction(); break;
+        case 107: _t->updateBalance((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 108: _t->insertBalance(); break;
+        case 109: _t->occasionalDiscount(); break;
+        case 110: _t->applyOccasionalDiscount(); break;
+        case 111: _t->changeDiscValidator(); break;
+        case 112: { double _r = _t->getTotalQtyOnList((*reinterpret_cast< const ProductInfo(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< double*>(_a[0]) = _r; }  break;
-        case 109: _t->log((*reinterpret_cast< const qulonglong(*)>(_a[1])),(*reinterpret_cast< const QDate(*)>(_a[2])),(*reinterpret_cast< const QTime(*)>(_a[3])),(*reinterpret_cast< const QString(*)>(_a[4]))); break;
-        case 110: _t->syncSettingsOnDb(); break;
-        case 111: _t->getCurrencies(); break;
-        case 112: _t->comboCurrencyOnChange(); break;
-        case 113: _t->doCurrencyConversion(); break;
-        case 114: _t->acceptCurrencyConversion(); break;
-        case 115: _t->reserveItems(); break;
-        case 116: _t->suspendReservation(); break;
-        case 117: _t->resumeReservation(); break;
-        case 118: _t->postponeReservation(); break;
-        case 119: _t->addReservationPayment(); break;
-        case 120: _t->insertCashInForReservationPayment((*reinterpret_cast< const qulonglong(*)>(_a[1])),(*reinterpret_cast< const double(*)>(_a[2]))); break;
-        case 121: _t->showCredits(); break;
-        case 122: _t->filterClientForCredit(); break;
-        case 123: _t->filterClient(); break;
-        case 124: _t->calculateTotalForClient(); break;
-        case 125: _t->showCreditPayment(); break;
-        case 126: _t->tenderedChanged(); break;
-        case 127: _t->doCreditPayment(); break;
-        case 128: _t->insertCashInForCredit((*reinterpret_cast< const CreditInfo(*)>(_a[1])),(*reinterpret_cast< const double(*)>(_a[2]))); break;
-        case 129: _t->printCreditReport(); break;
-        case 130: _t->qtyChanged((*reinterpret_cast< QTableWidgetItem*(*)>(_a[1]))); break;
-        case 131: _t->modifyClientsFilterModel(); break;
-        case 132: _t->modifyClientsFilterModelB(); break;
-        case 133: _t->verifyDiscountEntry(); break;
-        case 134: _t->createClient(); break;
-        case 135: _t->resizeSearchTable(); break;
-        case 136: _t->resizeSearchTableSmall(); break;
-        case 137: _t->on_rbFilterByPopularity_clicked(); break;
-        case 138: _t->on_rbFilterByCategory_clicked(); break;
+        case 113: _t->log((*reinterpret_cast< const qulonglong(*)>(_a[1])),(*reinterpret_cast< const QDate(*)>(_a[2])),(*reinterpret_cast< const QTime(*)>(_a[3])),(*reinterpret_cast< const QString(*)>(_a[4]))); break;
+        case 114: _t->syncSettingsOnDb(); break;
+        case 115: _t->getCurrencies(); break;
+        case 116: _t->comboCurrencyOnChange(); break;
+        case 117: _t->doCurrencyConversion(); break;
+        case 118: _t->acceptCurrencyConversion(); break;
+        case 119: _t->reserveItems(); break;
+        case 120: _t->suspendReservation(); break;
+        case 121: _t->resumeReservation(); break;
+        case 122: _t->postponeReservation(); break;
+        case 123: _t->addReservationPayment(); break;
+        case 124: _t->insertCashInForReservationPayment((*reinterpret_cast< const qulonglong(*)>(_a[1])),(*reinterpret_cast< const double(*)>(_a[2]))); break;
+        case 125: _t->showCredits(); break;
+        case 126: _t->filterClientForCredit(); break;
+        case 127: _t->filterClient(); break;
+        case 128: _t->calculateTotalForClient(); break;
+        case 129: _t->showCreditPayment(); break;
+        case 130: _t->tenderedChanged(); break;
+        case 131: _t->doCreditPayment(); break;
+        case 132: _t->insertCashInForCredit((*reinterpret_cast< const CreditInfo(*)>(_a[1])),(*reinterpret_cast< const double(*)>(_a[2]))); break;
+        case 133: _t->printCreditReport(); break;
+        case 134: _t->qtyChanged((*reinterpret_cast< QTableWidgetItem*(*)>(_a[1]))); break;
+        case 135: _t->modifyClientsFilterModel(); break;
+        case 136: _t->modifyClientsFilterModelB(); break;
+        case 137: _t->verifyDiscountEntry(); break;
+        case 138: _t->createClient(); break;
+        case 139: _t->resizeSearchTable(); break;
+        case 140: _t->resizeSearchTableSmall(); break;
+        case 141: _t->on_rbFilterByPopularity_clicked(); break;
+        case 142: _t->on_rbFilterByCategory_clicked(); break;
+        case 143: _t->slotmp_GETOrderRequest(); break;
+        case 144: _t->slotCancelButton_Pressed(); break;
+        case 145: _t->slotReceive_ServerNotification(); break;
         default: ;
         }
     }
@@ -459,9 +480,9 @@ int iotposView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 139)
+        if (_id < 146)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 139;
+        _id -= 146;
     }
     return _id;
 }
@@ -587,5 +608,31 @@ void iotposView::signalEnableStartOperationAction()
 void iotposView::signalDisableStartOperationAction()
 {
     QMetaObject::activate(this, &staticMetaObject, 19, 0);
+}
+
+// SIGNAL 20
+void iotposView::signalMP_continueTransaction()
+{
+    QMetaObject::activate(this, &staticMetaObject, 20, 0);
+}
+
+// SIGNAL 21
+void iotposView::mpSend_getOrderRequest(QString _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 21, _a);
+}
+
+// SIGNAL 22
+void iotposView::mpSignal_QRStatusOrder(QString _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 22, _a);
+}
+
+// SIGNAL 23
+void iotposView::notification_PrintStarting()
+{
+    QMetaObject::activate(this, &staticMetaObject, 23, 0);
 }
 QT_END_MOC_NAMESPACE

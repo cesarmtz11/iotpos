@@ -1,6 +1,7 @@
 #MCH: Deshabilitar debug (para alivianar el ejecutable).
 #     cmake -DCMAKE_BUILD_TYPE=release -DCMAKE_INSTALL_PREFIX=/opt/kde4
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fexceptions")
 set(iotpos_SRCS
    iotpos.cpp
    main.cpp
@@ -37,15 +38,29 @@ set(iotpos_SRCS
    nouns/BasketPriceSummary.cpp
    nouns/User.cpp
    nouns/Currency.cpp
-   #adding for keynumeric input
-   #keyboard/inputdevice.cpp
-   #keyboard/keyboard.cpp
-   #numpad.cpp
  )
+
+#CM Adding MercadoPago
+set(mercadopago_SRCS
+    mercadopago/QJsonSource/QJsonArray.cpp
+    mercadopago/QJsonSource/QJsonDocument.cpp
+    mercadopago/QJsonSource/QJsonObject.cpp
+    mercadopago/QJsonSource/QJsonParseError.cpp
+    mercadopago/QJsonSource/QJsonParser.cpp
+    mercadopago/QJsonSource/QJsonValue.cpp
+    mercadopago/QJsonSource/QJsonValueRef.cpp
+    mercadopago/mpAPI_Integration.cpp
+    mercadopago/mpAPI_AccountInfo.cpp
+    mercadopago/mpDedicated_Server.cpp
+    mercadopago/QServerThreadProcess/qJob.cpp
+    mercadopago/QServerThreadProcess/qJobManager.cpp
+)
+
+qt4_add_resources(Resources mercadopago/mpAPI_AccountInfo.qrc)
 
 #qt4_add_dbus_adaptor(iotpos_SRCS org.kde.iotpos.iotpos.xml iotpos.h iotpos)
 
-
+#kde4_add_ui_files( iotpos_SRCS
 kde4_add_ui_files( iotpos_SRCS
   ui/mainview.ui
   ui/prefs_base.ui
@@ -62,14 +77,11 @@ kde4_add_ui_files( iotpos_SRCS
   ui/checker.ui
   ui/datoscliente.ui
   ../iotstock/src/ui/editclient_widget.ui
-  # CM adding to for keyboard
-  #ui/keyboard.ui
-  #ui/numpad.ui
   )
 
 kde4_add_kcfg_files(iotpos_SRCS settings.kcfgc )
-
-kde4_add_executable(iotpos ${iotpos_SRCS})
+#${mercadopago_SRCS}
+kde4_add_executable(iotpos ${iotpos_SRCS} ${mercadopago_SRCS} ${Resources})
 
 target_link_libraries(iotpos
   ${KDE4_KDEUI_LIBS}

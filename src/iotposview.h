@@ -32,14 +32,17 @@ class MibitNotifier;
 #include <qwidget.h>
 #include <QList>
 #include <QtSql>
+#include <KNotification>
 
 #include "enums.h"
 #include "gaveta.h"
 #include "loginwindow.h"
 #include "ui_mainview.h"
 #include "bundlelist.h"
-
 #include "nouns/BasketPriceSummary.h"
+#include "mercadopago/mpAPI_Integration.h"
+#include "mercadopago/mpDedicated_Server.h"
+#include "mercadopago/QServerThreadProcess/qJobManager.h"
 
 /**
  * This is the main view class for iotpos.  Most of the non-menu,
@@ -80,6 +83,11 @@ public:
     void corteDeCaja(); //to allow iotpos class to doit
 
     QWidget *frameLeft, *frame;
+
+
+
+
+
   private:
     QTimer *rmTimer;
     Ui::mainview ui_mainview;
@@ -155,6 +163,29 @@ public:
 
     KPlotObject *objSales;
 
+    QString mpOrder_ID;
+    qJobManager manager;
+    mpAPI_Integration mpAPI;  // mp = mercado pago
+    QEventLoop wait_RequestStatus;
+    mpDedicated_Server mpServer;
+
+    bool QROrder_Status;
+
+    QTimer * mpGETQR_OrderStatus_Timer;
+
+    void mp_GETOrderRequest(QString mpOrder_ReceivedID);
+    bool getQROrder_Status() const;
+    void setQROrder_Status(const bool &QR_OrderStatus);
+    //QString getQROrder_ID() const;
+    //void setQROrder_ID(const double &QR_OrderID);
+    QString QROrder_ID;
+    KNotification *Notification_MP;
+    void notification_popup(KNotification *notification_MP, QString notification_text, bool timeout);
+    bool canfinish;
+    bool orderStatus_forNotification;
+    QString currentTransaction_Type;
+    double mp_CardOrderID;
+
   signals:
     /**
    * Use this signal to change the content of the statusbar
@@ -208,6 +239,11 @@ public:
     void signalDisableLogin();
     void signalEnableStartOperationAction();
     void signalDisableStartOperationAction();
+
+    void signalMP_continueTransaction();
+    void mpSend_getOrderRequest(QString mpOrder_ID);
+    void mpSignal_QRStatusOrder(QString mpQR_StatusID);
+    void notification_PrintStarting();
 
 
   private slots:
@@ -411,6 +447,10 @@ public:
     void resizeSearchTableSmall();
     void on_rbFilterByPopularity_clicked();
     void on_rbFilterByCategory_clicked();
+
+    void slotmp_GETOrderRequest();
+    void slotCancelButton_Pressed();
+    void slotReceive_ServerNotification();
 };
 
 #endif // IOTPOSVIEW_H

@@ -2232,6 +2232,7 @@ iotstock/src/CMakeFiles/iotstock.dir/__/__/src/loginwindow.o
  /usr/include/qt4/QtGui/QFont
  /usr/include/qt4/QtGui/QLayout
  /usr/include/qt4/QtGui/QMatrix4x4
+ /usr/include/qt4/QtGui/QMessageBox
  /usr/include/qt4/QtGui/QPalette
  /usr/include/qt4/QtGui/QPixmap
  /usr/include/qt4/QtGui/QPlatformWindow

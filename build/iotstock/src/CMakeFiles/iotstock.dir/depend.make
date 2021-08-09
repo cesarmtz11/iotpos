@@ -2231,6 +2231,7 @@ iotstock/src/CMakeFiles/iotstock.dir/__/__/src/loginwindow.o: /usr/include/qt4/Q
 iotstock/src/CMakeFiles/iotstock.dir/__/__/src/loginwindow.o: /usr/include/qt4/QtGui/QFont
 iotstock/src/CMakeFiles/iotstock.dir/__/__/src/loginwindow.o: /usr/include/qt4/QtGui/QLayout
 iotstock/src/CMakeFiles/iotstock.dir/__/__/src/loginwindow.o: /usr/include/qt4/QtGui/QMatrix4x4
+iotstock/src/CMakeFiles/iotstock.dir/__/__/src/loginwindow.o: /usr/include/qt4/QtGui/QMessageBox
 iotstock/src/CMakeFiles/iotstock.dir/__/__/src/loginwindow.o: /usr/include/qt4/QtGui/QPalette
 iotstock/src/CMakeFiles/iotstock.dir/__/__/src/loginwindow.o: /usr/include/qt4/QtGui/QPixmap
 iotstock/src/CMakeFiles/iotstock.dir/__/__/src/loginwindow.o: /usr/include/qt4/QtGui/QPlatformWindow

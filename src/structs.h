@@ -538,4 +538,16 @@ struct BundleInfo
     double     qty;
 };
 
+// Mensajes de interfaz para la integracion de MercadoPago
+
+struct mpDialogs
+{
+    QString mpNotification_QROrderCreated;
+    QString mpNotification_CardOrderCreated;
+    QString mpNotification_OrderPaid;
+    QString mpNotification_OrderCancelled;
+    QString mpNotification_OrderError;
+};
+
+
 #endif
